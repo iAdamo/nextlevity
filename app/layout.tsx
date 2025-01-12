@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="h-screen m-0 p-0">
         <StyledJsxRegistry>
-          <GluestackUIProvider mode="system">{children}</GluestackUIProvider>
+          <GluestackUIProvider mode="light">{children}</GluestackUIProvider>
         </StyledJsxRegistry>
       </body>
     </html>

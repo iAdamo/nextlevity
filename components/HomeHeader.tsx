@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const HomeHeader = () => {
   return (
-    <HStack className="bg-yellow-700 -mt-32 flex-col lg:flex-row">
-      <VStack className="lg:container bg-white">
-        <VStack className="mt-32 md:pl-11 h-full p-6 py-16 bg-blue-800 justify-center  gap-4">
+    <HStack className="-mt-32 flex-col-reverse md:flex-row h-full">
+      <VStack className="md:container bg-gradient-to-r from-green-700 to-blue-700">
+        <VStack className="md:mt-32 md:ml-11 h-full px-6 py-8 mt-0 md:p-0 md:py-0 justify-center gap-4">
           <p className="md:text-5xl text-4xl font-extrabold">
-            Find <span className="text-yellow-700">Marketing Strategies</span>
+            Find <span className="text-green-700">Marketing Strategies</span>
           </p>
           <p className="md:text-5xl text-3xl font-extrabol">
             Elevate Your Business
@@ -16,21 +16,19 @@ const HomeHeader = () => {
             With innovative strategies and creative solutions. We help you reach
             your goals and grow your business.
           </p>
-          <Button className="w-32 h-12 bg-yellow-700 data-[hover=true]:bg-yellow-600 data-[active=true]:bg-yellow-500">
+          <Button className="w-32 h-12 bg-green-700 data-[hover=true]:bg-green-600 data-[active=true]:bg-green-500">
             <ButtonText>Get Started</ButtonText>
           </Button>
         </VStack>
       </VStack>
-      <VStack className="lg:container bg-green-500">
-        <VStack className="h-full ">
-          <Image
+      <VStack className="md:container mt-32 lg:mt-0">
+        <Image
           className="object-cover"
-            src="/assets/homepage/carousel.jpg"
-            alt="Hero Image"
-            width={1920}
-            height={1980}
-          />
-        </VStack>
+          src="/assets/homepage/carousel.jpg"
+          alt="Hero Image"
+          width={1920}
+          height={1080}
+        />
       </VStack>
     </HStack>
   );

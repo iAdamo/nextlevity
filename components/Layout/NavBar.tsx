@@ -45,8 +45,7 @@ const NavBar = () => {
         isSticky ? "md:sticky md:w-full md:z-10" : "lg:mt-10 lg:px-10"
       }`}
     >
-      <HStack
-        className="bg-red-700 p-5 items-center justify-between shadow-lg">
+      <HStack className="bg-white p-5 items-center justify-between shadow-lg">
         <Button className="p-0 bg-transparent data-[hover=true]:bg-transparent data-[active=true]:bg-transparent">
           <Image
             className="w-10 h-10"
@@ -66,21 +65,21 @@ const NavBar = () => {
             offset={24}
           />
           <Link>
-            <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+            <LinkText className="no-underline font-extrabold data-[hover=true]:text-green-700">
               RESULTS
             </LinkText>
           </Link>
           <Link>
-            <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+            <LinkText className="no-underline font-extrabold data-[hover=true]:text-green-700">
               COMPANY
             </LinkText>
           </Link>
           <Link>
-            <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+            <LinkText className="no-underline font-extrabold data-[hover=true]:text-green-700">
               BLOG
             </LinkText>
           </Link>
-          <Button className="bg-yellow-700 data-[hover=true]:bg-yellow-600 data-[active=true]:bg-yellow-500">
+          <Button className="bg-green-700 data-[hover=true]:bg-green-600 data-[active=true]:bg-green-500">
             <ButtonText className="">WORK WITH US</ButtonText>
           </Button>
         </HStack>

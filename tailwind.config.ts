@@ -199,6 +199,22 @@ module.exports = {
         "soft-2": "0px 0px 20px rgba(38, 38, 38, 0.2)",
         "soft-3": "0px 0px 30px rgba(38, 38, 38, 0.1)",
         "soft-4": "0px 0px 40px rgba(38, 38, 38, 0.1)",
+        "top":
+          "0 -10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05)",
+        "top-right":
+          "10px -10px 15px -3px rgba(0, 0, 0, 0.1), 4px -4px 6px -2px rgba(0, 0, 0, 0.05)",
+        "right":
+          "10px 0 15px -3px rgba(0, 0, 0, 0.1), 4px 0 6px -2px rgba(0, 0, 0, 0.05)",
+        "bottom-right":
+          "10px 10px 15px -3px rgba(0, 0, 0, 0.1), 4px 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        "bottom":
+          "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        "bottom-left":
+          "-10px 10px 15px -3px rgba(0, 0, 0, 0.1), -4px 4px 6px -2px rgba(0, 0, 0, 0.05)",
+        "left":
+          "-10px 0 15px -3px rgba(0, 0, 0, 0.1), -4px 0 6px -2px rgba(0, 0, 0, 0.05)",
+        "top-left":
+          "-10px -10px 15px -3px rgba(0, 0, 0, 0.1), -4px -4px 6px -2px rgba(0, 0, 0, 0.05)",
       },
     },
   },
