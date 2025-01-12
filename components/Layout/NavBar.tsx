@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   VStack,
   HStack,
@@ -12,7 +13,23 @@ import MobileSideBar from "../Overlays/MobileSideBar";
 import { useRouter } from "next/navigation";
 
 const NavBar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
   const router = useRouter();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Trigger when scrolled past 50px
+      if (window.scrollY > 38) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const dropdownOptions = [
     { label: "Profile", onPress: () => router.push("/") },
@@ -23,8 +40,13 @@ const NavBar = () => {
     { label: "Logout", onPress: () => router.push("/") },
   ];
   return (
-    <VStack className="bg-transparent md:mx-auto md:container">
-      <HStack className="bg-red-700 p-4 md:mt-10 items-center justify-between">
+    <VStack
+      className={`transition-all duration-500 ease-in-out lg:mt-10 sticky top-0 z-10 ${
+        isSticky ? "md:sticky md:w-full md:z-10" : "lg:mt-10 lg:px-10"
+      }`}
+    >
+      <HStack
+        className="bg-red-700 p-5 items-center justify-between shadow-lg">
         <Button className="p-0 bg-transparent data-[hover=true]:bg-transparent data-[active=true]:bg-transparent">
           <Image
             className="w-10 h-10"
@@ -33,7 +55,7 @@ const NavBar = () => {
             width={30}
             height={30}
           />
-          <ButtonText className="text-2xl md:text-3xl font-extrabold text-blue-400  data-[hover=true]:text-none data-[active=true]:text-none">
+          <ButtonText className="text-2xl md:text-4xl font-extrabold text-blue-400  data-[hover=true]:text-none data-[active=true]:text-none">
             Nextlevity
           </ButtonText>
         </Button>
@@ -58,7 +80,7 @@ const NavBar = () => {
               BLOG
             </LinkText>
           </Link>
-          <Button className="bg-yellow-700 data-[hover=true]:bg-blue-400 data-[active=true]:bg-transparent">
+          <Button className="bg-yellow-700 data-[hover=true]:bg-yellow-600 data-[active=true]:bg-yellow-500">
             <ButtonText className="">WORK WITH US</ButtonText>
           </Button>
         </HStack>

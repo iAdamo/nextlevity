@@ -45,10 +45,10 @@ const MobileSideBar = () => {
         }}
         size="lg"
         anchor="left"
-        className="md:hidden"
+        className="md:hidden fixed h-screen"
       >
         <DrawerBackdrop />
-        <DrawerContent className="">
+        <DrawerContent className="w-auto h-screen overflow-y-scroll [&::-webkit-scrollbar]:hidden">
           <DrawerHeader>
             <Button className="bg-yellow-700 data-[hover=true]:bg-blue-400 data-[active=true]:bg-transparent">
               <ButtonText className="">
@@ -72,7 +72,7 @@ const MobileSideBar = () => {
                       <Text className="font-extrabold text-yellow-700 hover:text-blue-200">
                         SERVICES
                       </Text>
-                      <Icon as={ChevronUpIcon}  />
+                      <Icon as={ChevronUpIcon} />
                     </HStack>
                   </Pressable>
                 ) : (
@@ -82,9 +82,7 @@ const MobileSideBar = () => {
                     }}
                   >
                     <HStack className="justify-between">
-                      <Text
-                        className="font-extrabold text-blue-200 hover:text-yellow-700"
-                      >
+                      <Text className="font-extrabold text-blue-200 hover:text-yellow-700">
                         SERVICES
                       </Text>
                       <Icon as={ChevronDownIcon} size="sm" />
