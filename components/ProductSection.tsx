@@ -45,16 +45,16 @@ const ProductSection = () => {
   };
 
   return (
-    <VStack className="bg-yellow-500 px-10 gap-4">
-      <Text className="text-3xl font-bold text-purple-800">
+    <VStack className="mx-14 mb-14 mt-20 gap-4">
+      <Text className="text-3xl font-bold text-purple-950">
         OUR PRODUCTS AND SERVICES
       </Text>
-      <HStack className="bg-red-600 justify-between items-center">
+      <HStack className="justify-between items-center">
         <Text className="text-lg">
           Browse through our products and services
         </Text>
         <HStack className="ml-auto items-center">
-          <Link className="bg-red-600 text-cyan-950">
+          <Link className="text-cyan-950">
             <LinkText className="font-bold">See all</LinkText>
           </Link>
           <Icon as={ChevronRightIcon} className="ml-2" />
@@ -62,7 +62,7 @@ const ProductSection = () => {
       </HStack>
 
       {/* Scrollable Section */}
-      <HStack className="items-center py-8 justify-between gap-4 bg-blue-500">
+      <HStack className="items-center justify-between gap-8">
         <Button
           onPress={scrollLeft}
           className="bg-yellow-500 w-14 h-14 rounded-full"
@@ -78,10 +78,10 @@ const ProductSection = () => {
           scrollEventThrottle={16}
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ gap: 16 }}
-          className="overflow-x-auto flex-nowrap"
+          className="overflow-x-auto flex-nowrap py-4"
         >
           {products.map((product, index) => (
-            <Card key={index} className="p-4 border rounded-lg w-64 shadow-lg">
+            <Card key={index} className="p-4 rounded-lg w-64 shadow-hard-5">
               <Heading>
                 <Text className="text-lg font-bold">{product.title}</Text>
               </Heading>

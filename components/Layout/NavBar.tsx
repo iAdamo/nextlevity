@@ -54,7 +54,7 @@ const NavBar = () => {
             width={30}
             height={30}
           />
-          <ButtonText className="text-2xl md:text-4xl font-extrabold text-blue-400  data-[hover=true]:text-none data-[active=true]:text-none">
+          <ButtonText className="text-2xl md:text-4xl font-extrabold text-purple-500  data-[hover=true]:text-none data-[active=true]:text-none">
             Nextlevity
           </ButtonText>
         </Button>
@@ -65,21 +65,21 @@ const NavBar = () => {
             offset={24}
           />
           <Link>
-            <LinkText className="no-underline font-extrabold data-[hover=true]:text-green-700">
+            <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
               RESULTS
             </LinkText>
           </Link>
           <Link>
-            <LinkText className="no-underline font-extrabold data-[hover=true]:text-green-700">
+            <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
               COMPANY
             </LinkText>
           </Link>
           <Link>
-            <LinkText className="no-underline font-extrabold data-[hover=true]:text-green-700">
+            <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
               BLOG
             </LinkText>
           </Link>
-          <Button className="bg-green-700 data-[hover=true]:bg-green-600 data-[active=true]:bg-green-500">
+          <Button className="bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300">
             <ButtonText className="">WORK WITH US</ButtonText>
           </Button>
         </HStack>
