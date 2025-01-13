@@ -4,6 +4,8 @@ import HomeHeader from "@/components/HomeHeader";
 import HomeServiceSection from "@/components/HomeServiceSection";
 import ProductSection from "@/components/ProductSection";
 import Categories from "@/components/Categories";
+import ReviewsSection from "@/components/ReviewsSection";
+import TeamSection from "@/components/TeamSection";
 
 const HomePage = () => {
   return (
@@ -13,6 +15,8 @@ const HomePage = () => {
       <HomeServiceSection />
       <Categories />
       <ProductSection />
+      <ReviewsSection />
+      <TeamSection />
     </SafeAreaView>
   );
 };
