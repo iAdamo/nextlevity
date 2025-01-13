@@ -45,15 +45,15 @@ const ProductSection = () => {
   };
 
   return (
-    <VStack className="mx-14 mb-14 mt-20 gap-4">
-      <Text className="text-3xl font-bold text-purple-950">
-        OUR PRODUCTS AND SERVICES
+    <VStack className="md:mx-14 mx-4 mb-14 md:mt-20 mt-8  gap-4">
+      <Text className="md:text-3xl text-lg font-bold text-purple-950">
+        LATEST SERVICES
       </Text>
       <HStack className="justify-between items-center">
-        <Text className="text-lg">
+        <Text className="hidden md:text-lg text-sm">
           Browse through our products and services
         </Text>
-        <HStack className="ml-auto items-center">
+        <HStack className="md:ml-auto items-center">
           <Link className="text-cyan-950">
             <LinkText className="font-bold">See all</LinkText>
           </Link>
@@ -65,7 +65,7 @@ const ProductSection = () => {
       <HStack className="items-center justify-between gap-8">
         <Button
           onPress={scrollLeft}
-          className="bg-yellow-500 w-14 h-14 rounded-full"
+          className="hidden md:block bg-yellow-500 w-14 h-14 rounded-full"
         >
           <ButtonIcon as={ChevronLeftIcon} size="lg" />
         </Button>
@@ -100,7 +100,7 @@ const ProductSection = () => {
 
         <Button
           onPress={scrollRight}
-          className="bg-yellow-500 w-14 h-14 rounded-full"
+          className="hidden md:block bg-yellow-500 w-14 h-14 rounded-full"
         >
           <ButtonIcon as={ChevronRightIcon} />
         </Button>

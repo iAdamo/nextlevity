@@ -51,9 +51,12 @@ const TeamSection = () => {
         <Text className="text-lg">Meet our team members</Text>
       </VStack>
 
-      <HStack className="flex-wrap justify-center p-4 gap-4 bg-red-500">
+      <HStack className="justify-center p-4 gap-4 bg-red-500 overflow-x-auto">
         {teamMembers.map((member, index) => (
-          <Card key={index} className="justify-center items-center p-2 rounded-lg">
+          <Card
+            key={index}
+            className="flex-shrink-0 justify-center items-center p-2 rounded-lg"
+          >
             <Image
               src={member.photo}
               alt="Profile Image"

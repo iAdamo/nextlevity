@@ -53,27 +53,37 @@ const Categories = () => {
     },
   ];
   return (
-    <VStack className="bg-yellow-500 p-14 mx-14 gap-4 rounded-3xl">
+    <VStack className="md:p-10 md:mt-4 p-4 md:mx-14 gap-4 rounded-3xl">
       <VStack>
-        <Text className="text-3xl font-bold text-purple-950">CATEGORIES</Text>
-        <Text className="text-lg">Browse through our categories</Text>
+        <Text className="md:text-3xl text-lg font-bold text-purple-950">
+          CATEGORIES
+        </Text>
+        <Text className="hidden md:block text-lg">
+          Browse through our categories
+        </Text>
       </VStack>
-      <HStack className="flex-wrap justify-center gap-4 rounded-lg">
+      <HStack className="flex-wrap justify-center md:gap-4 gap-2 rounded-lg">
         {categoryOne.map((category, index) => (
           <Pressable
             key={index}
             onPress={() => handleCategoryClick(category.title)}
-            className="rounded-lg transform transition-transform duration-300 hover:scale-105"
+            className="h-auto justify-center items-center transform transition-transform duration-300 hover:scale-105"
           >
-            <Card className="w-52 h-52 rounded-lg justify-center items-center space-y-8">
+            <Card className="md:w-52 md:h-52 w-24 h-24 rounded-lg justify-center items-center shadow-hard-5 space-y-8">
               <Image
+                className="md:w-100 md:h-100 w-20 h-20"
                 src={category.image}
                 alt={category.title}
                 width={100}
                 height={100}
               />
-              <Text className="text-lg font-bold">{category.title}</Text>
+              <Text className="hidden md:block md:text-lg text-md font-bold">
+                {category.title}
+              </Text>
             </Card>
+            <Text className="md:hidden text-sm font-bold">
+              {category.title}
+            </Text>
           </Pressable>
         ))}
       </HStack>

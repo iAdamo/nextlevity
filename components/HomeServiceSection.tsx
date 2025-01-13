@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const HomeServiceSection = () => {
   return (
-    <VStack className="bg-white">
+    <VStack className="bg-red-700">
       <Divider className="bg-white h-6" />
       <HStack className="justify-between bg-white flex-col-reverse lg:flex-row items-center h-full">
-        <VStack className="items-center h-full w-full  pb-16 ">
+        <VStack className="items-center h-full w-full md:pb-16 pb-0 ">
           <VStack className="lg:relative flex-col justify-center items-center p-4 rounded-lg shadow-top-left">
             <Image
               className="rounded-lg"
@@ -46,7 +46,6 @@ const HomeServiceSection = () => {
           </VStack>
         </VStack>
       </HStack>
-      <Divider className="bg-white h-6" />
     </VStack>
   );
 };
