@@ -6,6 +6,7 @@ import ProductSection from "@/components/ProductSection";
 import Categories from "@/components/Categories";
 import ReviewsSection from "@/components/ReviewsSection";
 import TeamSection from "@/components/TeamSection";
+import Footer from "@/components/Layout/Footer";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <ProductSection />
       <ReviewsSection />
       <TeamSection />
+      <Footer />
     </SafeAreaView>
   );
 };

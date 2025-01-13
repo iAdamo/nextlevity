@@ -31,23 +31,22 @@ const ProductSection = () => {
     { title: "Product 4", description: "This is product 4" },
   ];
 
-  const scrollRight = () => {
-    const maxScroll = (products.length - 1) * cardWidth;
-    const newPosition = Math.min(scrollPosition + cardWidth, maxScroll);
-    setScrollPosition(newPosition);
-    scrollRef.current?.scrollTo({ x: newPosition, animated: true });
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({ x: 0, animated: true });
+    }
   };
 
-  const scrollLeft = () => {
-    const newPosition = Math.max(scrollPosition - cardWidth, 0);
-    setScrollPosition(newPosition);
-    scrollRef.current?.scrollTo({ x: newPosition, animated: true });
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollToEnd({ animated: true });
+    }
   };
 
   return (
-    <VStack className="md:mx-14 mx-4 mb-14 md:mt-20 mt-8  gap-4">
+    <VStack className="md:mx-12 mx-4 mb-14 md:mt-20 mt-8  gap-4">
       <Text className="md:text-3xl text-lg font-bold text-purple-950">
-        LATEST SERVICES
+        POPULAR SERVICES
       </Text>
       <HStack className="justify-between items-center">
         <Text className="hidden md:text-lg text-sm">
@@ -65,7 +64,7 @@ const ProductSection = () => {
       <HStack className="items-center justify-between gap-8">
         <Button
           onPress={scrollLeft}
-          className="hidden md:block bg-yellow-500 w-14 h-14 rounded-full"
+          className="hidden md:flex bg-yellow-500 w-14 h-14 z-10 right-10 rounded-full"
         >
           <ButtonIcon as={ChevronLeftIcon} size="lg" />
         </Button>
@@ -78,7 +77,7 @@ const ProductSection = () => {
           scrollEventThrottle={16}
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ gap: 16 }}
-          className="overflow-x-auto flex-nowrap py-4"
+          className="overflow-x-auto md:-mx-24 py-4"
         >
           {products.map((product, index) => (
             <Card key={index} className="p-4 rounded-lg w-64 shadow-hard-5">
@@ -100,7 +99,7 @@ const ProductSection = () => {
 
         <Button
           onPress={scrollRight}
-          className="hidden md:block bg-yellow-500 w-14 h-14 rounded-full"
+          className="hidden md:block bg-yellow-500 w-14 h-14 left-10 rounded-full"
         >
           <ButtonIcon as={ChevronRightIcon} />
         </Button>

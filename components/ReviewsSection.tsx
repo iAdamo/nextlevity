@@ -33,7 +33,7 @@ const ReviewsSection = () => {
       <Text className="hidden md:block text-lg">What our customers are saying</Text>
       <HStack className="flex-wrap justify-center gap-4">
         {reviews.map((review, index) => (
-          <Card key={index} className="p-5 rounded-lg max-w-[360px]">
+          <Card key={index} className="p-5 rounded-lg max-w-[360px] shadow-md">
             <VStack className="mb-6">
               <Text size="sm">{review.review}</Text>
             </VStack>
