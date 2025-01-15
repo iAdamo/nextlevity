@@ -5,3 +5,7 @@ export { default as linkedin } from "./linkedin.svg";
 export { default as twitter } from "./x-twitter.svg";
 export { default as youtube } from "./youtube.svg";
 export { default as tiktok } from "./tiktok.svg";
+export { default as categories } from "./categories.svg";
+export { default as matching } from "./matching.svg";
+export { default as quickly } from "./quickly.svg";
+export { default as happy } from "./happy.svg";

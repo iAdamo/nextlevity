@@ -40,7 +40,7 @@ const HomeServiceSection = () => {
               <br />
               We help you reach your goals and grow your business.
             </p>
-            <Button className="w-36 h-12 bg-green-700 data-[hover=true]:bg-green-600 data-[active=true]:bg-green-500">
+            <Button className="w-36 h-12 bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300">
               <ButtonText>Read More</ButtonText>
             </Button>
           </VStack>

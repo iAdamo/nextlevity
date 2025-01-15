@@ -54,14 +54,6 @@ const Categories = () => {
   ];
   return (
     <VStack className="md:p-10 md:mt-4 p-4 md:mx-14 gap-4 rounded-3xl">
-      <VStack>
-        <Text className="md:text-3xl text-lg font-bold text-purple-950">
-          CATEGORIES
-        </Text>
-        <Text className="hidden md:block text-lg">
-          Browse through our categories
-        </Text>
-      </VStack>
       <HStack className="flex-wrap justify-center md:gap-4 gap-2 rounded-lg">
         {categoryOne.map((category, index) => (
           <Pressable

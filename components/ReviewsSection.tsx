@@ -26,11 +26,11 @@ const ReviewsSection = () => {
         },
   ];
   return (
-    <VStack className="bg-purple-50 md:p-14 p-6 rounded-3xl md:mx-14 my-4 gap-4">
+    <VStack className="bg-purple-200 md:p-10 md:mx-4 p-6 gap-4 rounded-2xl">
       <Text className="md:text-3xl text-lg font-bold text-purple-950">
         REVIEWS
       </Text>
-      <Text className="hidden md:block text-lg">What our customers are saying</Text>
+      <Text className="hidden md:block text-lg">What our clients say about us</Text>
       <HStack className="flex-wrap justify-center gap-4">
         {reviews.map((review, index) => (
           <Card key={index} className="p-5 rounded-lg max-w-[360px] shadow-md">
