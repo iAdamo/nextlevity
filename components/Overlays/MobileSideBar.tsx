@@ -30,7 +30,7 @@ const MobileSideBar = () => {
   return (
     <>
       <Button
-        className="md:hidden"
+        className="md:hidden bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300"
         onPress={() => {
           setShowDrawer(true);
         }}
@@ -50,14 +50,14 @@ const MobileSideBar = () => {
         <DrawerBackdrop />
         <DrawerContent className="w-auto h-screen overflow-y-scroll [&::-webkit-scrollbar]:hidden">
           <DrawerHeader>
-            <Button className="bg-yellow-700 data-[hover=true]:bg-blue-400 data-[active=true]:bg-transparent">
+            <Button className="bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300">
               <ButtonText className="">
                 Work With Nextlevity Strategies
               </ButtonText>
             </Button>
           </DrawerHeader>
           <DrawerBody>
-            <Text size="2xl" className="text-typography-800">
+            <Text size="2xl" className="hidden text-typography-800">
               LogIn
             </Text>
             <VStack className="mt-4 gap-4">
@@ -69,7 +69,7 @@ const MobileSideBar = () => {
                     }}
                   >
                     <HStack className="justify-between">
-                      <Text className="font-extrabold text-yellow-700 hover:text-blue-200">
+                      <Text className="font-extrabold text-yellow-500 hover:text-purple-500">
                         SERVICES
                       </Text>
                       <Icon as={ChevronUpIcon} />
@@ -82,7 +82,7 @@ const MobileSideBar = () => {
                     }}
                   >
                     <HStack className="justify-between">
-                      <Text className="font-extrabold text-blue-200 hover:text-yellow-700">
+                      <Text className="font-extrabold text-purple-500 hover:text-yellow-500">
                         SERVICES
                       </Text>
                       <Icon as={ChevronDownIcon} size="sm" />
@@ -97,7 +97,7 @@ const MobileSideBar = () => {
                         className="w-full hover:bg-gray-50 hover:bg-opacity-20 rounded-md"
                       >
                         <HStack className="justify-between w-full p-2">
-                          <Text className="font-bold text-blue-200 text-center">
+                          <Text className="font-bold text-center">
                             {service}
                           </Text>
                           <Icon as={ArrowRightIcon} />
@@ -108,22 +108,22 @@ const MobileSideBar = () => {
                 )}
               </VStack>
               <Link>
-                <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
                   ABOUT
                 </LinkText>
               </Link>
               <Link>
-                <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
                   RESULTS
                 </LinkText>
               </Link>
               <Link>
-                <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
                   COMPANY
                 </LinkText>
               </Link>
               <Link>
-                <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
                   BLOG
                 </LinkText>
               </Link>

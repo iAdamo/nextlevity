@@ -9,20 +9,20 @@ const DynamicVideo = dynamic(() => import("@/components/media/VideoPlayer"), {
 
 const VideoSection = () => {
   return (
-    <VStack className="md:py-10 md:px-1 md:mx-4 rounded-3xl gap-2">
+    <VStack className="md:py-10 md:px-1 mx-4 rounded-3xl gap-2">
       <VStack>
         <Heading className="text-2xl md:text-3xl font-bold text-purple-950">
           See what success on NextLevity looks like
         </Heading>
         <Text className="hidden md:block text-lg">
-          Google turned to our strategies to level up thier business
+          Google turned to our strategies to level up thier bhttps://github.com/iAdamo?tab=repositoriesusiness
         </Text>
       </VStack>
-      <HStack className="gap-10">
-        <Card className="w-1/2 shadow-lg">
+      <VStack className="lg:flex-row mb-4 gap-10">
+        <Card className="lg:w-1/2 shadow-lg">
           <DynamicVideo />
         </Card>
-        <Card className="w-1/2 p-5 rounded-lg gap-4 shadow-md">
+        <Card className="lg:w-1/2 p-5 rounded-lg gap-4">
           <HStack className="gap-2">
             <Image
               src="/assets/homepage/header.jpg"
@@ -49,7 +49,7 @@ const VideoSection = () => {
             </Text>
           </VStack>
         </Card>
-      </HStack>
+      </VStack>
     </VStack>
   );
 };

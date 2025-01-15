@@ -1,4 +1,15 @@
-import { HStack, VStack, Link, LinkText, Heading } from "@/components/ui";
+import { useState } from "react";
+import {
+  HStack,
+  VStack,
+  Link,
+  LinkText,
+  Pressable,
+  Heading,
+  Icon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+} from "@/components/ui";
 
 const PreFooter = () => {
   const info = [
@@ -69,18 +80,37 @@ const PreFooter = () => {
       ],
     },
   ];
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleDropdown = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <HStack className=" p-4 my-4 flex-wrap justify-between">
-      {info.map((item) => (
-        <VStack key={item.title} className="md:flex-col gap-2">
-          <Heading size="sm">{item.title}</Heading>
-          {item.links.map((link) => (
-            <Link key={link.name} href={link.href}>
-              <LinkText className="no-underline font-medium text-primary-100 data-[hover=true]:underline data-[hover=true]:text-primary-100">
-                {link.name}
-              </LinkText>
-            </Link>
-          ))}
+      {info.map((item, index) => (
+        <VStack key={item.title} className="md:flex-col gap-2 w-full md:w-auto">
+          <Pressable onPress={() => toggleDropdown(index)}>
+            <HStack className="justify-between py-2">
+              <Heading size="sm" className="">
+                {item.title}
+              </Heading>
+              <Icon
+                as={openIndex === index ? ChevronUpIcon : ChevronDownIcon}
+                size="lg"
+                color="gray"
+              />
+            </HStack>
+          </Pressable>
+
+          {openIndex === index &&
+            item.links.map((link) => (
+              <Link key={link.name} href={link.href}>
+                <LinkText className="no-underline text-primary-100 data-[hover=true]:underline data-[hover=true]:text-primary-100">
+                  {link.name}
+                </LinkText>
+              </Link>
+            ))}
         </VStack>
       ))}
     </HStack>

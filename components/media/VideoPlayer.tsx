@@ -1,7 +1,10 @@
 const VideoPlayer = () => {
   return (
     <video
-      className="object-fill h-96 rounded-lg"
+      className="object-fill md:h-96 h-72
+
+
+      rounded-lg"
       controls
       muted
       autoPlay

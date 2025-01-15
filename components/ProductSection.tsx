@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import {
   HStack,
   VStack,
@@ -17,8 +17,6 @@ import {
 
 const ProductSection = () => {
   const scrollRef = useRef<ScrollView>(null);
-  const cardWidth = 256;
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   const products = [
     { title: "Product 1", description: "This is product 1" },

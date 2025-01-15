@@ -45,24 +45,24 @@ const TeamSection = () => {
     },
   ];
   return (
-    <VStack className="my-4 p-2 gap-1 rounded-lg  bg-gradient-to-b from-white via-purple-200 to-white">
+    <VStack className="my-4 p-2 gap-1 rounded-lg bg-gradient-to-b from-white via-purple-200 to-white">
       <VStack className="justify-center items-center">
         <Text className="text-xl md:text-2xl font-bold text-purple-950">
           OUR TEAM
         </Text>
         <Text className="hidden md:block text-lg">Meet our team members</Text>
       </VStack>
-      <HStack className="flex-nowrap justify-center gap-4 py-4 ">
+      <HStack className="justify-center gap-4 py-4 overflow-x-auto flex-nowrap">
         {teamMembers.map((member, index) => (
           <Card
             key={index}
-            className="flex-shrink-0 justify-center items-center shadow-hard-5 rounded-lg"
+            className="w-40 flex-shrink-0 justify-center items-center shadow-hard-5 rounded-lg"
           >
             <Image
               src={member.photo}
               alt="Profile Image"
-              width={120}
-              height={120}
+              width={100}
+              height={100}
               className="mb-2 rounded-md"
             />
             <VStack className="bg-yellow-500 justify-center items-center w-full">

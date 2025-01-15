@@ -6,11 +6,12 @@ import ProductSection from "@/components/ProductSection";
 import Categories from "@/components/Categories";
 import ReviewsSection from "@/components/ReviewsSection";
 import TeamSection from "@/components/TeamSection";
-import PreFooter from "@/components/PreFooter";
+import PreFooter from "@/components/Layout/PreFooter";
 import Footer from "@/components/Layout/Footer";
 import FaqSection from "@/components/FaqSection";
 import VideoSection from "@/components/VideoSection";
 import MakeItHappenSection from "@/components/MakeItHappenSection";
+import MoreInfo from "@/components/MoreInfo";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
       <HomeServiceSection />
       <ProductSection />
       <VideoSection />
+      <MoreInfo />
       <ReviewsSection />
       <MakeItHappenSection />
       <FaqSection />

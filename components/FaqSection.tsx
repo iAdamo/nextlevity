@@ -67,15 +67,15 @@ const FaqSection = () => {
   };
 
   return (
-    <VStack className="bg-purple-100 mx-4 p-6 mt-4 rounded-2xl">
+    <VStack className="bg-purple-100 md:mx-4 p-6 mt-4 rounded-2xl">
       <HStack className="justify-center">
         <Heading size="xl">Frequently Asked Questions</Heading>
       </HStack>
-      <HStack className="flex-wrap justify-start items-start p-6 mx-4 px-20 md:gap-4 gap-2 rounded-lg">
+      <HStack className="flex-wrap justify-start items-start md:p-6 mx-4 md:px-20 md:gap-4 gap-2 rounded-lg">
         {faqsData.map((faq, index) => (
           <Card key={index} variant="ghost" className="w-80">
             <Pressable onPress={() => toggleFaq(index)}>
-              <HStack className="justify-between items-center">
+              <HStack className="justify-between gap-6">
                 <Heading size="sm">{faq.question}</Heading>
                 <Icon
                   as={openIndex === index ? ChevronUpIcon : ChevronDownIcon}
