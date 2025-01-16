@@ -12,7 +12,7 @@ const HomeHeader = () => {
           <p className="md:text-5xl text-3xl font-extrabol">
             Elevate Your Business
           </p>
-          <p className="text-xs">
+          <p className="">
             With innovative strategies and creative solutions. We help you reach
             your goals and grow your business.
           </p>

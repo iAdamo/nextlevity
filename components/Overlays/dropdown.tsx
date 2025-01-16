@@ -1,10 +1,10 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import {
-  Menu,
-  MenuItem,
-  MenuItemLabel,
   Link,
   LinkText,
+  Popover,
+  PopoverBackdrop,
+  PopoverContent,
 } from "@/components/ui";
 
 interface DropdownOption {
@@ -23,12 +23,32 @@ const Dropdown: React.FC<DropdownProps> = ({
   options,
   offset,
 }) => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+        // Trigger when scrolled past 50px
+        if (window.scrollY > 38) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
   return (
-    <Menu
-      trigger={({ ...triggerProps }) => {
+    <Popover
+      trigger={(triggerProps) => {
         return (
-          <Link {...triggerProps }>
-            <LinkText className="no-underline font-extrabold data-[hover=true]:text-yellow-700">
+          <Link
+            {...triggerProps}
+            onMouseEnter={() => triggerProps.onPress?.()}
+            onMouseLeave={() => triggerProps.onPress?.()}
+          >
+            <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-700">
               {buttonLabel}
             </LinkText>
           </Link>
@@ -36,19 +56,23 @@ const Dropdown: React.FC<DropdownProps> = ({
       }}
       placement="bottom"
       offset={offset}
-      crossOffset={60}
+      className={`transition-all duration-500 ease-in-out w-full fixed ${
+        isSticky ? "md:-mt-10" : ""
+      }`}
     >
-      {options.map((option, index) => (
-        <MenuItem
-          key={index}
-          className="sm:w-96"
-          closeOnSelect
-          onPress={option.onPress}
-        >
-          <MenuItemLabel>{option.label}</MenuItemLabel>
-        </MenuItem>
-      ))}
-    </Menu>
+      <PopoverBackdrop />
+      <PopoverContent className="gap-2 transition-all duration-500 ease-in-out ">
+        {options.map((option, index) => (
+          <Link
+            key={index}
+            className="w-96"
+            onPress={option.onPress}
+          >
+            <LinkText>{option.label}</LinkText>
+          </Link>
+        ))}
+      </PopoverContent>
+    </Popover>
   );
 };
 

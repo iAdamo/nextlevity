@@ -15,14 +15,14 @@ const VideoSection = () => {
           See what success on NextLevity looks like
         </Heading>
         <Text className="hidden md:block text-lg">
-          Google turned to our strategies to level up thier bhttps://github.com/iAdamo?tab=repositoriesusiness
+          Google turned to our strategies to level up thier business
         </Text>
       </VStack>
-      <VStack className="lg:flex-row mb-4 gap-10">
-        <Card className="lg:w-1/2 shadow-lg">
+      <VStack className="lg:flex-row mb-4 gap-10 rounded-md">
+        <Card className="bg-gradient-to-b from-purple-50 to-yellow-50 lg:w-1/2 shadow-bottom">
           <DynamicVideo />
         </Card>
-        <Card className="lg:w-1/2 p-5 rounded-lg gap-4">
+        <Card className="lg:w-1/2 p-5 bg-transparent rounded-lg gap-4">
           <HStack className="gap-2">
             <Image
               src="/assets/homepage/header.jpg"

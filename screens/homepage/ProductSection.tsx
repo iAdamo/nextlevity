@@ -44,11 +44,15 @@ const ProductSection = () => {
   return (
     <VStack className="md:mx-12 mx-4 mb-14 md:mt-20 mt-8  gap-4">
       <Text className="md:text-3xl text-lg font-bold text-purple-950">
-        POPULAR SERVICES
+        OUR PROJECTS
       </Text>
       <HStack className="justify-between items-center">
-        <Text className="hidden md:text-lg text-sm">
-          Browse through our products and services
+        <Text className="md:text-md text-sm">
+          Our projects at Nextlevity embody innovation and targeted success. We
+          blend creative strategies with the latest technology to elevate our
+          client&apos;s digital presence. Our commitment to excellence turns every
+          campaign into a landmark of industry-leading results. Join us on a
+          journey to digital greatness.
         </Text>
         <HStack className="md:ml-auto items-center">
           <Link className="text-cyan-950">

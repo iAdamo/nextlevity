@@ -43,7 +43,7 @@ const Footer = () => {
             NO 54 Landi Street, MaryLand, Lagos
           </Text>
         </VStack>
-        <HStack className="justify-center items-center gap-2">
+        <HStack className="md:flex-col justify-center items-center gap-2">
           <Text className="font-semibold text-sm md:text-sm">Privacy Policy</Text>
           <Text className="font-semibold text-sm md:text-sm">Terms of Service</Text>
         </HStack>

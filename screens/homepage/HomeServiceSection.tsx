@@ -1,4 +1,11 @@
-import { Box, HStack, VStack, Divider, Button, ButtonText } from "./ui";
+import {
+  Box,
+  HStack,
+  VStack,
+  Divider,
+  Button,
+  ButtonText,
+} from "../../components/ui";
 import Image from "next/image";
 
 const HomeServiceSection = () => {

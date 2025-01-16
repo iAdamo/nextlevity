@@ -62,7 +62,7 @@ const NavBar = () => {
           <Dropdown
             buttonLabel="SERVICES"
             options={dropdownOptions}
-            offset={24}
+            offset={28}
           />
           <Link>
             <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">

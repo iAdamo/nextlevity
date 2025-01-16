@@ -17,7 +17,7 @@ const MoreInfo = () => {
       <VStack className="md:w-1/2 gap-8">
         <VStack className="gap-4">
           <Heading size="2xl">
-            NextLevity <span className="text-lg">Marketing Strategies</span>
+            Nextlevity <span className="text-lg">Marketing Strategies</span>
           </Heading>
           <Heading size="3xl">
             The premium marketing solution for businesses

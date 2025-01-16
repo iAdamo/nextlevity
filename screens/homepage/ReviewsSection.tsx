@@ -1,36 +1,38 @@
-import { VStack, HStack, Card, Text, Heading } from "./ui";
+import { VStack, HStack, Card, Text, Heading } from "../../components/ui";
 import Image from "next/image";
 
 const ReviewsSection = () => {
   const reviews = [
-       {
-          name: "Alice Johnson",
-          review:
-            "This product has exceeded my expectations. The quality is top-notch and the customer service is outstanding. Highly recommend!",
-          profession: "Business Analyst",
-          photo: "/assets/homepage/icon-deal.png",
-        },
-        {
-          name: "Michael Smith",
-          review:
-            "I've been using this service for a few months now and it has been a game-changer for my daily routine. The team behind it is very responsive and helpful.",
-          profession: "Software Engineer",
-          photo: "/assets/homepage/icon-deal.png",
-        },
-        {
-          name: "Emily Davis",
-          review:
-            "Fantastic experience! The interface is user-friendly and the features are exactly what I needed. I will definitely be a long-term customer.",
-          profession: "Graphic Designer",
-          photo: "/assets/homepage/icon-deal.png",
-        },
+    {
+      name: "Alice Johnson",
+      review:
+        "This product has exceeded my expectations. The quality is top-notch and the customer service is outstanding. Highly recommend!",
+      profession: "Business Analyst",
+      photo: "/assets/homepage/icon-deal.png",
+    },
+    {
+      name: "Michael Smith",
+      review:
+        "I've been using this service for a few months now and it has been a game-changer for my daily routine. The team behind it is very responsive and helpful.",
+      profession: "Software Engineer",
+      photo: "/assets/homepage/icon-deal.png",
+    },
+    {
+      name: "Emily Davis",
+      review:
+        "Fantastic experience! The interface is user-friendly and the features are exactly what I needed. I will definitely be a long-term customer.",
+      profession: "Graphic Designer",
+      photo: "/assets/homepage/icon-deal.png",
+    },
   ];
   return (
     <VStack className="bg-purple-200 md:p-10 md:mx-4 p-6 gap-4 rounded-2xl">
       <Text className="md:text-3xl text-lg font-bold text-purple-950">
         REVIEWS
       </Text>
-      <Text className="hidden md:block text-lg">What our clients say about us</Text>
+      <Text className="hidden md:block text-lg">
+        What our clients say about us
+      </Text>
       <HStack className="flex-wrap justify-center gap-4">
         {reviews.map((review, index) => (
           <Card key={index} className="p-5 rounded-lg max-w-[360px] shadow-md">

@@ -16,3 +16,4 @@ export * from "./drawer";
 export * from "./divider";
 export * from "./pressable";
 export * from "./icon";
+export * from "./popover";
