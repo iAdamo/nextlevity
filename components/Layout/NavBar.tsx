@@ -2,10 +2,8 @@ import { useEffect, useState } from "react";
 import {
   VStack,
   HStack,
-  Button,
   ButtonText,
-  Link,
-  LinkText,
+  Button,
 } from "@/components/ui";
 import Image from "next/image";
 import Dropdown from "@/components/Overlays/dropdown";
@@ -46,7 +44,10 @@ const NavBar = () => {
       }`}
     >
       <HStack className="bg-white p-5 items-center justify-between shadow-lg">
-        <Button className="p-0 bg-transparent data-[hover=true]:bg-transparent data-[active=true]:bg-transparent">
+        <Button
+          onPress={() => router.replace("/")}
+          className="p-0 bg-transparent data-[hover=true]:bg-transparent data-[active=true]:bg-transparent"
+        >
           <Image
             className="w-10 h-10"
             src="/assets/homepage/icon-deal.png"
@@ -54,8 +55,8 @@ const NavBar = () => {
             width={30}
             height={30}
           />
-          <ButtonText className="text-2xl md:text-4xl font-extrabold text-purple-500  data-[hover=true]:text-none data-[active=true]:text-none">
-            Nextlevity
+          <ButtonText className="text-xl md:text-3xl font-extrablack text-purple-500  data-[hover=true]:text-none data-[active=true]:text-none">
+            NEXTLEVITY
           </ButtonText>
         </Button>
         <HStack className="items-center gap-6 hidden md:flex ml-auto">
@@ -64,21 +65,23 @@ const NavBar = () => {
             options={dropdownOptions}
             offset={28}
           />
-          <Link>
-            <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+          <Button variant="link"
+            onPress={() => router.push("/services")}
+          >
+            <ButtonText className="text-purple-500 font-extrabold data-[hover=true]:text-yellow-500 data-[hover=true]:no-underline data-[active=true]:text-yellow-500">
               RESULTS
-            </LinkText>
-          </Link>
-          <Link>
-            <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+            </ButtonText>
+          </Button>
+          <Button variant="link">
+            <ButtonText className="text-purple-500 font-extrabold data-[hover=true]:text-yellow-500 data-[hover=true]:no-underline data-[active=true]:text-yellow-500">
               COMPANY
-            </LinkText>
-          </Link>
-          <Link>
-            <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+            </ButtonText>
+          </Button>
+          <Button variant="link">
+            <ButtonText className="text-purple-500 font-extrabold data-[hover=true]:text-yellow-500 data-[hover=true]:no-underline data-[active=true]:text-yellow-500">
               BLOG
-            </LinkText>
-          </Link>
+            </ButtonText>
+          </Button>
           <Button className="bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300">
             <ButtonText className="">WORK WITH US</ButtonText>
           </Button>

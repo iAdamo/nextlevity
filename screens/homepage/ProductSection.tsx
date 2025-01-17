@@ -46,7 +46,7 @@ const ProductSection = () => {
       <Text className="md:text-3xl text-lg font-bold text-purple-950">
         OUR PROJECTS
       </Text>
-      <HStack className="justify-between items-center">
+      <HStack className="flex-wrap justify-between items-center">
         <Text className="md:text-md text-sm">
           Our projects at Nextlevity embody innovation and targeted success. We
           blend creative strategies with the latest technology to elevate our
