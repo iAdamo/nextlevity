@@ -1,33 +1,11 @@
-import { useEffect, useState } from "react";
-import {
-  VStack,
-  HStack,
-  ButtonText,
-  Button,
-} from "@/components/ui";
+import { VStack, HStack, LinkText, Link, Button, ButtonText } from "@/components/ui";
 import Image from "next/image";
 import Dropdown from "@/components/Overlays/dropdown";
 import MobileSideBar from "../Overlays/MobileSideBar";
 import { useRouter } from "next/navigation";
 
 const NavBar = () => {
-  const [isSticky, setIsSticky] = useState(false);
-
   const router = useRouter();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Trigger when scrolled past 50px
-      if (window.scrollY > 38) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const dropdownOptions = [
     { label: "Profile", onPress: () => router.push("/") },
@@ -38,55 +16,51 @@ const NavBar = () => {
     { label: "Logout", onPress: () => router.push("/") },
   ];
   return (
-    <VStack
-      className={`transition-all duration-500 ease-in-out lg:mt-10 sticky top-0 z-10 ${
-        isSticky ? "md:sticky md:w-full md:z-10" : "lg:mt-10 lg:px-10"
-      }`}
-    >
-      <HStack className="bg-white p-5 items-center justify-between shadow-lg">
+    <VStack className="items-center justify-center z-10 w-full">
+      <HStack className="p-10 w-full items-center justify-between">
         <Button
           onPress={() => router.replace("/")}
-          className="p-0 bg-transparent data-[hover=true]:bg-transparent data-[active=true]:bg-transparent"
+          className="p-0 items-center justify-center"
         >
           <Image
-            className="w-10 h-10"
-            src="/assets/homepage/icon-deal.png"
+            className="object-cover"
+            src="/assets/homepage/logo.png"
             alt="Icon"
-            width={30}
-            height={30}
+            width={360}
+            height={176}
           />
-          <ButtonText className="text-xl md:text-3xl font-extrablack text-purple-500  data-[hover=true]:text-none data-[active=true]:text-none">
-            NEXTLEVITY
-          </ButtonText>
         </Button>
-        <HStack className="items-center gap-6 hidden md:flex ml-auto">
+        <HStack className="items-center gap-6 hidden md:flex ml-48">
           <Dropdown
-            buttonLabel="SERVICES"
+            buttonLabel="Services"
             options={dropdownOptions}
             offset={28}
           />
-          <Button variant="link"
-            onPress={() => router.push("/services")}
-          >
-            <ButtonText className="text-purple-500 font-extrabold data-[hover=true]:text-yellow-500 data-[hover=true]:no-underline data-[active=true]:text-yellow-500">
-              RESULTS
-            </ButtonText>
-          </Button>
-          <Button variant="link">
-            <ButtonText className="text-purple-500 font-extrabold data-[hover=true]:text-yellow-500 data-[hover=true]:no-underline data-[active=true]:text-yellow-500">
-              COMPANY
-            </ButtonText>
-          </Button>
-          <Button variant="link">
-            <ButtonText className="text-purple-500 font-extrabold data-[hover=true]:text-yellow-500 data-[hover=true]:no-underline data-[active=true]:text-yellow-500">
-              BLOG
-            </ButtonText>
-          </Button>
-          <Button className="bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300">
-            <ButtonText className="">WORK WITH US</ButtonText>
-          </Button>
+          <Link href="/results">
+            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
+              Results
+            </LinkText>
+          </Link>
+          <Link href="/company">
+            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
+              Company
+            </LinkText>
+          </Link>
+          <Link href="/blog">
+            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
+              Blog
+            </LinkText>
+          </Link>
+          <Link href="/contact">
+            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
+              Contact
+            </LinkText>
+          </Link>
         </HStack>
-        {/* Mobile Menu Button (hidden on larger screens) */}
+        <Button className="rounded-3xl bg-brand-0 data-[hover=true]:bg-brand-1 data-[active=true]:bg-brand-0">
+          <ButtonText className="text-txt-0">Get in touch</ButtonText>
+        </Button>
+        {/* Mobile Menu Link (hidden on larger screens) */}
         <MobileSideBar />
       </HStack>
     </VStack>

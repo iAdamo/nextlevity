@@ -1,36 +1,69 @@
-import { VStack, HStack, Button, ButtonText } from "@/components/ui";
+import {
+  VStack,
+  HStack,
+  Button,
+  ButtonText,
+  Text,
+  Link,
+  LinkText,
+} from "@/components/ui";
 import Image from "next/image";
+import { spirals } from "@/public/assets/icons";
 
 const HomeHeader = () => {
   return (
-    <HStack className="-mt-32 flex-col-reverse md:flex-row h-full">
-      <VStack className="md:container bg-gradient-to-r from-purple-800 to-yellow-800">
-        <VStack className="md:mt-32 md:ml-11 h-full px-6 py-8 mt-0 md:p-0 md:py-0 justify-center gap-4">
-          <p className="md:text-5xl text-4xl font-extrabold text-cyan-700">
-            Find <span className="text-yellow-500">Marketing Strategies</span>
-          </p>
-          <p className="md:text-5xl text-3xl font-extrabol">
-            Elevate Your Business
-          </p>
-          <p className="">
-            With innovative strategies and creative solutions. We help you reach
-            your goals and grow your business.
-          </p>
-          <Button className="w-32 h-12 bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300">
-            <ButtonText>Get Started</ButtonText>
-          </Button>
-        </VStack>
-      </VStack>
-      <VStack className="md:container mt-32 lg:mt-0">
+    <VStack className="-mt-32 w-full relative bg-transparent">
+      <VStack className="justify-center bg-transparent">
         <Image
-          className="object-cover"
-          src="/assets/homepage/carousel.jpg"
+          className="object-cover w-full"
+          src={spirals}
           alt="Hero Image"
-          width={1920}
-          height={1080}
+          width={900}
+          height={900}
         />
       </VStack>
-    </HStack>
+      <VStack className="absolute top-0 w-full h-[55rem] bg-red-600 bg-opacity-10">
+        <HStack className="justify-end absolute bottom-[5rem] right-0">
+          <Image
+            className="object-cover"
+            src="/assets/homepage/header.png"
+            alt="Hero Image"
+            width={900}
+            height={900}
+          />
+        </HStack>
+
+        <HStack className="w-full md:pl-20 absolute bottom-72 items-center">
+          <VStack className="w-1/2 h-full px-6 py-8 md:p-0 md:py-0 justify-center gap-4">
+            <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
+              Your Vision,
+            </Text>
+            <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
+              Our Strategy,
+            </Text>
+            <Link className="inline space-x-2 md:text-5xl text-xl font-extrabold text-txt-0">
+              <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
+                Unmatched
+              </Text>
+              <LinkText className="text-brand-1 md:text-5xl text-xl font-extrabold">
+                Results
+              </LinkText>
+            </Link>
+            <Text className="text-text-primary">
+              At Nextlevity, we specialize in turning your vision into reality.
+              Our innovative strategies and creative solutions ensure your brand
+              stands out in the digital landscape
+            </Text>
+            <Button
+              variant="outline"
+              className="w-40 h-12 mt-12 border-0 bg-brand-0 data-[hover=true]:bg-brand-1 data-[active=true]:bg-brand-0"
+            >
+              <ButtonText className="text-txt-0">Get in touch</ButtonText>
+            </Button>
+          </VStack>
+        </HStack>
+      </VStack>
+    </VStack>
   );
 };
 

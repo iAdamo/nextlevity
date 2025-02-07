@@ -1,32 +1,27 @@
 import { SafeAreaView } from "@/components/ui";
 import NavBar from "@/components/Layout/NavBar";
 import HomeHeader from "@/screens/homepage/HomeHeader";
-import HomeServiceSection from "@/screens/homepage/HomeServiceSection";
-import ProductSection from "@/screens/homepage/ProductSection";
 import Categories from "@/screens/homepage/Categories";
 import ReviewsSection from "@/screens/homepage/ReviewsSection";
-import TeamSection from "@/screens/homepage/TeamSection";
+import ReviewsSection2 from "@/screens/homepage/ReviewsSection2";
+
 import PreFooter from "@/components/Layout/PreFooter";
 import Footer from "@/components/Layout/Footer";
 import FaqSection from "@/screens/homepage/FaqSection";
-import VideoSection from "@/screens/homepage/VideoSection";
-import MakeItHappenSection from "@/screens/homepage/MakeItHappenSection";
 import MoreInfo from "@/screens/homepage/MoreInfo";
+import MarketingSolution from "./MaketingSolution";
 
 const HomePage = () => {
   return (
     <SafeAreaView>
       <NavBar />
       <HomeHeader />
-      <Categories />
-      <HomeServiceSection />
-      <ProductSection />
-      <VideoSection />
       <MoreInfo />
+      <MarketingSolution />
+      <Categories />
       <ReviewsSection />
-      <MakeItHappenSection />
+      <ReviewsSection2 />
       <FaqSection />
-      <TeamSection />
       <PreFooter />
       <Footer />
     </SafeAreaView>

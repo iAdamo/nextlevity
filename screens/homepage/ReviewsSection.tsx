@@ -1,64 +1,87 @@
-import { VStack, HStack, Card, Text, Heading } from "../../components/ui";
+import {
+  VStack,
+  HStack,
+  Card,
+  Heading,
+  Text,
+  Link,
+} from "@/components/ui";
 import Image from "next/image";
 
-const ReviewsSection = () => {
-  const reviews = [
+const ReviewSection = () => {
+
+  const stories = [
     {
-      name: "Alice Johnson",
-      review:
-        "This product has exceeded my expectations. The quality is top-notch and the customer service is outstanding. Highly recommend!",
-      profession: "Business Analyst",
-      photo: "/assets/homepage/icon-deal.png",
+      title: "How Chill Republic doubled their Revenue ",
+      brief:
+        "Nextlevity helped Chill Republic double their revenue by implementing targeted digital marketing strategies, enhancing their online presence, and driving customer engagement.",
+      image: "/assets/homepage/story0.jpeg",
+      url: "#",
     },
     {
-      name: "Michael Smith",
-      review:
-        "I've been using this service for a few months now and it has been a game-changer for my daily routine. The team behind it is very responsive and helpful.",
-      profession: "Software Engineer",
-      photo: "/assets/homepage/icon-deal.png",
+      title: "How Chill Republic doubled their Revenue ",
+      brief:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/assets/homepage/homemage1.jpeg",
+      url: "",
     },
     {
-      name: "Emily Davis",
-      review:
-        "Fantastic experience! The interface is user-friendly and the features are exactly what I needed. I will definitely be a long-term customer.",
-      profession: "Graphic Designer",
-      photo: "/assets/homepage/icon-deal.png",
+      title: "How Chill Republic doubled their Revenue ",
+      brief:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      image: "/assets/homepage/homemage1.jpeg",
+      url: "",
     },
   ];
   return (
-    <VStack className="bg-purple-200 md:p-10 md:mx-4 p-6 gap-4 rounded-2xl">
-      <Text className="md:text-3xl text-lg font-bold text-purple-950">
-        REVIEWS
-      </Text>
-      <Text className="hidden md:block text-lg">
-        What our clients say about us
-      </Text>
-      <HStack className="flex-wrap justify-center gap-4">
-        {reviews.map((review, index) => (
-          <Card key={index} className="p-5 rounded-lg max-w-[360px] shadow-md">
-            <VStack className="mb-6">
-              <Text size="sm">{review.review}</Text>
-            </VStack>
-            <HStack className="flex-row">
-              <Image
-                src={review.photo}
-                alt="Profile Image"
-                width={50}
-                height={50}
-                className="rounded-full"
-              />
-              <VStack>
-                <Heading size="sm" className="mb-1">
-                  {review.name}
+    <VStack className="mt-20">
+      <VStack className="gap-4 justify-center items-center px-72">
+        <Heading size="3xl" className="text-center">
+          Success stories: Empowering Brands through our Digital Marketing
+          Prowess
+        </Heading>
+        <Text size="md" className="text-center">
+          At <span className="text-brand-1">Nextlevity</span>, We Deliver
+          creative campaigns and measurable ROI to clients., we drive
+          engagement, elevate visibility, and achieve exceptional
+          <span className="text-brand-1">
+            <a href="#"> Results. </a>
+          </span>
+          Let&apos;s take your business to the next level
+        </Text>
+      </VStack>
+      <HStack className="flex-wrap justify-center md:gap-14 gap-2 py-10 rounded-lg">
+        {stories.map((story, index) => (
+          <Link
+            key={index}
+            href={story.url}
+            className="md:w-80 md:h-auto w-24 transform transition-transform duration-300 hover:scale-105 -my-4"
+          >
+            <Card className="md:w-full  justify-between rounded-3xl shadow-hard-5 gap-2">
+              <HStack className="">
+                <Image
+                  className="object-cover w-full md:h-52 h-24 rounded-3xl "
+                  src={story.image}
+                  alt={story.title}
+                  width={1900}
+                  height={1900}
+                />
+              </HStack>
+              <HStack className="md:h-48 gap-2 flex-wrap border-0 justify-center items-center drop-shadow-lg">
+                <Heading size="md" className="hidden md:inline text-center">
+                  {story.title}
                 </Heading>
-                <Text size="sm">{review.profession}</Text>
-              </VStack>
-            </HStack>
-          </Card>
+                <Text>{story.brief}</Text>
+              </HStack>
+            </Card>
+            <Text className="md:hidden text-center text-xs font-semibold">
+              {story.title}
+            </Text>
+          </Link>
         ))}
       </HStack>
     </VStack>
   );
 };
 
-export default ReviewsSection;
+export default ReviewSection;

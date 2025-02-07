@@ -47,10 +47,10 @@ const Dropdown: React.FC<DropdownProps> = ({
         trigger={(triggerProps) => {
           return (
             <Link {...triggerProps} className="flex-row gap-1">
-              <LinkText className="no-underline text-purple-500 font-bold data-[hover=true]:text-yellow-500">
+              <LinkText className="no-underline text-text-primary font-bold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
                 {buttonLabel}
               </LinkText>
-              <Icon as={ChevronDownIcon} className="w-5 h-5 text-purple-500" />
+              <Icon as={ChevronDownIcon} className="w-5 h-5 text-text-primary" />
             </Link>
           );
         }}

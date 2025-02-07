@@ -2,8 +2,8 @@ import {
   VStack,
   HStack,
   Card,
-  Button,
-  ButtonText,
+  Link,
+  LinkText,
   Heading,
   Text,
   Icon,
@@ -12,69 +12,87 @@ import {
 import Image from "next/image";
 
 const MoreInfo = () => {
+  const info = [
+    {
+      title: "Search Engine Optimization (SEO)",
+      description:
+        "Improve your website's visibility on search engines to attract organic traffic.",
+    },
+    {
+      title: "Content Marketing",
+      description:
+        "Create and distribute valuable content to attract and engage your target audience.",
+    },
+    {
+      title: "Social Media Marketing",
+      description:
+        "Run targeted ads on search engines and social media to drive immediate traffic and conversions.",
+    },
+    {
+      title: "Pay-Per-Click (PPC) Advertising",
+      description:
+        "Run targeted ads on search engines and social media to drive immediate traffic and conversions.",
+    },
+  ];
   return (
-    <VStack className="bg-purple-100 rounded-3xl m-4 md:px-16 md:py-10 p-4 md:flex-row justify-between items-center">
-      <VStack className="md:w-1/2 gap-8">
-        <VStack className="gap-4">
-          <Heading size="2xl">
-            Nextlevity <span className="text-lg">Marketing Strategies</span>
-          </Heading>
-          <Heading size="3xl">
-            The premium marketing solution for businesses
-          </Heading>
-        </VStack>
-
-        <HStack className="flex-wrap md:gap-0 gap-2">
-          {[
-            {
-              title: "Dedicated Hiring Experts",
-              description:
-                "Our team of seasoned digital marketing professionals ensures your campaigns are managed by industry experts, driving measurable success.",
-            },
-            {
-              title: "Satisfaction Guarantee",
-              description:
-                "We are committed to delivering outstanding results, ensuring client satisfaction through data-driven strategies and transparent reporting.",
-            },
-            {
-              title: "Advanced Management Tools",
-              description:
-                "Leverage our cutting-edge tools to track campaign performance, optimize strategies, and achieve superior business outcomes.",
-            },
-            {
-              title: "Tailored Growth Strategies",
-              description:
-                "Our personalized marketing solutions are designed to align with your unique business needs, maximizing ROI and lead generation.",
-            },
-          ].map((item, index) => (
-            <Card key={index} className="md:w-1/2  bg-transparent">
-              <HStack className="gap-2 md:flex-col">
-                <Icon
-                  as={CheckCircleIcon}
-                  size="xl"
-                  className="text-yellow-500"
-                />
-                <Heading size="sm">{item.title}</Heading>
-              </HStack>
-              <Text>{item.description}</Text>
-            </Card>
-          ))}
-        </HStack>
-
-        <HStack>
-          <Button className="bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-300">
-            <ButtonText>Try Now</ButtonText>
-          </Button>
-        </HStack>
+    <VStack className="mt-20">
+      <VStack className="gap-2 justify-center items-center px-72">
+        <Heading size="3xl" className="text-center">
+          Your Reliable digital Marketing Partner,
+        </Heading>
+        <Heading size="3xl" className="text-center">
+          Boosting Business Growth
+        </Heading>
+        <Text size="md" className="text-center">
+          We excel in crafting innovative marketing strategies that drive
+          results. Our expert team is dedicated to elevating your brand and
+          ensuring your success in the digital world.
+        </Text>
       </VStack>
-      <VStack className="hidden w-1/2 md:block">
-        <Image
-          className="object-cover"
-          src="/assets/homepage/nextlevity_pro.png"
-          alt="Features"
-          width={700}
-          height={700}
-        />
+      <VStack className="md:px-16 md:py-10 p-4 md:flex-row justify-between items-center">
+        <VStack className="md:w-2/3 gap-8">
+          <HStack className="flex-wrap gap-8">
+            <VStack className="gap-4">
+              <Heading size="xl">
+                Personalized Digital Marketing Experience
+              </Heading>
+              <Text size="md">
+                We develop innovative strategies that not only resonate with
+                your brand identity but also align seamlessly with your business
+                objectives.
+              </Text>
+            </VStack>
+            {info.map((item, index) => (
+              <Card key={index} className="md:w-80 h-32 rounded-2xl shadow-md">
+                <HStack className="gap-2">
+                  <Icon
+                    as={CheckCircleIcon}
+                    size="xl"
+                    className="text-white rounded-full bg-brand-0"
+                  />
+                  <Heading size="sm">{item.title}</Heading>
+                </HStack>
+                <Text className="ml-8">{item.description}</Text>
+              </Card>
+            ))}
+          </HStack>
+          <HStack>
+            <Link href="/google.com">
+              <LinkText className="font-bold text-brand-1 data-[hover=true]:text-yellow-400 data-[active=true]:text-yellow-300">
+                Learn More...
+              </LinkText>
+            </Link>
+          </HStack>
+        </VStack>
+        <VStack className="hidden w-1/2 md:flex justify-center items-center">
+          <Image
+            className="object-fill justify-center items-center"
+            src="/assets/homepage/homemage3.jpeg"
+            alt="Features"
+            width={400}
+            height={500}
+          />
+        </VStack>
       </VStack>
     </VStack>
   );

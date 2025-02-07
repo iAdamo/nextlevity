@@ -1,15 +1,21 @@
-import { useState } from "react";
 import {
   HStack,
   VStack,
   Heading,
-  Card,
   Text,
-  Icon,
-  ChevronDownIcon,
-  ChevronUpIcon,
-  Pressable,
+  Accordion,
+  AccordionItem,
+  AccordionHeader,
+  AccordionTrigger,
+  AccordionTitleText,
+  AccordionContentText,
+  AccordionIcon,
+  AccordionContent,
+  Button,
+  ButtonText,
+  Divider,
 } from "@/components/ui";
+import { MinusIcon, PlusIcon } from "lucide-react-native";
 
 const FaqSection = () => {
   const faqsData = [
@@ -60,37 +66,55 @@ const FaqSection = () => {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleFaq = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <VStack className="bg-purple-100 md:mx-4 p-6 mt-4 rounded-2xl">
-      <HStack className="justify-center">
-        <Heading size="xl">Frequently Asked Questions</Heading>
-      </HStack>
-      <HStack className="flex-wrap justify-start items-start md:p-6 mx-4 md:px-20 md:gap-4 gap-2 rounded-lg">
+    <HStack className="justify-between rounded-2xl m-20">
+      <VStack className="justify-start pr-20 gap-4">
+        <Heading size="4xl">Frequently</Heading>
+        <Heading size="4xl">Asked Questions</Heading>
+        <Text>
+          &quot;Whether you&apos;re just starting with digital marketing or
+          looking to explore our services further, these FAQs are here to give
+          you clear and concise answers&quot;
+        </Text>
+        <Button className="bg-brand-0 w-52 p-6 m-10 rounded-2xl">
+          <ButtonText>See more FAQS</ButtonText>
+        </Button>
+      </VStack>
+      <Accordion variant="unfilled" type="multiple" className="w-1/2">
         {faqsData.map((faq, index) => (
-          <Card key={index} variant="ghost" className="w-80">
-            <Pressable onPress={() => toggleFaq(index)}>
-              <HStack className="justify-between gap-6">
-                <Heading size="sm">{faq.question}</Heading>
-                <Icon
-                  as={openIndex === index ? ChevronUpIcon : ChevronDownIcon}
-                  size="lg"
-                  color="gray"
-                />
-              </HStack>
-            </Pressable>
-            {openIndex === index && (
-              <Text className="mt-2 text-gray-700">{faq.answer}</Text>
-            )}
-          </Card>
+          <>
+            <AccordionItem key={index} value={String(index)} className="mb-4">
+              <AccordionHeader>
+                <AccordionTrigger className="gap-4">
+                  {({ isExpanded }) => {
+                    return (
+                      <>
+                        {isExpanded ? (
+                          <AccordionIcon
+                            as={MinusIcon}
+                            className="text-brand-0 font-bold"
+                          />
+                        ) : (
+                          <AccordionIcon
+                            as={PlusIcon}
+                            className="text-brand-0 font-bold"
+                          />
+                        )}
+                        <AccordionTitleText>{faq.question}</AccordionTitleText>
+                      </>
+                    );
+                  }}
+                </AccordionTrigger>
+              </AccordionHeader>
+              <AccordionContent className="ml-10">
+                <AccordionContentText>{faq.answer}</AccordionContentText>
+              </AccordionContent>
+            </AccordionItem>
+            <Divider />
+          </>
         ))}
-      </HStack>
-    </VStack>
+      </Accordion>
+    </HStack>
   );
 };
 

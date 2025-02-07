@@ -17,3 +17,4 @@ export * from "./divider";
 export * from "./pressable";
 export * from "./icon";
 export * from "./popover";
+export *from "./accordion";

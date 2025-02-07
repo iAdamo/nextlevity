@@ -19,12 +19,12 @@ const HomeServiceSection = () => {
               className="rounded-lg"
               src="/assets/homepage/carousel.jpg"
               alt="Hero Image"
-              width={320}
-              height={320}
+              width={500}
+              height={30}
             />
-            <Box className="hidden md:block lg:absolute lg:-bottom-12 lg:left-64 justify-center items-center w-52 lg:h-52 -z-10 shadow-bottom-right rounded-lg"></Box>
+            <Box className="hidden  lg:absolute lg:-bottom-12 lg:left-64 justify-center items-center w-52 lg:h-52 -z-10 shadow-bottom-right rounded-lg"></Box>
             <Image
-              className="hidden md:block lg:absolute lg:-bottom-8 lg:left-[270px] justify-center items-center"
+              className="hidden lg:absolute lg:-bottom-8 lg:left-[270px] justify-center items-center"
               src="/assets/homepage/carousel.jpg"
               alt="Hero Image"
               width={180}

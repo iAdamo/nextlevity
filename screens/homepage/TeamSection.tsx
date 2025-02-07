@@ -4,74 +4,74 @@ import Image from "next/image";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Alice Johnson",
-      profession: "Business Analyst",
-      photo: "/assets/homepage/icon-deal.png",
+      name: "ATUNDE MICHEAL",
+      profession: "Co-Founder and CEO",
+      photo: "/assets/homepage/micheal.jpeg",
     },
     {
       name: "Michael Smith",
       profession: "Software Engineer",
-      photo: "/assets/homepage/icon-deal.png",
+      photo: "/assets/homepage/homemage1.jpeg",
     },
     {
       name: "Emily Davis",
       profession: "Graphic Designer",
-      photo: "/assets/homepage/icon-deal.png",
+      photo: "/assets/homepage/homemage1.jpeg",
     },
     {
-      name: "Alice Johnson",
-      profession: "Business Analyst",
-      photo: "/assets/homepage/icon-deal.png",
+      name: "ADEYEYE PEACE",
+      profession: "Product Designer",
+      photo: "/assets/homepage/peace.png",
     },
     {
       name: "Michael Smith",
       profession: "Software Engineer",
-      photo: "/assets/homepage/icon-deal.png",
+      photo: "/assets/homepage/homemage1.jpeg",
     },
     {
-      name: "Emily Davis",
-      profession: "Graphic Designer",
-      photo: "/assets/homepage/icon-deal.png",
+      name: "ADEBAYO DAVID",
+      profession: "Social Media Manager",
+      photo: "/assets/homepage/david.jpeg",
     },
     {
       name: "Alice Johnson",
       profession: "Business Analyst",
-      photo: "/assets/homepage/icon-deal.png",
-    },
-    {
-      name: "Emily Davis",
-      profession: "Graphic Designer",
-      photo: "/assets/homepage/icon-deal.png",
+      photo: "/assets/homepage/homemage1.jpeg",
     },
   ];
   return (
-    <VStack className="my-4 p-2 gap-1 rounded-lg bg-gradient-to-b from-white via-purple-200 to-white">
-      <VStack className="justify-center items-center">
-        <Text className="text-xl md:text-2xl font-bold text-purple-950">
-          OUR TEAM
+    <VStack className="my-20 p-2 gap-6 rounded-2xl">
+      <VStack className="justify-center items-center gap-4">
+        <Heading className="text-xl md:text-3xl">
+          Meet the team that makes the magic happen
+        </Heading>
+        <Text size="md" className="hidden md:inline">
+          Meet our diverse team of world class digital marketing, creator and
+          problem solvers.
         </Text>
-        <Text className="hidden md:block text-lg">Meet our team members</Text>
       </VStack>
-      <HStack className="justify-center gap-4 py-4 overflow-x-auto flex-nowrap">
+      <HStack className="flex-wrap justify-center gap-6 py-4 mx-20">
         {teamMembers.map((member, index) => (
           <Card
             key={index}
-            className="w-40 flex-shrink-0 justify-center items-center shadow-hard-5 rounded-lg"
+            className="p-0 flex-shrink-0 justify-center items-center rounded-3xl"
           >
             <Image
               src={member.photo}
               alt="Profile Image"
-              width={100}
-              height={100}
-              className="mb-2 rounded-md"
+              width={1920}
+              height={1080}
+              className="object-cover w-56 h-72 rounded-[3rem]"
             />
-            <VStack className="bg-yellow-500 justify-center items-center w-full">
-              <Heading size="sm" className="">
-                {member.name}
-              </Heading>
-              <Text className="text-sm font-normal text-typography-700">
-                {member.profession}
-              </Text>
+            <VStack className="w-full bottom-20 ">
+              <VStack className="justify-center items-center mx-4 bg-white rounded-md">
+                <Heading size="sm" className="">
+                  {member.name}
+                </Heading>
+                <Text className="text-sm font-normal text-typography-700">
+                  {member.profession}
+                </Text>
+              </VStack>
             </VStack>
           </Card>
         ))}

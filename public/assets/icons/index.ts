@@ -9,3 +9,5 @@ export { default as categories } from "./categories.svg";
 export { default as matching } from "./matching.svg";
 export { default as quickly } from "./quickly.svg";
 export { default as happy } from "./happy.svg";
+export { default as star } from "./star.svg";
+export { default as spirals } from "./spirals.svg";
