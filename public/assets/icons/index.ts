@@ -11,3 +11,4 @@ export { default as quickly } from "./quickly.svg";
 export { default as happy } from "./happy.svg";
 export { default as star } from "./star.svg";
 export { default as spirals } from "./spirals.svg";
+export { default as chart } from "./chart.svg";

@@ -17,7 +17,7 @@ const NavBar = () => {
   ];
   return (
     <VStack className="items-center justify-center z-10 w-full">
-      <HStack className="p-10 w-full items-center justify-between">
+      <HStack className="py-10 w-full items-center justify-between pl-10 pr-20">
         <Button
           onPress={() => router.replace("/")}
           className="p-0 items-center justify-center"

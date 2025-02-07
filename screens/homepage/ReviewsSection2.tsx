@@ -1,4 +1,4 @@
-import { VStack, HStack, Card, Heading, Text, Link } from "@/components/ui";
+import { VStack, HStack, Card, Heading, Text } from "@/components/ui";
 import { star } from "@/public/assets/icons";
 import Image from "next/image";
 import dynamic from "next/dynamic";
