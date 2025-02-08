@@ -1,15 +1,12 @@
-const VideoPlayer = () => {
+interface VideoPlayerProps {
+  className?: string;
+}
+
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ className }) => {
   return (
-    <video
-      className="object-fill md:h-96 h-72
-
-
-      rounded-lg"
-      controls
-      muted
-      autoPlay
-    >
-      <source src="assets/homepage/welcome.mp4" type="video/mp4" />
+    <video className={className} controls>
+      <source src="/path/to/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
   );
 };

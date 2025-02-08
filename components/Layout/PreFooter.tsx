@@ -84,10 +84,10 @@ const PreFooter = () => {
       <Card className="bg-[#D9D9D91F] absolute w-52 h-52 rounded-full top-[23rem] left-[65rem]"></Card>
       <VStack className="px-28 w-full">
         <VStack className="bottom-20">
-          <Heading size="xl" className="text-white">
+          <Heading size="2xl" className="text-white">
             The values that hold us accountable
           </Heading>
-          <Heading size="xl" className="text-white">
+          <Heading size="2xl" className="text-white">
             and guide our actions.
           </Heading>
         </VStack>

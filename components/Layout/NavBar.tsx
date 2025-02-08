@@ -1,4 +1,11 @@
-import { VStack, HStack, LinkText, Link, Button, ButtonText } from "@/components/ui";
+import {
+  VStack,
+  HStack,
+  LinkText,
+  Link,
+  Button,
+  ButtonText,
+} from "@/components/ui";
 import Image from "next/image";
 import Dropdown from "@/components/Overlays/dropdown";
 import MobileSideBar from "../Overlays/MobileSideBar";
@@ -31,19 +38,19 @@ const NavBar = () => {
           />
         </Button>
         <HStack className="items-center gap-6 hidden md:flex ml-48">
-          <Dropdown
-            buttonLabel="Services"
-            options={dropdownOptions}
-            offset={28}
-          />
+          <Link href="/results">
+            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
+              Services
+            </LinkText>
+          </Link>
           <Link href="/results">
             <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
               Results
             </LinkText>
           </Link>
-          <Link href="/company">
+          <Link href="/about">
             <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
-              Company
+              About
             </LinkText>
           </Link>
           <Link href="/blog">

@@ -2,7 +2,7 @@ import { VStack, Heading, Text } from "@/components/ui";
 
 const AboutUs = () => {
   return (
-    <VStack className="mt-20 gap-10 justify-center items-center px-40">
+    <VStack className="m-20 gap-10 justify-center items-center px-20">
       <Heading size="3xl" className="text-center">
         About Us
       </Heading>
