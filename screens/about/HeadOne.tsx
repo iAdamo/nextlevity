@@ -1,11 +1,7 @@
-import {
-  VStack,
-  HStack,
-  Card,
-  Heading,
-  Text,
-} from "@/components/ui";
-import Image from "next/image";
+import { Text } from "@/components/ui/text";
+import { VStack } from "@/components/ui/vstack";
+import { Heading } from "@/components/ui/heading";
+import { HStack } from "@/components/ui/hstack";
 import VideoPlayer from "@/components/media/VideoPlayer";
 
 const HeadOne = () => {

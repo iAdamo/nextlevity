@@ -1,12 +1,10 @@
-import {
-  VStack,
-  HStack,
-  Card,
-  Heading,
-  Text,
-  Link,
-} from "@/components/ui";
 import Image from "next/image";
+import { VStack } from "@/components/ui/vstack";
+import { HStack } from "@/components/ui/hstack";
+import { Heading } from "@/components/ui/heading";
+import { Text } from "@/components/ui/text";
+import { Card } from "@/components/ui/card";
+import { Link } from "@/components/ui/link";
 
 const ReviewSection = () => {
 

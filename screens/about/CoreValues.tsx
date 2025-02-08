@@ -1,4 +1,6 @@
-import { VStack, HStack, Text } from "@/components/ui";
+import { Text } from "@/components/ui/text";
+import { VStack } from "@/components/ui/vstack";
+import { HStack } from "@/components/ui/hstack";
 import Image from "next/image";
 
 const CoreValues = () => {

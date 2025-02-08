@@ -1,8 +1,8 @@
-import { SafeAreaView } from "@/components/ui";
+import { SafeAreaView } from "@/components/ui/safe-area-view";
 import NavBar from "@/components/Layout/NavBar";
 import PreFooter from "@/components/Layout/PreFooter";
 import Footer from "@/components/Layout/Footer";
-import TeamSection from "../homepage/TeamSection";
+import TeamSection from "@/screens/homepage/TeamSection";
 import AboutUs from "./AboutUs";
 import HeadOne from "./HeadOne";
 import OurMission from "./OurMission";

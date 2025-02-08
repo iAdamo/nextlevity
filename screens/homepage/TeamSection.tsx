@@ -1,5 +1,9 @@
-import { VStack, HStack, Card, Text, Heading } from "@/components/ui";
 import Image from "next/image";
+import { VStack } from "@/components/ui/vstack";
+import { HStack } from "@/components/ui/hstack";
+import { Heading } from "@/components/ui/heading";
+import { Text } from "@/components/ui/text";
+import { Card } from "@/components/ui/card";
 
 const TeamSection = () => {
   const teamMembers = [

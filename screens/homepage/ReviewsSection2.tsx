@@ -1,7 +1,11 @@
-import { VStack, HStack, Card, Heading, Text } from "@/components/ui";
 import { star } from "@/public/assets/icons";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { VStack } from "@/components/ui/vstack";
+import { HStack } from "@/components/ui/hstack";
+import { Heading } from "@/components/ui/heading";
+import { Text } from "@/components/ui/text";
+import { Card } from "@/components/ui/card";
 
 const DynamicVideo = dynamic(() => import("@/components/media/VideoPlayer"), {
   ssr: false,

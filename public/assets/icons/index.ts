@@ -12,3 +12,4 @@ export { default as happy } from "./happy.svg";
 export { default as star } from "./star.svg";
 export { default as spirals } from "./spirals.svg";
 export { default as chart } from "./chart.svg";
+export { default as logowhite } from "./logowhite.svg";

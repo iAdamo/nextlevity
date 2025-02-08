@@ -1,20 +1,19 @@
+import { VStack } from "@/components/ui/vstack";
+import { HStack } from "@/components/ui/hstack";
+import { Text } from "@/components/ui/text";
+import { Heading } from "@/components/ui/heading";
+import { Button, ButtonText } from "@/components/ui/button";
 import {
-  HStack,
-  VStack,
-  Heading,
-  Text,
   Accordion,
   AccordionItem,
   AccordionHeader,
   AccordionTrigger,
+  AccordionContent,
+  AccordionIcon,
   AccordionTitleText,
   AccordionContentText,
-  AccordionIcon,
-  AccordionContent,
-  Button,
-  ButtonText,
-  Divider,
-} from "@/components/ui";
+} from "@/components/ui/accordion";
+import { Divider } from "@/components/ui/divider";
 import { MinusIcon, PlusIcon } from "lucide-react-native";
 
 const FaqSection = () => {
@@ -82,8 +81,8 @@ const FaqSection = () => {
       </VStack>
       <Accordion variant="unfilled" type="multiple" className="w-1/2">
         {faqsData.map((faq, index) => (
-          <>
-            <AccordionItem key={index} value={String(index)} className="mb-4">
+          <div key={index}>
+            <AccordionItem value={String(index)} className="mb-4">
               <AccordionHeader>
                 <AccordionTrigger className="gap-4">
                   {({ isExpanded }) => {
@@ -111,7 +110,7 @@ const FaqSection = () => {
               </AccordionContent>
             </AccordionItem>
             <Divider />
-          </>
+          </div>
         ))}
       </Accordion>
     </HStack>

@@ -1,4 +1,6 @@
-import { VStack, Heading, Text } from "@/components/ui";
+import { Text } from "@/components/ui/text";
+import { VStack } from "@/components/ui/vstack";
+import { Heading } from "@/components/ui/heading";
 
 const AboutUs = () => {
   return (

@@ -1,13 +1,12 @@
-import {
-  HStack,
-  VStack,
-  Card,
-  Text,
-  Link,
-  Heading,
-  Icon,
-  ChevronRightIcon,
-} from "@/components/ui";
+import { VStack } from "@/components/ui/vstack";
+import { HStack } from "@/components/ui/hstack";
+import { Heading } from "@/components/ui/heading";
+import { Text } from "@/components/ui/text";
+import { Link } from "@/components/ui/link";
+import { Card } from "@/components/ui/card";
+import { Icon } from "@/components/ui/icon";
+import { ChevronRightIcon } from "@/components/ui/icon";
+
 import Image from "next/image";
 
 const Categories = () => {

@@ -1,19 +1,14 @@
 import { useState } from "react";
-import {
-  HStack,
-  VStack,
-  Link,
-  LinkText,
-  Pressable,
-  Heading,
-  Icon,
-  ChevronDownIcon,
-  ChevronUpIcon,
-  Card,
-  Text,
-  Button,
-  ButtonText,
-} from "@/components/ui";
+import { HStack } from "@/components/ui/hstack";
+import { VStack } from "@/components/ui/vstack";
+import { Link, LinkText } from "@/components/ui/link";
+import { Text } from "@/components/ui/text";
+import { Icon } from "@/components/ui/icon";
+import { ChevronDownIcon, ChevronUpIcon } from "@/components/ui/icon";
+import { Button, ButtonText } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Heading } from "@/components/ui/heading";
+import { Pressable } from "@/components/ui/pressable";
 import Image from "next/image";
 import {
   facebook,

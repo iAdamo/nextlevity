@@ -1,73 +1,69 @@
-import {
-  VStack,
-  HStack,
-  LinkText,
-  Link,
-  Button,
-  ButtonText,
-} from "@/components/ui";
+import { useMemo } from "react";
+import Link from "next/link";
 import Image from "next/image";
-import Dropdown from "@/components/Overlays/dropdown";
 import MobileSideBar from "../Overlays/MobileSideBar";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import { logowhite } from "@/public/assets/icons";
+import { HStack } from "@/components/ui/hstack";
+import { VStack } from "@/components/ui/vstack";
+import { Button, ButtonText } from "@/components/ui/button";
 
 const NavBar = () => {
   const router = useRouter();
+  const currentPath = usePathname();
 
-  const dropdownOptions = [
-    { label: "Profile", onPress: () => router.push("/") },
-    { label: "Settings", onPress: () => router.push("/") },
-    { label: "Logout", onPress: () => router.push("/") },
-    { label: "Profile", onPress: () => router.push("/") },
-    { label: "Settings", onPress: () => router.push("/") },
-    { label: "Logout", onPress: () => router.push("/") },
+  const options = [
+    { name: "Services", href: "/services" },
+    { name: "Results", href: "/results" },
+    { name: "About", href: "/about" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
   ];
+
+  // Memoized styles to avoid unnecessary re-renders
+  const styles = useMemo(() => {
+    const isContactPage = currentPath === "/contact";
+
+    return {
+      navBarClass: isContactPage ? "bg-brand-0" : "bg-transparent",
+      navBarLogo: isContactPage ? logowhite : "/assets/homepage/logo.png",
+      linkClass: isContactPage
+        ? "no-underline text-white hover:text-brand-1"
+        : "no-underline text-text-primary font-extrabold hover:text-brand-0",
+      buttonClass: isContactPage
+        ? "rounded-3xl bg-white hover:bg-brand-1"
+        : "rounded-3xl bg-brand-0 hover:bg-brand-1",
+    };
+  }, [currentPath]);
+
   return (
-    <VStack className="items-center justify-center z-10 w-full">
-      <HStack className="py-10 w-full items-center justify-between pl-10 pr-20">
-        <Button
-          onPress={() => router.replace("/")}
-          className="p-0 items-center justify-center"
-        >
-          <Image
-            className="object-cover"
-            src="/assets/homepage/logo.png"
-            alt="Icon"
-            width={360}
-            height={176}
-          />
+    <VStack
+      className={`items-center justify-center z-10 w-full ${styles.navBarClass}`}
+    >
+      <HStack className="py-10 w-full items-center justify-between px-10">
+        <Button onPress={() => router.replace("/")} className="p-0">
+          <Image src={styles.navBarLogo} alt="Logo" width={360} height={176} />
         </Button>
-        <HStack className="items-center gap-6 hidden md:flex ml-48">
-          <Link href="/results">
-            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
-              Services
-            </LinkText>
-          </Link>
-          <Link href="/results">
-            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
-              Results
-            </LinkText>
-          </Link>
-          <Link href="/about">
-            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
-              About
-            </LinkText>
-          </Link>
-          <Link href="/blog">
-            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
-              Blog
-            </LinkText>
-          </Link>
-          <Link href="/contact">
-            <LinkText className="no-underline text-text-primary font-extrabold data-[hover=true]:text-brand-0 data-[active=true]:text-brand-1">
-              Contact
-            </LinkText>
-          </Link>
+
+        {/* Desktop Navigation */}
+        <HStack className="items-center gap-6 hidden md:flex">
+          {options.map((option) => (
+            <Link
+              key={option.name}
+              href={option.href}
+              className={`${styles.linkClass} ${
+                currentPath === option.href ? "font-extrabold" : ""
+              }`}
+            >
+              {option.name}
+            </Link>
+          ))}
         </HStack>
-        <Button className="rounded-3xl bg-brand-0 data-[hover=true]:bg-brand-1 data-[active=true]:bg-brand-0">
+
+        <Button className={styles.buttonClass}>
           <ButtonText className="text-txt-0">Get in touch</ButtonText>
         </Button>
-        {/* Mobile Menu Link (hidden on larger screens) */}
+
         <MobileSideBar />
       </HStack>
     </VStack>

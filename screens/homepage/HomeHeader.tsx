@@ -1,14 +1,10 @@
-import {
-  VStack,
-  HStack,
-  Button,
-  ButtonText,
-  Text,
-  Link,
-  LinkText,
-} from "@/components/ui";
 import Image from "next/image";
 import { spirals, chart } from "@/public/assets/icons";
+import { Button, ButtonText } from "@/components/ui/button";
+import { HStack } from "@/components/ui/hstack";
+import { Text } from "@/components/ui/text";
+import { VStack } from "@/components/ui/vstack";
+import { Link, LinkText } from "@/components/ui/link";
 
 const HomeHeader = () => {
   return (

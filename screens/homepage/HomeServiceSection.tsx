@@ -1,12 +1,9 @@
-import {
-  Box,
-  HStack,
-  VStack,
-  Divider,
-  Button,
-  ButtonText,
-} from "../../components/ui";
 import Image from "next/image";
+import { Button, ButtonText } from "@/components/ui/button";
+import { Box } from "@/components/ui/box";
+import { Divider } from "@/components/ui/divider";
+import { HStack } from "@/components/ui/hstack";
+import { VStack } from "@/components/ui/vstack";
 
 const HomeServiceSection = () => {
   return (
