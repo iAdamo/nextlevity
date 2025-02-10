@@ -7,11 +7,11 @@ import VideoPlayer from "@/components/media/VideoPlayer";
 const HeadOne = () => {
   return (
     <VStack className="mx-20 my-10 gap-8">
-      <VStack className="gap-8 justify-center items-center px-72">
-        <Heading size="3xl" className="text-center">
+      <VStack className="gap-8 justify-center items-center">
+        <Heading size="4xl" className="px-32 text-center">
           Empowering Your Brand with Innovative Marketing Solutions
         </Heading>
-        <Text size="md" className="text-center">
+        <Text size="md" className="px-52 text-center">
           We blend creativity and strategy to elevate your business and drive
           results. Let&apos;s create something extraordinary together.
         </Text>

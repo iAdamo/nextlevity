@@ -10,28 +10,28 @@ const CoreValues = () => {
       value: "Innovation",
       description:
         "Our commitment to excellence drives us to explore new frontiers and deliver groundbreaking solutions. We believe in the power of technology to transform lives and industries. At Nextlevity, innovation is at the core of everything we do.",
-      image: "/assets/icons/bulbidea.svg",
+      image: "/assets/about/value0.jpeg",
     },
     {
       title: "Open Book",
       value: "Transparency",
       description:
         "The company is committed to maintaining clear and transparent communication throughout every campaign. We will provide measurable results to demonstrate the effectiveness and success of our efforts. Our goal is to build trust and deliver outstanding outcomes for our clients.",
-      image: "/assets/icons/boyball.svg",
+      image: "/assets/about/value1.jpeg",
     },
     {
       title: "Common Goal",
       value: "Collaboration",
       description:
         "We partner with clients to create personalized marketing solutions. By understanding their goals, we develop tailored strategies that drive success and deliver measurable results.",
-      image: "/assets/icons/heart.svg",
+      image: "/assets/about/value2.jpeg",
     },
     {
       title: "Quality and and Achievement",
       value: "Excellence",
       description:
         "Nextlevity is dedicated to exceeding expectations in every project we undertake. We strive to deliver exceptional results by going above and beyond the standard requirements.",
-      image: "/assets/icons/boyball.svg",
+      image: "/assets/about/value3.jpeg",
     },
   ];
   return (
@@ -55,7 +55,7 @@ const CoreValues = () => {
             <VStack className="h-auto w-[35%] rounded-2xl">
               <Image
                 className="object-cover h-52 w-full rounded-2xl"
-                src="/assets/homepage/homemage4.jpeg"
+                src={value.image}
                 alt="Hero Image"
                 width={400}
                 height={400}

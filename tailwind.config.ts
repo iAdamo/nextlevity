@@ -23,8 +23,8 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          0: "#FF6F4B",
-          1: "#7337E9",
+          0: "#FF7A03",
+          1: "#43255F",
           2: "#FEF3F1",
           3: "#EEDEF6",
         },
@@ -204,7 +204,7 @@ module.exports = {
         "right":
           "10px 0 15px -3px rgba(0, 0, 0, 0.1), 4px 0 6px -2px rgba(0, 0, 0, 0.05)",
         "bottom-right":
-          "10px 10px 15px -3px rgba(0, 0, 0, 0.1), 4px 4px 6px -2px rgba(0, 0, 0, 0.05)",
+          "10px 10px 15px -3px rgba(0, 0, 0, 0.1), 4px 4px 6px -2px rgba(0, 0, 0, 0.5)",
         "bottom":
           "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
         "bottom-left":

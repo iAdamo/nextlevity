@@ -1,12 +1,13 @@
 import { SafeAreaView } from "@/components/ui/safe-area-view";
-import NavBar from "@/components/Layout/NavBar";
-import PreFooter from "@/components/Layout/PreFooter";
-import Footer from "@/components/Layout/Footer";
+import NavBar from "@/screens/layout/NavBar";
+import PreFooter from "@/screens/layout/PreFooter";
+import Footer from "@/screens/layout/Footer";
 import TeamSection from "@/screens/homepage/TeamSection";
 import AboutUs from "./AboutUs";
 import HeadOne from "./HeadOne";
 import OurMission from "./OurMission";
 import CoreValues from "./CoreValues";
+import MoreInfo from "./MoreInfo";
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
       <AboutUs />
       <OurMission />
       <CoreValues />
+      <MoreInfo />
       <TeamSection />
       <PreFooter />
       <Footer />

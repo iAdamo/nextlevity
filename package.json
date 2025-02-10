@@ -11,10 +11,13 @@
   "dependencies": {
     "@expo/html-elements": "^0.4.2",
     "@gluestack-ui/accordion": "^1.0.8",
+    "@gluestack-ui/actionsheet": "^0.2.46",
     "@gluestack-ui/button": "^1.0.8",
+    "@gluestack-ui/checkbox": "^0.1.33",
     "@gluestack-ui/divider": "^0.1.10",
     "@gluestack-ui/form-control": "^0.1.19",
     "@gluestack-ui/icon": "^0.1.25",
+    "@gluestack-ui/input": "^0.1.32",
     "@gluestack-ui/link": "^0.1.23",
     "@gluestack-ui/menu": "^0.2.37",
     "@gluestack-ui/modal": "^0.1.35",
@@ -22,6 +25,8 @@
     "@gluestack-ui/overlay": "^0.1.16",
     "@gluestack-ui/popover": "^0.1.43",
     "@gluestack-ui/pressable": "^0.1.17",
+    "@gluestack-ui/select": "^0.1.30",
+    "@gluestack-ui/textarea": "^0.1.24",
     "@gluestack-ui/toast": "^1.0.8",
     "@gluestack/ui-next-adapter": "^2.1.12",
     "@legendapp/motion": "^2.4.0",
@@ -35,6 +40,7 @@
     "react-native-safe-area-context": "^5.0.0",
     "react-native-svg": "^15.2.0",
     "react-native-web": "^0.19.13",
+    "sharp": "^0.33.5",
     "tailwind-variants": "^0.3.1"
   },
   "devDependencies": {

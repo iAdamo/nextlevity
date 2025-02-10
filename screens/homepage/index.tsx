@@ -1,17 +1,16 @@
 import { SafeAreaView } from "@/components/ui/safe-area-view";
-import NavBar from "@/components/Layout/NavBar";
+import NavBar from "@/screens/layout/NavBar";
 import HomeHeader from "@/screens/homepage/HomeHeader";
 import Categories from "@/screens/homepage/Categories";
 import ReviewsSection from "@/screens/homepage/ReviewsSection";
 import ReviewsSection2 from "@/screens/homepage/ReviewsSection2";
 
-import PreFooter from "@/components/Layout/PreFooter";
-import Footer from "@/components/Layout/Footer";
+import PreFooter from "@/screens/layout/PreFooter";
+import Footer from "@/screens/layout/Footer";
 import FaqSection from "@/screens/homepage/FaqSection";
 import MoreInfo from "@/screens/homepage/MoreInfo";
 import MarketingSolution from "./MaketingSolution";
 import type { Metadata } from "next";
-
 
 export const metadata: Metadata = {
   title: "Nextlevity",

@@ -1,7 +1,7 @@
 import { SafeAreaView } from "@/components/ui/safe-area-view";
-import NavBar from "@/components/Layout/NavBar";
-import PreFooter from "@/components/Layout/PreFooter";
-import Footer from "@/components/Layout/Footer";
+import NavBar from "@/screens/layout/NavBar";
+import PreFooter from "@/screens/layout/PreFooter";
+import Footer from "@/screens/layout/Footer";
 import HeadOne from "../about/HeadOne";
 import AboutUs from "../about/AboutUs";
 

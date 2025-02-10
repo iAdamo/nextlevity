@@ -13,3 +13,6 @@ export { default as star } from "./star.svg";
 export { default as spirals } from "./spirals.svg";
 export { default as chart } from "./chart.svg";
 export { default as logowhite } from "./logowhite.svg";
+export { default as message } from "./message.svg";
+export { default as sentarrow } from "./sentarrow.svg";
+export { default as phone } from "./phone.svg";
