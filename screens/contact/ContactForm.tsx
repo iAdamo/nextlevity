@@ -1,7 +1,6 @@
 import {
   FormControl,
   FormControlError,
-  FormControlErrorIcon,
   FormControlErrorText,
   FormControlLabel,
   FormControlLabelText,
@@ -10,8 +9,6 @@ import { Input, InputField } from "@/components/ui/input";
 import {
   Button,
   ButtonText,
-  ButtonIcon,
-  ButtonSpinner,
 } from "@/components/ui/button";
 import {
   Checkbox,
@@ -40,20 +37,19 @@ import {
 import Image from "next/image";
 import { message, sentarrow, twitter, phone } from "@/public/assets/icons";
 
-
 const ContactForm = () => {
   return (
     <VStack className="px-20 py-10">
       <HStack>
         <VStack className="w-1/2 gap-8">
-          <VStack className="pr-20 gap-8">
+          <VStack className="pr-20 pl-10 gap-6">
             <HStack className="justify-between">
               <FormControl>
                 <FormControlLabel>
-                  <FormControlLabelText>First name</FormControlLabelText>
+                  <FormControlLabelText className="font-bold">First name</FormControlLabelText>
                 </FormControlLabel>
-                <Input className="h-12">
-                  <InputField className="" />
+                <Input className="h-12 border-brand-4 data-[hover=true]:border-brand-4 data-[hover=true]:border-2 data-[focus=true]:border-brand-4 data-[focus=true]:bg-blue-50">
+                  <InputField className="" placeholder="First Name" />
                 </Input>
                 <FormControlError>
                   <FormControlErrorText></FormControlErrorText>
@@ -61,32 +57,33 @@ const ContactForm = () => {
               </FormControl>
               <FormControl>
                 <FormControlLabel>
-                  <FormControlLabelText>Last name</FormControlLabelText>
+                  <FormControlLabelText className="font-bold">Last name</FormControlLabelText>
                 </FormControlLabel>
-                <Input className="h-12">
-                  <InputField className="h-20" />
+                <Input className="h-12 border-brand-4 data-[hover=true]:border-brand-4 data-[hover=true]:border-2 data-[focus=true]:border-brand-4 data-[focus=true]:bg-blue-50">
+                  <InputField className="" placeholder="Last Name" />
                 </Input>
               </FormControl>
             </HStack>
             <FormControl>
               <FormControlLabel>
-                <FormControlLabelText>Email</FormControlLabelText>
+                <FormControlLabelText className="font-bold">Email</FormControlLabelText>
               </FormControlLabel>
-              <Input className="h-12">
-                <InputField className="h-20" />
+              <Input className="h-12 border-brand-4 data-[hover=true]:border-brand-4 data-[hover=true]:border-2 data-[focus=true]:border-brand-4 data-[focus=true]:bg-blue-50">
+                <InputField
+                  className=""
+                  placeholder="adeola.musa.chuks@gmail.com"
+                />
               </Input>
             </FormControl>
             <FormControl>
               <FormControlLabel>
-                <FormControlLabelText>Phone number</FormControlLabelText>
+                <FormControlLabelText className="font-bold">Phone Number</FormControlLabelText>
               </FormControlLabel>
-              <HStack className="border">
-                <Select className="h-14 w-1/4 border-0">
-                  <SelectTrigger>
-                    <SelectInput
-                      placeholder="Select option"
-                      className="flex-1"
-                    />
+
+              <Input className="h-12 border-brand-4 data-[hover=true]:border-brand-4 data-[hover=true]:border-2 data-[focus=true]:border-brand-4 data-[focus=true]:bg-blue-50">
+                <Select className="w-1/4">
+                  <SelectTrigger className="h-12 justify-between border-brand-4 data-[hover=true]:border-brand-4 data-[hover=true]:border-2 data-[focus=true]:border-brand-4 data-[focus=true]:bg-blue-50">
+                    <SelectInput placeholder="NG" className="flex-1 font-semibold" />
                     <SelectIcon className="mr-3" as={ChevronDownIcon} />
                   </SelectTrigger>
                   <SelectPortal>
@@ -98,21 +95,22 @@ const ContactForm = () => {
                       <SelectItem label="Red" value="red" />
                       <SelectItem label="Blue" value="blue" />
                       <SelectItem label="Black" value="black" />
-                      <SelectItem label="Pink" value="pink" isDisabled={true} />
+                      <SelectItem label="Pink" value="pink"/>
                       <SelectItem label="Green" value="green" />
                     </SelectContent>
                   </SelectPortal>
                 </Select>
-                <Input className="h-12 w-3/4 border-0">
-                  <InputField className="h-20" />
-                </Input>
-              </HStack>
+                <InputField className="" placeholder="+(234) 900 0000 000" />
+              </Input>
             </FormControl>
             <FormControl>
               <FormControlLabel>
-                <FormControlLabelText>Message</FormControlLabelText>
+                <FormControlLabelText className="font-bold">Message</FormControlLabelText>
               </FormControlLabel>
-              <Textarea size="sm" className="h-40 bg-blue-50">
+              <Textarea
+                size="sm"
+                className="h-40 border-brand-4 data-[hover=true]:border-brand-4 data-[hover=true]:border-2 data-[focus=true]:border-brand-4 data-[focus=true]:bg-blue-50"
+              >
                 <TextareaInput
                   placeholder="Leave a message for us..."
                   className="text-left align-top "
@@ -120,61 +118,57 @@ const ContactForm = () => {
               </Textarea>
             </FormControl>
           </VStack>
-          <VStack className="">
+          <VStack className="ml-10">
             <FormControl className="flex flex-row gap-4 flex-wrap">
-              <Checkbox className="gap-4">
+              <Checkbox value="Social Media Marketing" className="gap-4">
                 <CheckboxIndicator>
-                  <CheckboxIcon as={CheckIcon} className="text-xl" />
+                  <CheckboxIcon as={CheckIcon} className="" />
                 </CheckboxIndicator>
-                <CheckboxLabel className="text-xl">
+                <CheckboxLabel className="">
                   Social Media Marketing
                 </CheckboxLabel>
               </Checkbox>
-              <Checkbox>
+              <Checkbox className="gap-4" value="Branding and graphics design">
                 <CheckboxIndicator>
                   <CheckboxIcon as={CheckIcon} />
                 </CheckboxIndicator>
-                <CheckboxLabel className="text-xl">
+                <CheckboxLabel className="">
                   Branding and graphics design
                 </CheckboxLabel>
               </Checkbox>
-              <Checkbox>
+              <Checkbox className="gap-4" value="Content Marketing">
                 <CheckboxIndicator>
-                  <CheckboxIcon as={CheckIcon} className="text-xl" />
+                  <CheckboxIcon as={CheckIcon} className="" />
                 </CheckboxIndicator>
-                <CheckboxLabel className="text-xl">
-                  Content Marketing
-                </CheckboxLabel>
+                <CheckboxLabel className="">Content Marketing</CheckboxLabel>
               </Checkbox>
-              <Checkbox>
+              <Checkbox className="gap-4" value="Influencer Marketing">
                 <CheckboxIndicator>
-                  <CheckboxIcon as={CheckIcon} className="text-xl" />
+                  <CheckboxIcon as={CheckIcon} className="" />
                 </CheckboxIndicator>
-                <CheckboxLabel className="text-xl">
-                  Influencer Marketing
-                </CheckboxLabel>
+                <CheckboxLabel className="">Influencer Marketing</CheckboxLabel>
               </Checkbox>
-              <Checkbox>
+              <Checkbox className="gap-4" value="Search Engine Optimization">
                 <CheckboxIndicator>
-                  <CheckboxIcon as={CheckIcon} className="text-xl" />
+                  <CheckboxIcon as={CheckIcon} className="text-2xl" />
                 </CheckboxIndicator>
-                <CheckboxLabel className="text-xl">
+                <CheckboxLabel className="">
                   Search Engine Optimization
                 </CheckboxLabel>
               </Checkbox>
-              <Checkbox>
+              <Checkbox className="gap-4" value="Pay per Click Advertising">
                 <CheckboxIndicator>
-                  <CheckboxIcon as={CheckIcon} className="text-xl" />
+                  <CheckboxIcon as={CheckIcon} className="" />
                 </CheckboxIndicator>
-                <CheckboxLabel className="text-xl">
+                <CheckboxLabel className="">
                   Pay per Click Advertising
                 </CheckboxLabel>
               </Checkbox>
-              <Checkbox>
+              <Checkbox className="gap-4" value="Others">
                 <CheckboxIndicator>
-                  <CheckboxIcon as={CheckIcon} className="text-xl" />
+                  <CheckboxIcon as={CheckIcon} className="" />
                 </CheckboxIndicator>
-                <CheckboxLabel className="text-xl">Others </CheckboxLabel>
+                <CheckboxLabel className="">Others </CheckboxLabel>
               </Checkbox>
             </FormControl>
           </VStack>

@@ -20,7 +20,7 @@ const Newsletter = () => {
         <VStack className="w-1/4 justify-center items-center">
           <Input className="bg-[#FFFEFE] h-14 rounded-lg border-none px-2">
             <InputField placeholder="Enter your email address" />
-            <Button className="bg-[#7337E9] rounded-xl py-2">
+            <Button className="bg-brand-4 rounded-xl py-2">
               <ButtonText>Subscribe</ButtonText>
             </Button>
           </Input>
