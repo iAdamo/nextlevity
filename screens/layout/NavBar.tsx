@@ -13,7 +13,7 @@ const NavBar = () => {
   const currentPath = usePathname();
 
   const options = [
-    { name: "Services", href: "/services" },
+    { name: "Services", href: "/service" },
     { name: "Results", href: "/results" },
     { name: "About", href: "/about" },
     { name: "Blog", href: "/blog" },
