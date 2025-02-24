@@ -18,7 +18,7 @@ const HomeHeader = () => {
           height={900}
         />
       </VStack>
-      <VStack className="absolute top-0 w-full h-[55rem] bg-red-600 bg-opacity-10">
+      <VStack className="absolute top-0 w-full h-[55rem] bg-opacity-10">
         <HStack className="absolute bottom-[5rem] right-0">
           <Image
             className="object-cover"

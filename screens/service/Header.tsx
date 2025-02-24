@@ -66,7 +66,7 @@ const Header = () => {
     },
   ];
   return (
-    <VStack className="-mt-32 w-full bg-red-400 relative">
+    <VStack className="-mt-32 w-full relative">
       <Image
         className="object-cover w-full"
         src="/assets/service/service-one.jpeg"

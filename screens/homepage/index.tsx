@@ -1,3 +1,5 @@
+"use client";
+
 import { SafeAreaView } from "@/components/ui/safe-area-view";
 import NavBar from "@/screens/layout/NavBar";
 import HomeHeader from "@/screens/homepage/HomeHeader";
@@ -10,12 +12,6 @@ import Footer from "@/screens/layout/Footer";
 import FaqSection from "@/screens/homepage/FaqSection";
 import MoreInfo from "@/screens/homepage/MoreInfo";
 import MarketingSolution from "./MaketingSolution";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Nextlevity",
-  description: "Multi-service marketing app",
-};
 
 const HomePage = () => {
   return (

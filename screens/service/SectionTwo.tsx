@@ -3,7 +3,6 @@ import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
 import { Heading } from "@/components/ui/heading";
 import { VStack } from "@/components/ui/vstack";
-import Link from "next/link";
 import { Card } from "@/components/ui/card";
 
 const SectionTwo = () => {

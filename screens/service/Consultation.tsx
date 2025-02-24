@@ -67,7 +67,7 @@ const Consultation = () => {
               </VStack>
             </HStack>
             <Link
-              href="#"
+              href="/contact/#form"
               className="bg-[#F64E2C] py-3 px-6 hover:bg-brand-4 font-bold text-white rounded-full w-60 text-center"
             >
               Book Consultation

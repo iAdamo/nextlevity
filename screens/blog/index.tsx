@@ -3,12 +3,22 @@ import NavBar from "@/screens/layout/NavBar";
 import PreFooter from "@/screens/layout/PreFooter";
 import Footer from "@/screens/layout/Footer";
 import BlogHeader from "./BlogHeader";
+import PopularArticles from "./PopularArticles";
+import RecentArticles from "./RecentArticles";
+import Testimonial from "./Testimonial";
+import Newsletter from "../contact/Newsletter";
+import AllArticles from "./AllArticles";
 
 const BlogPage = () => {
   return (
     <SafeAreaView>
       <NavBar />
       <BlogHeader />
+      <PopularArticles />
+      <RecentArticles />
+      <Testimonial />
+      <AllArticles />
+      <Newsletter />
       <PreFooter />
       <Footer />
     </SafeAreaView>
