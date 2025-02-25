@@ -5,17 +5,11 @@ import { Link, LinkText } from "@/components/ui/link";
 import { Text } from "@/components/ui/text";
 import { Icon } from "@/components/ui/icon";
 import { ChevronDownIcon, ChevronUpIcon } from "@/components/ui/icon";
-import { Button, ButtonText } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Heading } from "@/components/ui/heading";
 import { Pressable } from "@/components/ui/pressable";
 import Image from "next/image";
-import {
-  facebook,
-  instagram,
-  linkedin,
-  youtube,
-} from "@/public/assets/icons";
+import { facebook, instagram, linkedin, youtube } from "@/public/assets/icons";
 
 const PreFooter = () => {
   const info = [
@@ -147,9 +141,14 @@ const PreFooter = () => {
             <Heading size="2xl">Let&apos;s get started!</Heading>
           </VStack>
           <VStack className="items-center justify-center">
-            <Button variant="outline" className="border-0 bg-white rounded-3xl">
-              <ButtonText className="text-brand-0">Get in touch</ButtonText>
-            </Button>
+            <Link
+              href="/contact#form"
+              className="bg-white text-center rounded-3xl hover:bg-brand-1 active:bg-brand-0"
+            >
+              <LinkText className="text-brand-0 font-bold py-2 px-6 text-center no-underline">
+                Get in touch
+              </LinkText>
+            </Link>
           </VStack>
         </HStack>
 
@@ -247,7 +246,6 @@ const PreFooter = () => {
                   height={24}
                 />
               </Card>
-
             </HStack>
           </VStack>
         </HStack>

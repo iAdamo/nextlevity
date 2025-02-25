@@ -13,8 +13,8 @@ const NavBar = () => {
   const currentPath = usePathname();
 
   const options = [
+    { name: "Home", href: "/" },
     { name: "Services", href: "/service" },
-    { name: "Results", href: "/results" },
     { name: "About", href: "/about" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
@@ -60,7 +60,7 @@ const NavBar = () => {
           ))}
         </HStack>
 
-        <Link href="#" className={`text-txt-0 font-bold py-2 px-6 text-center rounded-3xl hover:bg-brand-1 active:bg-brand-0 ${styles.buttonClass}`}>
+        <Link href="/contact#form" className={`text-txt-0 font-bold py-2 px-6 text-center rounded-3xl hover:bg-brand-1 active:bg-brand-0 ${styles.buttonClass}`}>
           Get in touch
         </Link>
 

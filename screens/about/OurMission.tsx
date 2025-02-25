@@ -30,7 +30,7 @@ const OurMission = () => {
           </VStack>
 
           <Link
-            href="#"
+            href="/contact/#form"
             className="mt-20 mx-auto text-xl font-bold text-white px-6 py-2 rounded-3xl bg-brand-0 hover:bg-brand-1"
           >
             Get in touch

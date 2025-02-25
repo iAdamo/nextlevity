@@ -1,9 +1,8 @@
-import ServicePage from "@/screens/service";
+import BlogPage from "@/screens/blog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "NextLevity",
-  description: "Services",
+  description: "Blog Post",
 };
-
-export default ServicePage;
+export default BlogPage;

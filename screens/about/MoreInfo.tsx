@@ -31,7 +31,7 @@ const MoreInfo = () => {
                 boundaries to achieve unparalleled success in every endeavor.
               </Text>
               <Link
-                href="#"
+                href="/contact#form"
                 className="w-52 text-xl font-bold text-center text-white rounded-3xl p-3 bg-brand-0 hover:bg-brand-0"
               >
                 Connect with us
