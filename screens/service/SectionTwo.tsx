@@ -4,7 +4,13 @@ import { Text } from "@/components/ui/text";
 import { Heading } from "@/components/ui/heading";
 import { VStack } from "@/components/ui/vstack";
 import { Card } from "@/components/ui/card";
-
+import {
+  serviceTwo,
+  serviceThree,
+  serviceFour,
+  serviceFive,
+  serviceEleven,
+} from "@/public/assets/service";
 const SectionTwo = () => {
   return (
     <VStack className="p-20 gap-10">
@@ -41,7 +47,7 @@ const SectionTwo = () => {
         <VStack className="w-1/2 p-10 ml-20 bg-[#43255F66]">
           <Image
             className="object-cover h-full rounded-3xl shadow-lg"
-            src="/assets/service/service-x.jpeg"
+            src={serviceEleven}
             alt="Hero Image"
             width={1200}
             height={800}
@@ -52,7 +58,7 @@ const SectionTwo = () => {
         <VStack className="w-1/2">
           <Image
             className="object-cover h-80 rounded-3xl shadow-lg"
-            src="/assets/service/service-twoo.jpeg"
+            src={serviceTwo}
             alt="Hero Image"
             width={1200}
             height={800}
@@ -77,7 +83,7 @@ const SectionTwo = () => {
         <VStack className="w-1/2">
           <Image
             className="object-cover h-80 rounded-3xl shadow-lg"
-            src="/assets/service/service-three.jpeg"
+            src={serviceThree}
             alt="Hero Image"
             width={1200}
             height={800}
@@ -100,7 +106,7 @@ const SectionTwo = () => {
         <VStack className="w-1/2">
           <Image
             className="object-cover h-80 rounded-3xl shadow-lg"
-            src="/assets/service/service-four.jpeg"
+            src={serviceFour}
             alt="Hero Image"
             width={1200}
             height={800}
@@ -122,7 +128,7 @@ const SectionTwo = () => {
         <VStack className="w-1/2">
           <Image
             className="object-cover h-80 rounded-3xl shadow-lg"
-            src="/assets/service/service-five.jpeg"
+            src={serviceFive}
             alt="Hero Image"
             width={1200}
             height={800}

@@ -2,6 +2,7 @@ import { Text } from "@/components/ui/text";
 import { VStack } from "@/components/ui/vstack";
 import { HStack } from "@/components/ui/hstack";
 import Image from "next/image";
+import { value0, value1, value2, value3 } from "@/public/assets/abouts";
 
 const CoreValues = () => {
   const values = [
@@ -10,28 +11,28 @@ const CoreValues = () => {
       value: "Innovation",
       description:
         "Our commitment to excellence drives us to explore new frontiers and deliver groundbreaking solutions. We believe in the power of technology to transform lives and industries. At Nextlevity, innovation is at the core of everything we do.",
-      image: "/assets/about/value0.jpeg",
+      image: value0,
     },
     {
       title: "Open Book",
       value: "Transparency",
       description:
         "The company is committed to maintaining clear and transparent communication throughout every campaign. We will provide measurable results to demonstrate the effectiveness and success of our efforts. Our goal is to build trust and deliver outstanding outcomes for our clients.",
-      image: "/assets/about/value1.jpeg",
+      image: value1,
     },
     {
       title: "Common Goal",
       value: "Collaboration",
       description:
         "We partner with clients to create personalized marketing solutions. By understanding their goals, we develop tailored strategies that drive success and deliver measurable results.",
-      image: "/assets/about/value2.jpeg",
+      image: value2,
     },
     {
       title: "Quality and and Achievement",
       value: "Excellence",
       description:
         "Nextlevity is dedicated to exceeding expectations in every project we undertake. We strive to deliver exceptional results by going above and beyond the standard requirements.",
-      image: "/assets/about/value3.jpeg",
+      image: value3,
     },
   ];
   return (

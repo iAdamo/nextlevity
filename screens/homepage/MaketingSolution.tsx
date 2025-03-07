@@ -5,6 +5,7 @@ import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import { Card } from "@/components/ui/card";
 import { Icon, CheckCircleIcon } from "@/components/ui/icon";
+import { homemage4 } from "@/public/assets/homepage";
 
 const MarketingSolution = () => {
   return (
@@ -13,7 +14,7 @@ const MarketingSolution = () => {
         <VStack className="w-[40%]">
           <Image
             className="object-cover h-[30rem] w-[26rem] rounded-tr-[10rem]"
-            src="/assets/homepage/homemage4.jpeg"
+            src={homemage4}
             alt="Hero Image"
             width={1900}
             height={1900}

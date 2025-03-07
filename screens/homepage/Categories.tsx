@@ -6,6 +6,7 @@ import { Link } from "@/components/ui/link";
 import { Card } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { ChevronRightIcon } from "@/components/ui/icon";
+import { categ0, categ1, categ2 } from "@/public/assets/homepage";
 
 import Image from "next/image";
 
@@ -13,28 +14,28 @@ const Categories = () => {
   const categories = [
     {
       title: "Customer relationship management system",
-      image: "/assets/homepage/categ0.jpeg",
+      image: categ0,
       description:
         "We manages and analyzes customer interactions to improve relationships and drive growth.",
       url: "",
     },
     {
       title: "Content Management System",
-      image: "/assets/homepage/categ1.jpeg",
+      image: categ1,
       description:
         "We help our users create, manage and modify digital content easily.",
       url: "",
     },
     {
       title: "Influencer marketing platform",
-      image: "/assets/homepage/categ2.jpeg",
+      image: categ2,
       description:
         "We help brands find the right influencers, track campaigns and measure results to maximize impacts an loss",
       url: "",
     },
     {
       title: "Social media management tools",
-      image: "/assets/homepage/categ0.jpeg",
+      image: categ0,
       description:
         "Scheduling posts, Monitoring Engagements, analyzing Performance, and more.",
       url: "",

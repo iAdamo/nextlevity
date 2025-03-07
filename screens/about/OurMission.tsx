@@ -3,6 +3,7 @@ import { VStack } from "@/components/ui/vstack";
 import { HStack } from "@/components/ui/hstack";
 import Image from "next/image";
 import Link from "next/link";
+import { about0, about1 } from "@/public/assets/abouts";
 
 const OurMission = () => {
   return (
@@ -39,14 +40,14 @@ const OurMission = () => {
         <VStack className="w-2/3 px-4 items-start">
           <Image
             className="object-cover w-[22rem] h-96 rounded-3xl"
-            src="/assets/about/about0.jpeg"
+            src={about0}
             alt="Hero Image"
             width={1000}
             height={500}
           />
           <Image
             className="object-cover w-[22rem] h-96 rounded-3xl absolute top-28 right-14"
-            src="/assets/about/about1.jpeg"
+            src={about1}
             alt="Hero Image"
             width={1000}
             height={500}

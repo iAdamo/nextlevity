@@ -4,43 +4,44 @@ import { HStack } from "@/components/ui/hstack";
 import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import { Card } from "@/components/ui/card";
+import { micheal, peace, david, homemage1 } from "@/public/assets/homepage";
 
 const TeamSection = () => {
   const teamMembers = [
     {
       name: "ATUNDE MICHEAL",
       profession: "Co-Founder and CEO",
-      photo: "/assets/homepage/micheal.jpeg",
+      photo: micheal,
     },
     {
       name: "Michael Smith",
       profession: "Software Engineer",
-      photo: "/assets/homepage/homemage1.jpeg",
+      photo: homemage1,
     },
     {
       name: "Emily Davis",
       profession: "Graphic Designer",
-      photo: "/assets/homepage/homemage1.jpeg",
+      photo: homemage1,
     },
     {
       name: "ADEYEYE PEACE",
       profession: "Product Designer",
-      photo: "/assets/homepage/peace.png",
+      photo: peace,
     },
     {
       name: "Michael Smith",
       profession: "Software Engineer",
-      photo: "/assets/homepage/homemage1.jpeg",
+      photo: homemage1,
     },
     {
       name: "ADEBAYO DAVID",
       profession: "Social Media Manager",
-      photo: "/assets/homepage/david.jpeg",
+      photo: david
     },
     {
       name: "Alice Johnson",
       profession: "Business Analyst",
-      photo: "/assets/homepage/homemage1.jpeg",
+      photo: homemage1,
     },
   ];
   return (

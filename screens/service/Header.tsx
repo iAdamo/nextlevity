@@ -5,6 +5,17 @@ import { Heading } from "@/components/ui/heading";
 import { VStack } from "@/components/ui/vstack";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
+import {
+  bolt,
+  loading,
+  loader,
+  metrize,
+  cotton,
+  shooting,
+  divide,
+  star,
+  serviceOne,
+} from "@/public/assets/service";
 
 const Header = () => {
   const services = [
@@ -12,56 +23,56 @@ const Header = () => {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/bolt.png",
+      image: bolt,
       link: "#",
     },
     {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/loading.png",
+      image: loading,
       link: "#",
     },
     {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/loader.png",
+      image: loader,
       link: "#",
     },
     {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/metrize.png",
+      image: metrize,
       link: "#",
     },
     {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/cotton.png",
+      image: cotton,
       link: "#",
     },
     {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/shooting.png",
+      image: shooting,
       link: "#",
     },
     {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/divide.png",
+      image: divide,
       link: "#",
     },
     {
       title: "Branding and graphics design",
       description:
         "Nextlevity help businesses rank higher on search engines for increased visibility ",
-      image: "/assets/service/star.png",
+      image: star,
       link: "#",
     },
   ];
@@ -69,7 +80,7 @@ const Header = () => {
     <VStack className="-mt-32 w-full relative">
       <Image
         className="object-cover w-full"
-        src="/assets/service/service-one.jpeg"
+        src={serviceOne}
         alt="Hero Image"
         width={3200}
         height={3000}

@@ -7,6 +7,7 @@ import { logowhite } from "@/public/assets/icons";
 import { HStack } from "@/components/ui/hstack";
 import { VStack } from "@/components/ui/vstack";
 import { Button } from "@/components/ui/button";
+import { logo } from "@/public/assets/homepage"
 
 const NavBar = () => {
   const router = useRouter();
@@ -26,7 +27,7 @@ const NavBar = () => {
 
     return {
       navBarClass: isContactPage ? "bg-brand-0" : "bg-transparent",
-      navBarLogo: isContactPage ? logowhite : "/assets/homepage/logo.png",
+      navBarLogo: isContactPage ? logowhite : logo,
       linkClass: isContactPage
         ? "no-underline text-white text-lg font-bold hover:text-brand-1"
         : "no-underline text-text-primary text-lg font-bold hover:text-brand-0",
@@ -60,7 +61,10 @@ const NavBar = () => {
           ))}
         </HStack>
 
-        <Link href="/contact#form" className={`text-txt-0 font-bold py-2 px-6 text-center rounded-3xl hover:bg-brand-1 active:bg-brand-0 ${styles.buttonClass}`}>
+        <Link
+          href="/contact#form"
+          className={`text-txt-0 font-bold py-2 px-6 text-center rounded-3xl hover:bg-brand-1 active:bg-brand-0 ${styles.buttonClass}`}
+        >
           Get in touch
         </Link>
 

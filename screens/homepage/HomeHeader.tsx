@@ -5,6 +5,7 @@ import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
 import { VStack } from "@/components/ui/vstack";
 import { Link, LinkText } from "@/components/ui/link";
+import { header } from "@/public/assets/homepage";
 
 const HomeHeader = () => {
   return (
@@ -13,7 +14,7 @@ const HomeHeader = () => {
         <Image
           className="object-cover w-full"
           src={spirals}
-          alt="Hero Image"
+          alt="spirals"
           width={900}
           height={900}
         />
@@ -22,8 +23,8 @@ const HomeHeader = () => {
         <HStack className="absolute bottom-[5rem] right-0">
           <Image
             className="object-cover"
-            src="/assets/homepage/header.png"
-            alt="Hero Image"
+            src={header}
+            alt="home header"
             width={900}
             height={900}
           />

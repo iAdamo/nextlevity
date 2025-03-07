@@ -4,6 +4,7 @@ import { Heading } from "@/components/ui/heading";
 import { HStack } from "@/components/ui/hstack";
 import Image from "next/image";
 import Link from "next/link";
+import { about2, about3 } from "@/public/assets/abouts";
 
 const MoreInfo = () => {
   return (
@@ -13,7 +14,7 @@ const MoreInfo = () => {
           <VStack className="w-2/5  h-full">
             <Image
               className="object-cover rounded-lg w-96 h-[30rem]"
-              src="/assets/about/about2.jpeg"
+              src={about2}
               alt="Hero Image"
               width={1500}
               height={1500}
@@ -43,7 +44,7 @@ const MoreInfo = () => {
           <VStack className="w-2/5  h-full">
             <Image
               className="object-cover rounded-lg w-96 h-[30rem]"
-              src="/assets/about/about3.jpeg"
+              src={about3}
               alt="Hero Image"
               width={1500}
               height={1500}

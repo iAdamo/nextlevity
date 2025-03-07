@@ -72,8 +72,7 @@ const PopularArticles = () => {
             </Heading>
             <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl justify-between">
               <Heading size="xl" className="text-white">
-                Saving Your Business from the Brink: Strategies for Revival and
-                Growth
+                The Role of Chatbots in Customer Experience
               </Heading>
               <HStack className="justify-between px-2">
                 <HStack className="gap-2 ml-4">

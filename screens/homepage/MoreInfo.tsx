@@ -6,7 +6,7 @@ import { Text } from "@/components/ui/text";
 import { Card } from "@/components/ui/card";
 import { Icon, CheckCircleIcon } from "@/components/ui/icon";
 import { Link, LinkText } from "@/components/ui/link";
-
+import { homemage3 } from "@/public/assets/homepage";
 
 const MoreInfo = () => {
   const info = [
@@ -84,7 +84,7 @@ const MoreInfo = () => {
         <VStack className="hidden w-1/2 md:flex justify-center items-center">
           <Image
             className="object-fill justify-center items-center"
-            src="/assets/homepage/homemage3.jpeg"
+            src={homemage3}
             alt="Features"
             width={400}
             height={500}

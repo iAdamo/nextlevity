@@ -2,12 +2,13 @@ import { VStack } from "@/components/ui/vstack";
 import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import Image from "next/image";
+import { contact0 } from "@/public/assets/contacts";
 
 const ContactUs = () => {
   return (
     <VStack className="shadow-brand-0 shadow-md mb-10">
       <Image
-        src="/assets/contact/contact0.jpeg"
+        src={contact0}
         alt="Contact Us"
         width={1920}
         height={1080}

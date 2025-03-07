@@ -5,6 +5,7 @@ import { Text } from "@/components/ui/text";
 import { Heading } from "@/components/ui/heading";
 import { VStack } from "@/components/ui/vstack";
 import Link from "next/link";
+import { serviceSix, serviceSeven } from "@/public/assets/service";
 
 const Consultation = () => {
   return (
@@ -77,14 +78,14 @@ const Consultation = () => {
         <HStack className="w-3/5 pl-10 justify-between">
           <Image
             className="object-cover w-80 h-96 mt-40 rounded-3xl shadow-lg"
-            src="/assets/service/service-six.jpeg"
+            src={serviceSix}
             alt="Hero Image"
             width={1900}
             height={1200}
           />
           <Image
             className="object-cover w-80 h-96 mt-10 rounded-3xl shadow-lg"
-            src="/assets/service/service-seven.jpeg"
+            src={serviceSeven}
             alt="Hero Image"
             width={1200}
             height={800}

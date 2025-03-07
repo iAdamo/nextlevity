@@ -1,0 +1,14 @@
+export { default as categ0 } from "./categ0.jpeg";
+export { default as categ1 } from "./categ1.jpeg";
+export { default as categ2 } from "./categ2.jpeg";
+export { default as david } from "./david.jpeg";
+export { default as header } from "./header.png";
+export { default as homemage1 } from "./homemage1.jpeg";
+export { default as homemage2 } from "./homemage2.jpeg";
+export { default as homemage3 } from "./homemage3.jpeg";
+export { default as homemage4 } from "./homemage4.jpeg";
+export { default as icondeal } from "./icon-deal.png";
+export { default as logo } from "./logo.png";
+export { default as micheal } from "./micheal.jpeg";
+export { default as peace } from "./peace.png";
+export { default as story0 } from "./story0.jpeg";

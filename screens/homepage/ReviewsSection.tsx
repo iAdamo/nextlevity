@@ -5,29 +5,29 @@ import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import { Card } from "@/components/ui/card";
 import { Link } from "@/components/ui/link";
+import { story0, homemage1 } from "@/public/assets/homepage";
 
 const ReviewSection = () => {
-
   const stories = [
     {
       title: "How Chill Republic doubled their Revenue ",
       brief:
         "Nextlevity helped Chill Republic double their revenue by implementing targeted digital marketing strategies, enhancing their online presence, and driving customer engagement.",
-      image: "/assets/homepage/story0.jpeg",
+      image: story0,
       url: "#",
     },
     {
       title: "How Chill Republic doubled their Revenue ",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "/assets/homepage/homemage1.jpeg",
+      image: homemage1,
       url: "",
     },
     {
       title: "How Chill Republic doubled their Revenue ",
       brief:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: "/assets/homepage/homemage1.jpeg",
+      image: homemage1,
       url: "",
     },
   ];
@@ -58,8 +58,8 @@ const ReviewSection = () => {
             <Card className="md:w-full  justify-between rounded-3xl shadow-hard-5 gap-2">
               <HStack className="">
                 <Image
-                  className="object-cover w-full md:h-52 h-24 rounded-3xl "
                   src={story.image}
+                  className="object-cover w-full md:h-52 h-24 rounded-3xl "
                   alt={story.title}
                   width={1900}
                   height={1900}

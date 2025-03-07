@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { Box } from "@/components/ui/box";
 import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
 import { Heading } from "@/components/ui/heading";
 import { VStack } from "@/components/ui/vstack";
 import Link from "next/link";
 import { Card } from "@/components/ui/card";
+import { serviceEight, serviceNine, serviceTen } from "@/public/assets/service";
 
 const SectionFour = () => {
   return (
@@ -17,7 +17,7 @@ const SectionFour = () => {
         <Card className="w-[30%] p-0 bg-transparent gap-4 justify-center items-center">
           <Image
             className="object-cover h-40 rounded-xl shadow-lg"
-            src="/assets/service/service-eight.jpeg"
+            src={serviceEight}
             alt="Hero Image"
             width={1900}
             height={1200}
@@ -27,7 +27,7 @@ const SectionFour = () => {
         <Card className="w-[30%] p-0 bg-transparent gap-4 justify-center items-center">
           <Image
             className="object-cover h-40 rounded-xl shadow-lg"
-            src="/assets/service/service-nine.jpeg"
+            src={serviceNine}
             alt="Hero Image"
             width={1900}
             height={1200}
@@ -37,7 +37,7 @@ const SectionFour = () => {
         <Card className="w-[30%] p-0 bg-transparent gap-4 justify-center items-center">
           <Image
             className="object-cover h-40 rounded-xl shadow-lg"
-            src="/assets/service/service-ten.jpeg"
+            src={serviceTen}
             alt="Hero Image"
             width={1900}
             height={1200}
