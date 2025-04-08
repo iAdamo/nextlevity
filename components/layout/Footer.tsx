@@ -1,3 +1,5 @@
+"use client";
+
 import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
 

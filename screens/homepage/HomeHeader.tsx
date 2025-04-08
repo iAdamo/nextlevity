@@ -10,14 +10,13 @@ import { header } from "@/public/assets/homepage";
 const HomeHeader = () => {
   return (
     <VStack className="-mt-40 w-full relative h-[60rem] overflow-hidden">
-
-      <VStack className="absolute inset-0 w-full h-[52rem] bg-gradient-to-br from-white to-purple-100">
+      <VStack className="absolute inset-0 w-full h-[56rem] bg-gradient-to-br from-white to-purple-100">
         <Image
-          className="object-cover w-full h-[54rem]"
+          className="object-contain w-full h-[60rem]"
           src={spirals}
           alt="spirals"
-          width={1800}
-          height={1200}
+          width={1000}
+          height={1000}
         />
         <HStack className="absolute bottom-[4rem] h-[42rem] -right-28">
           <Image
