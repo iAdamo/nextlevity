@@ -13,7 +13,7 @@ const DynamicVideo = dynamic(() => import("@/components/media/VideoPlayer"), {
 
 const ReviewSection2 = () => {
   return (
-    <VStack className="mt-20 px-20 pb-4  bg-[#F6692C38]">
+    <VStack className="px-20 pb-4  bg-[#F6692C38]">
       <Heading size="3xl" className="text-center py-10">
         What our clients are saying about us
       </Heading>

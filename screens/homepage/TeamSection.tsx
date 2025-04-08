@@ -45,7 +45,7 @@ const TeamSection = () => {
     },
   ];
   return (
-    <VStack className="my-20 p-2 gap-6 rounded-2xl">
+    <VStack className="p-2 gap-6 rounded-2xl">
       <VStack className="justify-center items-center gap-4">
         <Heading className="text-xl md:text-3xl">
           Meet the team that makes the magic happen

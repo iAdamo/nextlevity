@@ -14,7 +14,7 @@ import MarketingSolution from "./MaketingSolution";
 
 const HomePage = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="gap-10">
       <NavBar />
       <HomeHeader />
       <MoreInfo />

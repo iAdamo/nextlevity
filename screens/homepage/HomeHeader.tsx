@@ -9,27 +9,26 @@ import { header } from "@/public/assets/homepage";
 
 const HomeHeader = () => {
   return (
-    <VStack className="-mt-32 w-full relative bg-transparent">
-      <VStack className="justify-center bg-transparent">
+    <VStack className="-mt-40 w-full relative h-[60rem] overflow-hidden">
+
+      <VStack className="absolute inset-0 w-full h-[52rem] bg-gradient-to-br from-white to-purple-100">
         <Image
-          className="object-cover w-full"
+          className="object-cover w-full h-[54rem]"
           src={spirals}
           alt="spirals"
-          width={900}
-          height={900}
+          width={1800}
+          height={1200}
         />
-      </VStack>
-      <VStack className="absolute top-0 w-full h-[55rem] bg-opacity-10">
-        <HStack className="absolute bottom-[5rem] right-0">
+        <HStack className="absolute bottom-[4rem] h-[42rem] -right-28">
           <Image
             className="object-cover"
             src={header}
             alt="home header"
-            width={900}
-            height={900}
+            width={1000}
+            height={1000}
           />
         </HStack>
-        <HStack className="absolute top-[38rem] left-[40rem]">
+        <HStack className="absolute top-[40rem] left-[40rem]">
           <Image
             className="object-cover"
             src={chart}
