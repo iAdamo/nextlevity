@@ -5,7 +5,7 @@ import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import { Card } from "@/components/ui/card";
 import { Link } from "@/components/ui/link";
-import { story0, homemage1 } from "@/public/assets/homepage";
+import { story0, story1, story2 } from "@/public/assets/homepage";
 
 const ReviewSection = () => {
   const stories = [
@@ -17,17 +17,18 @@ const ReviewSection = () => {
       url: "#",
     },
     {
-      title: "How Chill Republic doubled their Revenue ",
+      title:
+        "Small Bakery's Sweet Success: From Local Favorite to Online Sensation",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: homemage1,
+        "We worked closely with her to develop personalized marketing strategies that aligned perfectly with her business goals.",
+      image: story1,
       url: "",
     },
     {
-      title: "How Chill Republic doubled their Revenue ",
+      title: "Fitness Fame: Gym Gains Global Recognition",
       brief:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      image: homemage1,
+        'The results were astounding. Within months, "FitLife Gym" experienced a significant increase in membershipand social media engagement"',
+      image: story2,
       url: "",
     },
   ];

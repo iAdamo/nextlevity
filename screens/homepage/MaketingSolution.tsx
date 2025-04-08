@@ -9,7 +9,7 @@ import { homemage4 } from "@/public/assets/homepage";
 
 const MarketingSolution = () => {
   return (
-    <VStack className="md:p-10 bg-brand-1">
+    <VStack className="p-10 pb-28 bg-brand-1">
       <HStack className="w-full gap-4 p-8">
         <VStack className="w-[40%]">
           <Image
@@ -35,7 +35,7 @@ const MarketingSolution = () => {
               <Icon
                 as={CheckCircleIcon}
                 size="lg"
-                className="text-white rounded-full bg-brand-1"
+                className="text-white rounded-full bg-brand-0"
               />
               <Text>Market Research</Text>
             </Card>
@@ -43,7 +43,7 @@ const MarketingSolution = () => {
               <Icon
                 as={CheckCircleIcon}
                 size="lg"
-                className="text-white rounded-full bg-brand-1"
+                className="text-white rounded-full bg-brand-0"
               />
               <Text>Campaign Management Analysis</Text>
             </Card>
@@ -51,7 +51,7 @@ const MarketingSolution = () => {
               <Icon
                 as={CheckCircleIcon}
                 size="lg"
-                className="text-white rounded-full bg-brand-1"
+                className="text-white rounded-full bg-brand-0"
               />
               <Text>CRM Implementation</Text>
             </Card>
@@ -59,7 +59,7 @@ const MarketingSolution = () => {
               <Icon
                 as={CheckCircleIcon}
                 size="lg"
-                className="text-white rounded-full bg-brand-1"
+                className="text-white rounded-full bg-brand-0"
               />
               <Text>Data Analysis</Text>
             </Card>

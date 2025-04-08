@@ -10,7 +10,7 @@ import { header } from "@/public/assets/homepage";
 const HomeHeader = () => {
   return (
     <VStack className="-mt-40 w-full relative h-[60rem] overflow-hidden">
-      <VStack className="absolute inset-0 w-full h-[56rem] bg-gradient-to-br from-white to-purple-100">
+      <VStack className="absolute inset-0 w-full h-[56rem] bg-gradient-to-r from-white to-purple-100">
         <Image
           className="object-contain w-full h-[60rem]"
           src={spirals}
@@ -55,7 +55,7 @@ const HomeHeader = () => {
                 </LinkText>
               </Link>
             </VStack>
-            <Text className="text-text-primary">
+            <Text className="text-text-primary pr-40">
               At Nextlevity, we specialize in turning your vision into reality.
               Our innovative strategies and creative solutions ensure your brand
               stands out in the digital landscape

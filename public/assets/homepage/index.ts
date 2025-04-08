@@ -12,3 +12,5 @@ export { default as logo } from "./logo.png";
 export { default as micheal } from "./micheal.jpeg";
 export { default as peace } from "./peace.png";
 export { default as story0 } from "./story0.jpeg";
+export { default as story1 } from "./story1.jpeg";
+export { default as story2 } from "./story2.jpeg";

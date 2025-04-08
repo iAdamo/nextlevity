@@ -32,7 +32,7 @@ const MoreInfo = () => {
     },
   ];
   return (
-    <VStack className="">
+    <VStack className="gap-10">
       <VStack className="gap-2 justify-center items-center px-72">
         <Heading size="3xl" className="text-center">
           Your Reliable digital Marketing Partner,
@@ -40,7 +40,7 @@ const MoreInfo = () => {
         <Heading size="3xl" className="text-center">
           Boosting Business Growth
         </Heading>
-        <Text size="md" className="text-center">
+        <Text size="md" className="text-center leading-8">
           We excel in crafting innovative marketing strategies that drive
           results. Our expert team is dedicated to elevating your brand and
           ensuring your success in the digital world.
@@ -53,7 +53,7 @@ const MoreInfo = () => {
               <Heading size="xl">
                 Personalized Digital Marketing Experience
               </Heading>
-              <Text size="md">
+              <Text size="md" className="leading-10">
                 We develop innovative strategies that not only resonate with
                 your brand identity but also align seamlessly with your business
                 objectives.
@@ -73,9 +73,9 @@ const MoreInfo = () => {
               </Card>
             ))}
           </HStack>
-          <HStack>
+          <HStack  className="">
             <Link href="/google.com">
-              <LinkText className="font-bold text-brand-1 data-[hover=true]:text-yellow-400 data-[active=true]:text-yellow-300">
+              <LinkText className="ml-20 mt-40 font-bold text-brand-1 data-[hover=true]:text-yellow-400 data-[active=true]:text-yellow-300">
                 Learn More...
               </LinkText>
             </Link>
