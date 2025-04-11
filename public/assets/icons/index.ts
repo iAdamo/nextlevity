@@ -17,3 +17,4 @@ export { default as message } from "./message.svg";
 export { default as sentarrow } from "./sentarrow.svg";
 export { default as phone } from "./phone.svg";
 export { default as paint } from "./paint.svg";
+export { default as logosvg } from "./logosvg.svg";

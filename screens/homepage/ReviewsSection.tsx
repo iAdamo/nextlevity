@@ -33,7 +33,7 @@ const ReviewSection = () => {
     },
   ];
   return (
-    <VStack className="">
+    <VStack className="gap-8">
       <VStack className="gap-4 justify-center items-center px-72">
         <Heading size="3xl" className="text-center">
           Success stories: Empowering Brands through our Digital Marketing

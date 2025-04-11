@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "The aim of marketing is to know and understand the customer Business kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
+    "author": "John Doe",
+    "date": "2023-10-01",
+    "content": "In this post, we will explore how to build a blog using React. We will cover the basics of setting up a React application, creating components, and managing state.",
+    "tags": ["React", "JavaScript", "Web Development"],
+    "images": [
+      {
+        "url": "https://example.com/image1.jpg",
+        "alt": "Image 1"
+      },
+      {
+        "url": "https://example.com/image2.jpg",
+        "alt": "Image 2"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Understanding JavaScript Closures",
+    "author": "Jane Smith",
+    "date": "2023-10-02",
+    "content": "JavaScript closures are a powerful feature that allows functions to have access to variables from their outer scope. In this post, we will explore how closures work and provide examples of their usage.",
+    "tags": ["JavaScript", "Closures", "Programming"],
+    "images": [
+      {
+        "url": "https://example.com/image3.jpg",
+        "alt": "Image 3"
+      },
+      {
+        "url": "https://example.com/image4.jpg",
+        "alt": "Image 4"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "The Role of Chatbots in Customer Experience",
+    "author": "Jane Smith",
+    "date": "2023-10-02",
+    "content": "JavaScript closures are a powerful feature that allows functions to have access to variables from their outer scope. In this post, we will explore how closures work and provide examples of their usage.",
+    "tags": ["JavaScript", "Closures", "Programming"],
+    "images": [
+      {
+        "url": "https://example.com/image3.jpg",
+        "alt": "Image 3"
+      },
+      {
+        "url": "https://example.com/image4.jpg",
+        "alt": "Image 4"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Unlocking Digital Growth: Proven Tactics for Business Success...",
+    "author": "Jane Smith",
+    "date": "2023-10-02",
+    "content": "JavaScript closures are a powerful feature that allows functions to have access to variables from their outer scope. In this post, we will explore how closures work and provide examples of their usage.",
+    "tags": ["JavaScript", "Closures", "Programming"],
+    "images": [
+      {
+        "url": "https://example.com/image3.jpg",
+        "alt": "Image 3"
+      },
+      {
+        "url": "https://example.com/image4.jpg",
+        "alt": "Image 4"
+      }
+    ]
+  }
+]

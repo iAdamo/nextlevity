@@ -27,9 +27,9 @@ const HomeHeader = () => {
             height={1000}
           />
         </HStack>
-        <HStack className="absolute top-[40rem] left-[40rem]">
+        <HStack className="absolute top-[45rem] left-[42rem]">
           <Image
-            className="object-cover"
+            className="chart"
             src={chart}
             alt="Hero Image"
             width={150}
@@ -37,9 +37,9 @@ const HomeHeader = () => {
           />
         </HStack>
 
-        <HStack className="w-full md:pl-20 absolute bottom-72 items-center">
-          <VStack className="w-1/2 h-full px-6 py-8 md:p-0 md:py-0 justify-center gap-8">
-            <VStack>
+        <HStack className="w-full md:pl-20 absolute bottom-32 items-center">
+          <VStack className="w-1/2 h-full px-6 py-8 md:p-0 md:py-0 justify-center gap-10">
+            <VStack space="lg" className="">
               <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
                 Your Vision,
               </Text>
@@ -55,14 +55,14 @@ const HomeHeader = () => {
                 </LinkText>
               </Link>
             </VStack>
-            <Text className="text-text-primary pr-40">
+            <Text className="text-text-primary pr-40 leading-8">
               At Nextlevity, we specialize in turning your vision into reality.
               Our innovative strategies and creative solutions ensure your brand
               stands out in the digital landscape
             </Text>
             <Button
               variant="outline"
-              className="w-40 h-12 mt-8 ml-10 rounded-xl border-0 bg-brand-0 data-[hover=true]:bg-brand-1 data-[active=true]:bg-brand-0"
+              className="w-40 h-12 mt-8 ml-10 rounded-full border-0 bg-brand-0 data-[hover=true]:bg-brand-1 data-[active=true]:bg-brand-0"
             >
               <ButtonText className="text-txt-0">Get in touch</ButtonText>
             </Button>

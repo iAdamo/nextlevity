@@ -1,3 +1,3 @@
-import BlogPost from "@/screens/blog/blogpost/BlogPost";
+import BlogPost from "@/screens/blog/blogpost";
 
 export default BlogPost;
