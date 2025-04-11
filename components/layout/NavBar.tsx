@@ -9,7 +9,7 @@ import { logowhite } from "@/public/assets/icons";
 import { HStack } from "@/components/ui/hstack";
 import { VStack } from "@/components/ui/vstack";
 import { Button } from "@/components/ui/button";
-import { logo } from "@/public/assets/homepage"
+import { logo } from "@/public/assets/icons";
 
 const NavBar = () => {
   const router = useRouter();
@@ -33,9 +33,7 @@ const NavBar = () => {
       linkClass: isContactPage
         ? "no-underline text-white text-lg font-bold hover:text-brand-1"
         : "no-underline text-text-primary text-lg font-bold hover:text-brand-0",
-      buttonClass: isContactPage
-        ? "bg-white"
-        : "bg-brand-0",
+      buttonClass: isContactPage ? "bg-white" : "bg-brand-0",
     };
   }, [currentPath]);
 
@@ -45,7 +43,7 @@ const NavBar = () => {
     >
       <HStack className="py-10 w-full items-center justify-between px-10">
         <Button onPress={() => router.replace("/")} className="p-0">
-          <Image src={styles.navBarLogo} alt="Logo" width={360} height={176} />
+          <Image src={styles.navBarLogo} alt="Logo" width={200} height={176} />
         </Button>
 
         {/* Desktop Navigation */}

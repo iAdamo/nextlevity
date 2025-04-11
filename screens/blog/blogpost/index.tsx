@@ -1,30 +1,26 @@
 "use client";
 
-import { useParams } from "next/navigation";
 import { VStack } from "@/components/ui/vstack";
 import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
-import { Link } from "@/components/ui/link";
 import { Heading } from "@/components/ui/heading";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { contact0 } from "@/public/assets/contacts";
 import { logosvg } from "@/public/assets/icons";
 import AllArticles from "../AllArticles";
 import Newsletter from "@/screens/contact/Newsletter";
 import trendingData from "./trending.json";
 
 const BlogPost = () => {
-  const { title } = useParams();
   return (
     <VStack>
-      <VStack className="shadow-brand-0 shadow-md mb-10">
+      <VStack className="mb-20">
         <Image
-          src={contact0}
+          src="/assets/blog/blogpost/blogpost0.jpeg"
           alt="Contact Us"
           width={1920}
           height={1080}
-          className="object-cover w-full h-[40rem]"
+          className="object-cover w-full h-[35rem]"
         />
       </VStack>
       <HStack className="pl-20 pr-10">
@@ -34,6 +30,7 @@ const BlogPost = () => {
               NextLevity: Revolutionizing Business Growth with Digital Marketing
               Solutions
             </Heading>
+
             <Text>
               NextLevity Analysis by Tolani Jone Fri March 15, 2025 Business 10
               min read
@@ -210,9 +207,9 @@ const BlogPost = () => {
                           size="xs"
                           className="text-brand-0 font-semibold inline"
                         >
-                          {item.tags[0]} -{" "}
+                          {item.tags[0]}{" "}
                           <span className="text-black">
-                            {`${Math.ceil(
+                            {`. ${Math.ceil(
                               item.content.split(" ").length / 200
                             )} min read`}
                           </span>
@@ -224,11 +221,11 @@ const BlogPost = () => {
               </VStack>
             </VStack>
           </VStack>
-          <VStack className="gap-10">
-            <Heading>Recent Articles</Heading>
+          <VStack className="gap-4">
+            <Heading className="italic">Recent Articles</Heading>
             <VStack className="gap-4">
               {trendingData.map((item, index) => (
-                <VStack key={index} className="gap-4 mb-4">
+                <VStack key={index} className="gap-2 mb-4">
                   <Image
                     className="object-fill rounded-[2.5rem] bg-[#D9D9D9]"
                     alt="image2"
@@ -236,27 +233,32 @@ const BlogPost = () => {
                     width={1980}
                     height={1280}
                   />
-                  <Text className="text-sm font-semibold">
-                    {item.title.length > 80
-                      ? `${item.title.substring(0, 80)}...`
-                      : item.title}
-                  </Text>
-                  <HStack><Image
+                  <HStack className="items-center gap-2">
+                    <Image
                       className=""
                       alt="bloglogo"
                       src={logosvg}
-                      width={40}
-                      height={40}
+                      width={30}
+                      height={30}
+                    />
+                    <Text size="xs" className="font-semibold">
+                      NextLevity
+                    </Text>
+                  </HStack>
+                  <Heading className="">
+                    {item.title.length > 80
+                      ? `${item.title.substring(0, 80)}...`
+                      : item.title}
+                  </Heading>
 
-                  /></HStack>
                   <HStack className="gap-2">
                     <Text
                       size="xs"
                       className="text-brand-0 font-semibold inline"
                     >
-                      {item.tags[0]} -{" "}
+                      {item.tags[0]}{" "}
                       <span className="text-black">
-                        {`${Math.ceil(
+                        {`. ${Math.ceil(
                           item.content.split(" ").length / 200
                         )} min read`}
                       </span>

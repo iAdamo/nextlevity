@@ -8,7 +8,6 @@ export { default as homemage2 } from "./homemage2.jpeg";
 export { default as homemage3 } from "./homemage3.jpeg";
 export { default as homemage4 } from "./homemage4.jpeg";
 export { default as icondeal } from "./icon-deal.png";
-export { default as logo } from "./logo.png";
 export { default as micheal } from "./micheal.jpeg";
 export { default as peace } from "./peace.png";
 export { default as story0 } from "./story0.jpeg";
