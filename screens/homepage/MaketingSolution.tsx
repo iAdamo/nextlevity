@@ -9,7 +9,7 @@ import { homemage4 } from "@/public/assets/homepage";
 
 const MarketingSolution = () => {
   return (
-    <VStack className="p-10 pb-28 bg-brand-1">
+    <VStack className="p-10 pb-24 bg-brand-1">
       <HStack className="w-full gap-4 p-8">
         <VStack className="w-[40%]">
           <Image
@@ -22,7 +22,9 @@ const MarketingSolution = () => {
         </VStack>
         <VStack className="w-1/2 gap-8">
           <VStack className="gap-4">
-            <Heading size="xl">All-encompassing Marketing Solution</Heading>
+            <Heading size="xl" className="text-txt-primary">
+              All-encompassing Marketing Solution
+            </Heading>
             <Text className="text-txt-primary">
               We offer all-encompassing marketing solutions designed to elevate
               your brand and drive business growth. Our comprehensive approach
@@ -37,7 +39,7 @@ const MarketingSolution = () => {
                 size="lg"
                 className="text-white rounded-full bg-brand-0"
               />
-              <Text>Market Research</Text>
+              <Text className="font-bold">Market Research</Text>
             </Card>
             <Card className="w-96 items-center gap-8 rounded-3xl flex-row">
               <Icon
@@ -45,7 +47,7 @@ const MarketingSolution = () => {
                 size="lg"
                 className="text-white rounded-full bg-brand-0"
               />
-              <Text>Campaign Management Analysis</Text>
+              <Text className="font-bold">Campaign Management Analysis</Text>
             </Card>
             <Card className="w-96 items-center gap-8 rounded-3xl flex-row">
               <Icon
@@ -53,7 +55,7 @@ const MarketingSolution = () => {
                 size="lg"
                 className="text-white rounded-full bg-brand-0"
               />
-              <Text>CRM Implementation</Text>
+              <Text className="font-bold">CRM Implementation</Text>
             </Card>
             <Card className="w-96 items-center gap-8 rounded-3xl flex-row">
               <Icon
@@ -61,7 +63,7 @@ const MarketingSolution = () => {
                 size="lg"
                 className="text-white rounded-full bg-brand-0"
               />
-              <Text>Data Analysis</Text>
+              <Text className="font-bold">Data Analysis</Text>
             </Card>
           </VStack>
         </VStack>

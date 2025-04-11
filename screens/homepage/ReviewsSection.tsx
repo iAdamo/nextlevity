@@ -40,10 +40,10 @@ const ReviewSection = () => {
           Prowess
         </Heading>
         <Text size="md" className="text-center">
-          At <span className="text-brand-1">Nextlevity</span>, We Deliver
+          At <span className="text-[#7D26BB] font-semibold">Nextlevity</span>, We Deliver
           creative campaigns and measurable ROI to clients., we drive
           engagement, elevate visibility, and achieve exceptional
-          <span className="text-brand-1">
+          <span className="text-[#7D26BB] font-semibold">
             <a href="#"> Results. </a>
           </span>
           Let&apos;s take your business to the next level

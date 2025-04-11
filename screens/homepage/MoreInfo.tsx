@@ -23,7 +23,7 @@ const MoreInfo = () => {
     {
       title: "Social Media Marketing",
       description:
-        "Run targeted ads on search engines and social media to drive immediate traffic and conversions.",
+        "Use social media platforms to build brand awareness and engage with your audience.",
     },
     {
       title: "Pay-Per-Click (PPC) Advertising",
@@ -46,48 +46,49 @@ const MoreInfo = () => {
           ensuring your success in the digital world.
         </Text>
       </VStack>
-      <VStack className="md:px-16 md:py-10 p-4 md:flex-row justify-between items-center">
+      <VStack className="md:pl-16 md:py-10 md:flex-row justify-between items-center">
         <VStack className="md:w-2/3 gap-8">
           <HStack className="flex-wrap gap-8">
             <VStack className="gap-4">
-              <Heading size="xl">
+              <Heading size="3xl" className="font-semibold">
                 Personalized Digital Marketing Experience
               </Heading>
-              <Text size="md" className="leading-10">
+              <Text size="md" className="leading-8 pr-64">
                 We develop innovative strategies that not only resonate with
                 your brand identity but also align seamlessly with your business
                 objectives.
               </Text>
             </VStack>
             {info.map((item, index) => (
-              <Card key={index} className="md:w-80 h-32 rounded-2xl shadow-md">
+              <Card
+                key={index}
+                className="md:w-[23rem] h-28 py-2 rounded-2xl shadow-md gap-2"
+              >
                 <HStack className="gap-2">
                   <Icon
                     as={CheckCircleIcon}
-                    size="xl"
+                    size="lg"
                     className="text-white rounded-full bg-brand-0"
                   />
                   <Heading size="sm">{item.title}</Heading>
                 </HStack>
-                <Text className="ml-8">{item.description}</Text>
+                <Text className="ml-7">{item.description}</Text>
               </Card>
             ))}
           </HStack>
-          <HStack  className="">
-            <Link href="/google.com">
-              <LinkText className="ml-20 mt-40 font-bold text-brand-1 data-[hover=true]:text-yellow-400 data-[active=true]:text-yellow-300">
-                Learn More...
-              </LinkText>
-            </Link>
-          </HStack>
+          <Link href="/google.com" className="w-40 ml-10 mt-10">
+            <LinkText className="font-bold text-[#7D26BB] data-[hover=true]:text-yellow-400 data-[active=true]:text-yellow-300">
+              Learn More...
+            </LinkText>
+          </Link>
         </VStack>
-        <VStack className="hidden w-1/2 md:flex justify-center items-center">
+        <VStack className="hidden w-1/3 md:flex">
           <Image
-            className="object-fill justify-center items-center"
+            className="object-cover"
             src={homemage3}
-            alt="Features"
-            width={400}
-            height={500}
+            alt="marketing_partner"
+            width={1000}
+            height={1000}
           />
         </VStack>
       </VStack>

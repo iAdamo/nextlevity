@@ -15,8 +15,8 @@ const HomeHeader = () => {
           className="object-contain w-full h-[60rem]"
           src={spirals}
           alt="spirals"
-          width={1000}
-          height={1000}
+          width={1900}
+          height={1900}
         />
         <HStack className="absolute bottom-[4rem] h-[42rem] -right-28">
           <Image
