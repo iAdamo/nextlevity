@@ -9,25 +9,26 @@ import { header } from "@/public/assets/homepage";
 
 const HomeHeader = () => {
   return (
-    <VStack className="-mt-40 w-full relative h-[60rem] overflow-hidden">
-      <VStack className="absolute inset-0 w-full h-[56rem] bg-gradient-to-r from-white to-purple-100">
-        <Image
-          className="object-contain w-full h-[60rem]"
-          src={spirals}
-          alt="spirals"
-          width={1900}
-          height={1900}
-        />
-        <HStack className="absolute bottom-[4rem] h-[42rem] -right-28">
+    <VStack className="-mt-40 w-full bg-gradient-to-br from-white via-white to-purple-200 relative overflow-hidden">
+      <Image
+        className="object-cover w-full mt-10"
+        src={spirals}
+        alt="spirals"
+        width={1900}
+        height={1900}
+      />
+
+      <VStack className="absolute inset-0 w-full">
+        <HStack className="top-16 left-[24rem]">
           <Image
             className="object-cover"
             src={header}
             alt="home header"
-            width={1000}
-            height={1000}
+            width={1150}
+            height={1150}
           />
         </HStack>
-        <HStack className="absolute top-[45rem] left-[42rem]">
+        <HStack className="absolute top-[50rem] left-[41rem]">
           <Image
             className="chart"
             src={chart}
@@ -37,7 +38,7 @@ const HomeHeader = () => {
           />
         </HStack>
 
-        <HStack className="w-full md:pl-20 absolute bottom-32 items-center">
+        <HStack className="w-full md:pl-20 absolute bottom-56 items-center">
           <VStack className="w-1/2 h-full px-6 py-8 md:p-0 md:py-0 justify-center gap-10">
             <VStack space="lg" className="">
               <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
