@@ -9,7 +9,7 @@ import { Box } from "@/components/ui/box";
 
 const PopularArticles = () => {
   return (
-    <VStack className="p-20 gap-20">
+    <VStack className="px-20 gap-20">
       <HStack className="justify-between items-center">
         <VStack className="gap-4">
           <Heading size="2xl">Popular Articles</Heading>
@@ -25,8 +25,8 @@ const PopularArticles = () => {
           View all
         </Link>
       </HStack>
-      <HStack className="gap-20 items-center justify-center">
-        <Card className="relative w-2/5 h-[30rem] p-0">
+      <HStack className="gap-20 items-center justify-between">
+        <Card className="relative w-[605px] h-[686px] p-0">
           <Image
             className="object-cover w-full h-full rounded-3xl"
             src="/assets/blog/blog4.jpeg"
@@ -38,27 +38,39 @@ const PopularArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
-                Saving Your Business from the Brink: Strategies for Revival and
-                Growth
-              </Heading>
-              <HStack className="justify-between px-2">
-                <HStack className="gap-2 ml-4">
-                  <VStack className="w-5 h-5">
-                    <Box className="bg-white w-5 h-5 rounded-full"></Box>
-                  </VStack>
-                  <VStack>
-                    <Text className="font-semibold">Tiffany wells</Text>
-                    <Text className="font-semibold">Editor, NextLevity</Text>
-                  </VStack>
+            <Link href="/blog/ggg">
+              <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl justify-between p-1">
+                <p
+                  className="text-white text-4xl font-extrabold"
+                  style={{
+                    textShadow:
+                      "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                  }}
+                >
+                  Saving Your Business from the Brink: Strategies for Revival
+                  and Growth
+                </p>
+                <HStack className="justify-between px-2">
+                  <HStack className="gap-2 ml-4">
+                    <VStack className="w-5 h-5">
+                      <Box className="bg-white w-5 h-5 rounded-full"></Box>
+                    </VStack>
+                    <VStack>
+                      <Text className="font-semibold text-black">
+                        Tiffany wells
+                      </Text>
+                      <Text className="font-semibold text-black">
+                        Editor, NextLevity
+                      </Text>
+                    </VStack>
+                  </HStack>
+                  <Text className="font-semibold text-black">Feb 13</Text>
                 </HStack>
-                <Text className="font-semibold">Feb 13</Text>
-              </HStack>
-            </VStack>
+              </VStack>
+            </Link>
           </VStack>
         </Card>
-        <Card className="relative w-2/5 h-[30rem] p-0">
+        <Card className="relative w-[605px] h-[686px] p-0">
           <Image
             className="object-cover w-full h-full rounded-3xl"
             src="/assets/blog/blog2.jpeg"
@@ -70,23 +82,35 @@ const PopularArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
-                The Role of Chatbots in Customer Experience
-              </Heading>
-              <HStack className="justify-between px-2">
-                <HStack className="gap-2 ml-4">
-                  <VStack className="w-5 h-5">
-                    <Box className="bg-white w-5 h-5 rounded-full"></Box>
-                  </VStack>
-                  <VStack>
-                    <Text className="font-semibold">Tiffany wells</Text>
-                    <Text className="font-semibold">Editor, NextLevity</Text>
-                  </VStack>
+            <Link href="/blog/ggg">
+              <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl justify-between p-1">
+                <p
+                  className="text-white text-4xl font-extrabold"
+                  style={{
+                    textShadow:
+                      "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                  }}
+                >
+                  The Role of Chatbots in Customer Experience
+                </p>
+                <HStack className="justify-between px-2">
+                  <HStack className="gap-2 ml-4">
+                    <VStack className="w-5 h-5">
+                      <Box className="bg-white w-5 h-5 rounded-full"></Box>
+                    </VStack>
+                    <VStack>
+                      <Text className="font-semibold text-black">
+                        Tiffany wells
+                      </Text>
+                      <Text className="font-semibold text-black">
+                        Editor, NextLevity
+                      </Text>
+                    </VStack>
+                  </HStack>
+                  <Text className="font-semibold text-black">Feb 13</Text>
                 </HStack>
-                <Text className="font-semibold">Feb 13</Text>
-              </HStack>
-            </VStack>
+              </VStack>
+            </Link>
           </VStack>
         </Card>
       </HStack>

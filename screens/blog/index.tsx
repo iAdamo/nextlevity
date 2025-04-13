@@ -1,6 +1,5 @@
 "use client";
 
-import { SafeAreaView } from "@/components/ui/safe-area-view";
 import BlogHeader from "./BlogHeader";
 import PopularArticles from "./PopularArticles";
 import RecentArticles from "./RecentArticles";
@@ -10,14 +9,14 @@ import AllArticles from "./AllArticles";
 
 const BlogPage = () => {
   return (
-    <SafeAreaView>
+    <article className="space-y-32">
       <BlogHeader />
       <PopularArticles />
       <RecentArticles />
       <Testimonial />
       <AllArticles />
       <Newsletter />
-    </SafeAreaView>
+    </article>
   );
 };
 

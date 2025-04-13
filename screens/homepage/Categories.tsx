@@ -43,7 +43,7 @@ const Categories = () => {
   ];
   return (
     <VStack className="md:p-0 p-4 md:mx-0">
-      <HStack className="flex-wrap justify-center md:gap-14 gap-2 py-10 rounded-lg">
+      <HStack className="flex-wrap justify-between px-20 py-10 rounded-lg">
         {categories.map((category, index) => (
           <Link
             key={index}

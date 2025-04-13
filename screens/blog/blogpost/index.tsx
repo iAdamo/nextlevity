@@ -10,6 +10,7 @@ import { logosvg } from "@/public/assets/icons";
 import AllArticles from "../AllArticles";
 import Newsletter from "@/screens/contact/Newsletter";
 import trendingData from "./trending.json";
+import recentBlogs from "./recents.json";
 
 const BlogPost = () => {
   return (
@@ -26,7 +27,7 @@ const BlogPost = () => {
       <HStack className="pl-20 pr-10">
         <VStack className="w-4/5 gap-20">
           <VStack space="2xl">
-            <Heading size="3xl" className="font-semibold">
+            <Heading size="2xl" className="font-semibold">
               NextLevity: Revolutionizing Business Growth with Digital Marketing
               Solutions
             </Heading>
@@ -36,7 +37,7 @@ const BlogPost = () => {
               min read
             </Text>
           </VStack>
-          <VStack space="2xl" className="gap-10 pr-60">
+          <VStack space="2xl" className="gap-10 pr-44">
             <Text className="leading-8 font-semibold">
               At NextLevity, we understand the unique challenges that small
               businesses face in the digital landscape. Our tailored solutions
@@ -106,7 +107,7 @@ const BlogPost = () => {
               width={1980}
               height={1280}
             />
-            <Heading>The Bakery Beakthrough</Heading>
+            <Heading className="ml-10">The Bakery Beakthrough</Heading>
             <Text className="leading-8 font-semibold">
               Meet Sarah, a dedicated baker and owner of &quot;Sweet
               Delights,&quot; a cozy bakery nestled in the heart of a bustling
@@ -179,12 +180,12 @@ const BlogPost = () => {
             </Text>
           </VStack>
         </VStack>
-        <VStack className="w-1/5 pt-52 gap-32">
+        <VStack className="w-1/4 pt-52 gap-32">
           <VStack className="gap-8">
             <Heading size="xl">Trending Post</Heading>
             <VStack className="rounded-[2.5rem] gap-10 p-2 bg-[#D9D9D9]">
               <Image
-                className="object-fill rounded-[2.5rem] bg-[#D9D9D9]"
+                className="object-fill h-[322px] rounded-[2.5rem] bg-[#D9D9D9]"
                 alt="image2"
                 src="/assets/blog/blogpost/trending0.png"
                 width={1980}
@@ -221,15 +222,15 @@ const BlogPost = () => {
               </VStack>
             </VStack>
           </VStack>
-          <VStack className="gap-4">
+          <VStack className="gap-8">
             <Heading className="italic">Recent Articles</Heading>
-            <VStack className="gap-4">
-              {trendingData.map((item, index) => (
+            <VStack className="gap-4 ">
+              {recentBlogs.map((item, index) => (
                 <VStack key={index} className="gap-2 mb-4">
                   <Image
-                    className="object-fill rounded-[2.5rem] bg-[#D9D9D9]"
-                    alt="image2"
-                    src="/assets/blog/blogpost/trending0.png"
+                    className="object-cover h-[400px] rounded-[2.5rem]"
+                    alt={item.title}
+                    src={item.image}
                     width={1980}
                     height={1280}
                   />

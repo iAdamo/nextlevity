@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation";
 const AllArticles = () => {
   const pathname = usePathname();
   return (
-    <VStack className="p-20 gap-14">
+    <VStack className="px-20 gap-14">
       <VStack className="gap-20">
         <HStack className="justify-between items-center">
           <VStack className="gap-4">
@@ -45,10 +45,16 @@ const AllArticles = () => {
                 <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
                   Featured
                 </Heading>
-                <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl justify-between">
-                  <Heading size="xl" className="text-white">
+                <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl p-1 justify-between">
+                  <p
+                    className="text-white text-3xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                    }}
+                  >
                     The Impact of AR and VR on Digital Marketing
-                  </Heading>
+                  </p>
                   <HStack className="justify-between px-2">
                     <HStack className="gap-2 ml-4">
                       <VStack className="w-5 h-5">
@@ -78,10 +84,16 @@ const AllArticles = () => {
                 <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
                   Featured
                 </Heading>
-                <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl justify-between">
-                  <Heading size="xl" className="text-white">
+                <VStack className="bg-[#FFFFFF80] h-1/3 rounded-2xl p-1 justify-between">
+                  <p
+                    className="text-white text-3xl font-extrabold"
+                    style={{
+                      textShadow:
+                        "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                    }}
+                  >
                     Harnessing the Power of Influencer Marketing
-                  </Heading>
+                  </p>
                   <HStack className="justify-between px-2">
                     <HStack className="gap-2 ml-4">
                       <VStack className="w-5 h-5">
@@ -115,10 +127,16 @@ const AllArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
+            <VStack className="bg-[#FFFFFF80] rounded-2xl p-1 justify-between">
+              <p
+                className="text-white text-2xl font-extrabold"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                }}
+              >
                 Leveraging User-Generated Content for Authentic Engagement
-              </Heading>
+              </p>
               <HStack className="justify-between px-2">
                 <HStack className="gap-2 ml-4">
                   <VStack className="w-5 h-5">
@@ -146,10 +164,16 @@ const AllArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
+            <VStack className="bg-[#FFFFFF80] rounded-2xl p-1 justify-between">
+              <p
+                className="text-white text-2xl font-extrabold"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                }}
+              >
                 Personalization Power: Tailoring Campaigns for Maximum Impact
-              </Heading>
+              </p>
               <HStack className="justify-between px-2">
                 <HStack className="gap-2 ml-4">
                   <VStack className="w-5 h-5">
@@ -177,10 +201,16 @@ const AllArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
+            <VStack className="bg-[#FFFFFF80] rounded-2xl p-1 justify-between">
+              <p
+                className="text-white text-2xl font-extrabold"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                }}
+              >
                 Content is King: Crafting Compelling Stories for Your Audience
-              </Heading>
+              </p>
               <HStack className="justify-between px-2">
                 <HStack className="gap-2 ml-4">
                   <VStack className="w-5 h-5">

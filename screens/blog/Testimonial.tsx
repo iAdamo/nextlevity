@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Testimonial = () => {
   return (
-    <VStack className="p-20 gap-10">
+    <VStack className="px-20 gap-10">
       <HStack className="justify-between">
         <Heading size="2xl">Testimonial</Heading>
         <Link

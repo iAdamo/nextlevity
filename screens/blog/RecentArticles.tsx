@@ -9,7 +9,7 @@ import { Box } from "@/components/ui/box";
 
 const RecentArticles = () => {
   return (
-    <VStack className="p-20 gap-20">
+    <VStack className="px-20 gap-20">
       <HStack className="justify-between items-center">
         <VStack className="gap-4">
           <Heading size="2xl">Recent Articles</Heading>
@@ -38,11 +38,17 @@ const RecentArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
+           <VStack className="bg-[#FFFFFF80] rounded-2xl p-1 justify-between">
+              <p
+                className="text-white text-2xl font-extrabold"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                }}
+              >
                 Data-Driven Decisions: Harnessing Analytics for Marketing
-                Success
-              </Heading>
+                
+              </p>
               <HStack className="justify-between px-2">
                 <HStack className="gap-2 ml-4">
                   <VStack className="w-5 h-5">
@@ -70,10 +76,16 @@ const RecentArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
+           <VStack className="bg-[#FFFFFF80] rounded-2xl p-1 justify-between">
+              <p
+                className="text-white text-2xl font-extrabold"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                }}
+              >
                 Maximize ROI: Proven Tactics for Digital Success
-              </Heading>
+              </p>
               <HStack className="justify-between px-2">
                 <HStack className="gap-2 ml-4">
                   <VStack className="w-5 h-5">
@@ -101,10 +113,16 @@ const RecentArticles = () => {
             <Heading className="py-1 px-4 bg-white text-brand-1 text-center font-normal rounded-full">
               Featured
             </Heading>
-            <VStack className="bg-[#FFFFFF80] rounded-2xl justify-between">
-              <Heading size="xl" className="text-white">
+           <VStack className="bg-[#FFFFFF80] rounded-2xl p-1 justify-between">
+              <p
+                className="text-white text-2xl font-extrabold"
+                style={{
+                  textShadow:
+                    "2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black",
+                }}
+              >
                 Effective Strategies for Retargeting Campaigns
-              </Heading>
+              </p>
               <HStack className="justify-between px-2">
                 <HStack className="gap-2 ml-4">
                   <VStack className="w-5 h-5">

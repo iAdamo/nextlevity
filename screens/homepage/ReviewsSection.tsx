@@ -49,14 +49,14 @@ const ReviewSection = () => {
           Let&apos;s take your business to the next level
         </Text>
       </VStack>
-      <HStack className="flex-wrap justify-center md:gap-14 gap-2 py-10 rounded-lg">
+      <HStack className="grid grid-cols-3 gap-10 px-20 py-10 rounded-lg">
         {stories.map((story, index) => (
           <Link
             key={index}
             href={story.url}
             className="md:w-80 md:h-auto w-24 transform transition-transform duration-300 hover:scale-105 -my-4"
           >
-            <Card className="md:w-full  justify-between rounded-3xl shadow-hard-5 gap-2">
+            <Card className="w-[360px] bg-[#F2F2F2] justify-between rounded-3xl shadow-hard-5 gap-2">
               <HStack className="">
                 <Image
                   src={story.image}
@@ -67,10 +67,10 @@ const ReviewSection = () => {
                 />
               </HStack>
               <HStack className="md:h-48 gap-2 flex-wrap border-0 justify-center items-center drop-shadow-lg">
-                <Heading size="md" className="hidden md:inline text-center">
+                <Heading size="md" className="text-center px-4">
                   {story.title}
                 </Heading>
-                <Text>{story.brief}</Text>
+                <Text className="text-center">{story.brief}</Text>
               </HStack>
             </Card>
             <Text className="md:hidden text-center text-xs font-semibold">

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "The Future of AI: Trends and Predictions",
+    "author": "John Doe",
+    "date": "2023-10-01",
+    "link": "/blog/the-future-of-ai-trends-and-predictions",
+    "image": "/assets/blog/blogpost/recents0.jpeg",
+    "content": "In this post, we will explore the latest trends and predictions in the field of artificial intelligence. From advancements in machine learning to the impact of AI on various industries, we will cover it all.",
+    "tags": ["AI", "Technology", "Future"]
+  },
+  {
+    "id": "2",
+    "title": "Understanding JavaScript Closures",
+    "author": "Jane Smith",
+    "date": "2023-10-02",
+    "link": "/blog/understanding-javascript-closures",
+    "image": "/assets/blog/blogpost/recents1.jpeg",
+    "content": "In this post, we will explore the latest trends and predictions in the field of artificial intelligence. From advancements in machine learning to the impact of AI on various industries, we will cover it all.",
+    "tags": ["JavaScript", "Closures", "Programming"]
+  },
+  {
+    "id": "3",
+    "title": "The Role of Chatbots in Customer Experience",
+    "author": "Jane Smith",
+    "date": "2023-10-02",
+    "link": "/blog/the-role-of-chatbots-in-customer-experience",
+    "image": "/assets/blog/blogpost/recents2.jpeg",
+    "content": "In this post, we will explore the latest trends and predictions in the field of artificial intelligence. From advancements in machine learning to the impact of AI on various industries, we will cover it all.",
+    "tags": ["Chatbots", "Customer Experience", "AI"]
+  },
+  {
+    "id": "4",
+    "title": "Unlocking Digital Growth: Proven Tactics for Business Success...",
+    "author": "Jane Smith",
+    "date": "2023-10-02",
+    "link": "/blog/unlocking-digital-growth-proven-tactics-for-business-success",
+    "image": "/assets/blog/blogpost/recents3.jpeg",
+    "content": "In this post, we will explore the latest trends and predictions in the field of artificial intelligence. From advancements in machine learning to the impact of AI on various industries, we will cover it all.",
+    "tags": ["Digital Growth", "Business", "Success"]
+  }
+]
