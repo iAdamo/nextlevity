@@ -18,6 +18,10 @@ import {
 import { CheckIcon } from "@/components/ui/icon";
 import { VStack } from "@/components/ui/vstack";
 import { HStack } from "@/components/ui/hstack";
+import { Heading } from "@/components/ui/heading";
+import { Text } from "@/components/ui/text";
+import Image from "next/image";
+import { message, sentarrow, twitter, phone } from "@/public/assets/icons";
 import { Textarea, TextareaInput } from "@/components/ui/textarea";
 import PhoneInput from "react-phone-input-2";
 import { useForm, Controller } from "react-hook-form";
@@ -253,6 +257,32 @@ const ContactForm = () => {
           >
             <ButtonText>Send Message</ButtonText>
           </Button>
+        </VStack>
+        <VStack className="pl-20 gap-10 w-1/2">
+          <VStack className="gap-4">
+            <Heading size="2xl">Chat with us</Heading>
+            <Text>Speak to our friendly team via live chat </Text>
+            <Button variant="link" className="justify-start gap-4">
+              <Image src={message} alt="Message" width={24} height={24} />
+              <ButtonText>Start a live chat</ButtonText>
+            </Button>
+            <Button variant="link" className="justify-start gap-4">
+              <Image src={sentarrow} alt="sentarrow" width={24} height={24} />
+              <ButtonText>Shoot us an email</ButtonText>
+            </Button>
+            <Button variant="link" className="justify-start gap-4">
+              <Image src={twitter} alt="Socials" width={24} height={24} />
+              <ButtonText>Check out socials</ButtonText>
+            </Button>
+          </VStack>
+          <VStack className="gap-4">
+            <Heading className="2xl">Call Us</Heading>
+            <Text>Call our team from Mon- Fri from 8am to 5pm</Text>
+            <Button variant="link" className="justify-start gap-4">
+              <Image src={phone} alt="phone" width={24} height={24} />
+              <ButtonText>+234 913 929 0549</ButtonText>
+            </Button>
+          </VStack>
         </VStack>
       </HStack>
     </VStack>
