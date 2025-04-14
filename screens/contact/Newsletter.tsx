@@ -28,7 +28,7 @@ const Newsletter = () => {
         </VStack>
         <VStack className="w-1/4 justify-center items-center">
           <FormControl>
-            <Input className="bg-[#FFFEFE] h-14 rounded-lg border-none px-2">
+            <Input className="bg-[#FFFEFE] h-14 rounded-lg border-none px-2 data-[focus=true]:bg-transparent">
               <InputField
                 placeholder="Enter your email address"
                 value={values}

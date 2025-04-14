@@ -15,14 +15,13 @@ const ContactUs = () => {
         className="object-cover w-full h-[40rem]"
       />
 
-      <VStack className="mt-20 gap-4 absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <VStack>
+      <VStack className="mt-20 gap-4 absolute inset-0">
+        <VStack className="gap-4 justify-center items-center px-56 pt-20">
           <Heading size="4xl" className="text-center text-white">
             Contact Our Team
           </Heading>
-        </VStack>
-        <VStack className="">
-          <Text size="xl" className="text-center text-white leading-loose">
+
+          <Text size="2xl" className="text-center text-white leading-loose ">
             Should you require assistance with our product or scaling on our
             platform, our dedicated team is prepared to provide support and
             ensure a seamless onboarding experience within 15 minutes.
