@@ -13,3 +13,6 @@ export { default as peace } from "./peace.png";
 export { default as story0 } from "./story0.jpeg";
 export { default as story1 } from "./story1.jpeg";
 export { default as story2 } from "./story2.jpeg";
+export { default as emmanuel } from "./emmanuel.png";
+export { default as eyitayo } from "./eyitayo.jpeg";
+export { default as seye } from "./seye.jpeg";

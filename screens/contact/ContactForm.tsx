@@ -74,7 +74,7 @@ const ContactForm = () => {
   };
 
   return (
-    <VStack className="px-20 py-10">
+    <VStack id="form" className="px-20 py-10">
       <HStack>
         <VStack className="w-1/2 gap-8">
           <VStack className="pr-20 pl-10 gap-6">

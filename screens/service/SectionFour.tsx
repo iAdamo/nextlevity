@@ -9,7 +9,7 @@ import { serviceEight, serviceNine, serviceTen } from "@/public/assets/service";
 
 const SectionFour = () => {
   return (
-    <VStack className="gap-8 p-20 items-center">
+    <VStack className="gap-8 px-10 py-20 items-center">
       <Heading size="2xl">
         Read about how we worked with these companies on their projects.
       </Heading>
@@ -22,7 +22,7 @@ const SectionFour = () => {
             width={1900}
             height={1200}
           />
-          <Text>Layla Candles</Text>
+          <Text className="font-bold">Layla Candles</Text>
         </Card>
         <Card className="w-[30%] p-0 bg-transparent gap-4 justify-center items-center">
           <Image
@@ -32,7 +32,7 @@ const SectionFour = () => {
             width={1900}
             height={1200}
           />
-          <Text>Sweet Delight Bakery</Text>
+          <Text className="font-bold">Sweet Delight Bakery</Text>
         </Card>
         <Card className="w-[30%] p-0 bg-transparent gap-4 justify-center items-center">
           <Image
@@ -42,7 +42,7 @@ const SectionFour = () => {
             width={1900}
             height={1200}
           />
-          <Text>Chill Replubic Restaurant</Text>
+          <Text className="font-bold">Chill Replubic Restaurant</Text>
         </Card>
       </HStack>
       <Link

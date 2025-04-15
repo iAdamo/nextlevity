@@ -66,7 +66,7 @@ const FaqSection = () => {
   ];
 
   return (
-    <HStack className="justify-between rounded-2xl mx-20">
+    <HStack id="faqs" className="justify-between rounded-2xl mx-20">
       <VStack className="justify-start pr-20 gap-4">
         <Heading size="4xl">Frequently</Heading>
         <Heading size="4xl">Asked Questions</Heading>

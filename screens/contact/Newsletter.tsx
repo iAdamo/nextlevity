@@ -19,8 +19,8 @@ const Newsletter = () => {
     <VStack className="py-20 px-20  drop-shadow-xl">
       <HStack className="bg-[#77777733] p-10 rounded-3xl shadow-bottom-right">
         <VStack className="w-2/3 gap-4">
-          <Heading size="xl">Join Our Weekly Newsletter</Heading>
-          <Text>
+          <Heading size="2xl">Join Our Weekly Newsletter</Heading>
+          <Text className="font-semibold">
             Stay informed with the latest news, announcements, and articles
             <br />
             designed to elevate your brand.

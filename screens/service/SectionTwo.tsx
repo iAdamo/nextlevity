@@ -13,38 +13,37 @@ import {
 } from "@/public/assets/service";
 const SectionTwo = () => {
   return (
-    <VStack className="p-20 gap-10">
+    <VStack className="px-20 gap-10">
       <Heading size="3xl" className="font-semibold">
         Why Choose NextLevity?
       </Heading>
-      <HStack>
-        <VStack className="w-1/2 gap-6">
-          <Card className="bg-[#FFCA9A] w-[90%] gap-4">
+      <HStack className="">
+        <VStack className="w-1/2 gap-10 pr-4">
+          <Card className="bg-[#FFCA9A] gap-4 h-full rounded-2xl">
             <Heading size="lg">Customized and Innovative Solution </Heading>
-            <Text size="md" className="font-semibold leading-7">
+            <Text size="lg" className="font-semibold leading-7">
               We offer personalized digital marketing strategies that align with
               your unique business needs, leveraging innovative technologies for
               maximum impact.
             </Text>
           </Card>
-          <Card className="bg-[#FFCA9A] w-[90%] gap-4">
-            <Heading size="lg">Customized and Innovative Solution </Heading>
-            <Text size="md" className="font-semibold leading-7">
-              We offer personalized digital marketing strategies that align with
-              your unique business needs, leveraging innovative technologies for
-              maximum impact.
+          <Card className="bg-[#FFCA9A] gap-4 h-full rounded-2xl">
+            <Heading size="lg">Comprehensive Service</Heading>
+            <Text size="lg" className="font-semibold leading-7">
+              From social media management to SEO and analytics, our end-to-end
+              solutions ensure a cohesive and effective marketing approach.
             </Text>
           </Card>
-          <Card className="bg-[#FFCA9A] w-[90%] gap-4">
-            <Heading size="lg">Customized and Innovative Solution </Heading>
-            <Text size="md" className="font-semibold leading-7">
-              We offer personalized digital marketing strategies that align with
-              your unique business needs, leveraging innovative technologies for
-              maximum impact.
+          <Card className="bg-[#FFCA9A] gap-4 h-full rounded-2xl">
+            <Heading size="lg">Proven Success</Heading>
+            <Text size="lg" className="font-semibold leading-7">
+              Our track record of delivering outstanding results and client
+              satisfaction speaks for itself. Partner with us for reliable and
+              impactful digital marketing.
             </Text>
           </Card>
         </VStack>
-        <VStack className="w-1/2 p-10 ml-20 bg-[#43255F66]">
+        <VStack className="w-1/2 h-[684px] px-6 py-12 ml-20 bg-[#43255F66]">
           <Image
             className="object-cover h-full rounded-3xl shadow-lg"
             src={serviceEleven}

@@ -16,12 +16,21 @@ import { facebook, instagram, linkedin, youtube } from "@/public/assets/icons";
 const PreFooter = () => {
   const info = [
     {
-      title: "Marketing Solutions",
+      title: "Company",
       links: [
-        { name: "Brand Strategy", href: "/services/brand-strategy" },
+        { name: "About Us", href: "/about" },
+        { name: "Our Team", href: "/about#team" },
+        { name: "Careers", href: "/careers" },
+        { name: "Faqs", href: "/#faqs" },
+      ],
+    },
+    {
+      title: "Services",
+      links: [
+        { name: "Digital Marketing ", href: "/services/brand-strategy" },
         { name: "Content Marketing", href: "/services/content-marketing" },
-        { name: "Social Media Marketing", href: "/services/social-media" },
-        { name: "SEO & SEM", href: "/services/seo-sem" },
+        { name: "Pay-Per-Click Advertising", href: "/services/seo-sem" },
+        { name: "Social Media Management", href: "/services/social-media" },
         { name: "Email Marketing", href: "/services/email-marketing" },
         {
           name: "Influencer Marketing",
@@ -30,34 +39,19 @@ const PreFooter = () => {
       ],
     },
     {
-      title: "Industries We Serve",
-      links: [
-        { name: "E-Commerce", href: "/industries/e-commerce" },
-        { name: "Healthcare", href: "/industries/healthcare" },
-        { name: "Real Estate", href: "/industries/real-estate" },
-        { name: "Tech Startups", href: "/industries/tech-startups" },
-        { name: "Education", href: "/industries/education" },
-        { name: "Hospitality", href: "/industries/hospitality" },
-      ],
-    },
-    {
       title: "Resources",
       links: [
         { name: "Blog", href: "/blog" },
-        { name: "Case Studies", href: "/case-studies" },
-        { name: "Webinars & Events", href: "/resources/webinars" },
-        { name: "Marketing Guides", href: "/resources/marketing-guides" },
-        { name: "Tools & Templates", href: "/resources/tools-templates" },
+        { name: "Our Team", href: "/about#team" },
+        { name: "Contact Us", href: "/contact#form" },
+        { name: "FAQS", href: "/#faqs" },
       ],
     },
     {
-      title: "Company",
+      title: "Help",
       links: [
-        { name: "About Us", href: "/about" },
-        { name: "Our Team", href: "/team" },
-        { name: "Careers", href: "/careers" },
-        { name: "Contact Us", href: "/contact" },
-        { name: "Privacy Policy", href: "/privacy-policy" },
+        { name: "Contact Us", href: "/contact#form" },
+        { name: "Terms of service", href: "/privacy-policy" },
       ],
     },
   ];
@@ -154,7 +148,7 @@ const PreFooter = () => {
           </VStack>
         </HStack>
 
-        <HStack className="border-b-4 mt-8">
+        <HStack className="border-b-4 mt-4">
           <HStack className="md:hidden p-4 my-4 flex-wrap justify-between">
             {info.map((item, index) => (
               <VStack
@@ -185,7 +179,7 @@ const PreFooter = () => {
               </VStack>
             ))}
           </HStack>
-          <HStack className="hidden md:flex w-2/3 p-4 my-4 flex-wrap justify-between">
+          <HStack className="hidden md:flex w-2/3 p-4 flex-wrap justify-between">
             {info.map((item) => (
               <VStack key={item.title} className="md:flex-col gap-2">
                 <Heading size="md" className="my-6 text-[#F4F4F4]">

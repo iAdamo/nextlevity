@@ -1,6 +1,5 @@
 "use client";
 
-import { SafeAreaView } from "@/components/ui/safe-area-view";
 import TeamSection from "@/screens/homepage/TeamSection";
 import AboutUs from "./AboutUs";
 import HeadOne from "./HeadOne";
@@ -10,14 +9,14 @@ import MoreInfo from "./MoreInfo";
 
 const About = () => {
   return (
-    <SafeAreaView>
+    <main className="space-y-20">
       <HeadOne />
       <AboutUs />
       <OurMission />
       <CoreValues />
       <MoreInfo />
       <TeamSection />
-    </SafeAreaView>
+    </main>
   );
 };
 

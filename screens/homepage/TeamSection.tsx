@@ -4,7 +4,15 @@ import { HStack } from "@/components/ui/hstack";
 import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import { Card } from "@/components/ui/card";
-import { micheal, peace, david, homemage1 } from "@/public/assets/homepage";
+import {
+  micheal,
+  peace,
+  david,
+  emmanuel,
+  eyitayo,
+  seye,
+} from "@/public/assets/homepage";
+import { logo } from "@/public/assets/icons";
 
 const TeamSection = () => {
   const teamMembers = [
@@ -14,14 +22,24 @@ const TeamSection = () => {
       photo: micheal,
     },
     {
-      name: "Michael Smith",
-      profession: "Software Engineer",
-      photo: homemage1,
+      name: "Seye",
+      profession: "Co-Founder & CFO",
+      photo: seye,
     },
     {
-      name: "Emily Davis",
-      profession: "Graphic Designer",
-      photo: homemage1,
+      name: "ADEBAYO DAVID",
+      profession: "Co-Founder & Social Media Lead",
+      photo: david,
+    },
+    {
+      name: "Atunde Emmanuel",
+      profession: "Business Analyst",
+      photo: emmanuel,
+    },
+    {
+      name: "Adam",
+      profession: "Software Engineer",
+      photo: logo,
     },
     {
       name: "ADEYEYE PEACE",
@@ -29,19 +47,9 @@ const TeamSection = () => {
       photo: peace,
     },
     {
-      name: "Michael Smith",
-      profession: "Software Engineer",
-      photo: homemage1,
-    },
-    {
-      name: "ADEBAYO DAVID",
+      name: "Ojo Eyitayo",
       profession: "Social Media Manager",
-      photo: david
-    },
-    {
-      name: "Alice Johnson",
-      profession: "Business Analyst",
-      photo: homemage1,
+      photo: eyitayo,
     },
   ];
   return (
