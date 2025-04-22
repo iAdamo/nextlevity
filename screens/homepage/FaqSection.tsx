@@ -1,5 +1,4 @@
 import { VStack } from "@/components/ui/vstack";
-import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
 import { Heading } from "@/components/ui/heading";
 import { Button, ButtonText } from "@/components/ui/button";
@@ -66,23 +65,27 @@ const FaqSection = () => {
   ];
 
   return (
-    <HStack id="faqs" className="justify-between rounded-2xl mx-20">
-      <VStack className="justify-start pr-20 gap-4">
-        <Heading size="4xl">Frequently</Heading>
-        <Heading size="4xl">Asked Questions</Heading>
-        <Text>
+    <VStack
+      id="faqs"
+      className="md:flex-row justify-between gap-4 rounded-2xl md:mx-20 mx-4"
+    >
+      <VStack className="justify-start md:pr-20 gap-4">
+        <Heading size="xl" className="md:text-4xl">
+          Frequently Asked Questions
+        </Heading>
+        <Text size="md" className="text-text-primary md:text-lg">
           &quot;Whether you&apos;re just starting with digital marketing or
           looking to explore our services further, these FAQs are here to give
           you clear and concise answers&quot;
         </Text>
-        <Button className="bg-brand-0 w-52 p-6 m-10 rounded-2xl">
+        <Button className="hidden md:flex bg-brand-0 w-52 p-6 m-10 rounded-2xl">
           <ButtonText>See more FAQS</ButtonText>
         </Button>
       </VStack>
-      <Accordion variant="unfilled" type="multiple" className="w-1/2">
+      <Accordion variant="unfilled" type="multiple" className="md:w-1/2">
         {faqsData.map((faq, index) => (
           <div key={index}>
-            <AccordionItem value={String(index)} className="mb-4">
+            <AccordionItem value={String(index)} className="md:mb-4">
               <AccordionHeader>
                 <AccordionTrigger className="gap-4">
                   {({ isExpanded }) => {
@@ -99,7 +102,13 @@ const FaqSection = () => {
                             className="text-brand-0 font-bold"
                           />
                         )}
-                        <AccordionTitleText>{faq.question}</AccordionTitleText>
+                        <AccordionTitleText
+                          className={`text-base text-text-primary ${
+                            isExpanded ? "text-brand-0" : "text-text-primary"
+                          }`}
+                        >
+                          {faq.question}
+                        </AccordionTitleText>
                       </>
                     );
                   }}
@@ -113,7 +122,10 @@ const FaqSection = () => {
           </div>
         ))}
       </Accordion>
-    </HStack>
+      <Button className="md:hidden bg-brand-0 w-52 p-6 m-10 rounded-2xl">
+        <ButtonText>See more FAQS</ButtonText>
+      </Button>
+    </VStack>
   );
 };
 

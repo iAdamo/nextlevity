@@ -43,38 +43,38 @@ const Categories = () => {
   ];
   return (
     <VStack className="md:p-0 p-4 md:mx-0">
-      <HStack className="flex-wrap justify-between px-20 py-10 rounded-lg">
+      <HStack className="flex-wrap justify-between md:px-20 md:py-10 rounded-lg md:gap-y-0 gap-y-4">
         {categories.map((category, index) => (
           <Link
             key={index}
             href={category.url}
-            className="md:w-60 md:h-auto w-24 transform transition-transform duration-300 hover:scale-105 -my-4"
+            className="md:w-60 w-40 h-full transform transition-transform duration-300 hover:scale-105 "
           >
-            <Card className="md:w-60 h-full justify-between items-center rounded-3xl shadow-hard-5 gap-2">
-              <HStack className="">
+            <Card className="justify-between items-center rounded-3xl shadow-hard-5 md:gap-2">
+              <VStack className="w-full h-40">
                 <Image
-                  className="object-fill w-full md:h-40 h-24 rounded-3xl"
+                  className="object-cover w-full h-40 rounded-3xl"
                   src={category.image}
                   alt={category.title}
                   width={1900}
                   height={1900}
                 />
-              </HStack>
-              <HStack className="md:h-40 flex-wrap border-0 justify-center items-center drop-shadow-lg">
-                <Heading size="md" className="hidden md:inline text-center">
+              </VStack>
+
+              <VStack className="md:h-40 h-40 border-0 justify-start items-center drop-shadow-lg gap-2">
+                <Heading size="xs" className="text-center md:text-lg">
                   {category.title}
                 </Heading>
-                <Text>{category.description}</Text>
-              </HStack>
+                <Text size="xs" className="md:text-[16px] md:leading-6">
+                  {category.description}
+                </Text>
+              </VStack>
               <Icon
                 as={ChevronRightIcon}
-                size="xl"
-                className="bg-brand-0 rounded-full"
+                size="md"
+                className="bg-brand-0 md:w-6 md:h-6 rounded-full"
               />
             </Card>
-            <Text className="md:hidden text-center text-xs font-semibold">
-              {category.title}
-            </Text>
           </Link>
         ))}
       </HStack>

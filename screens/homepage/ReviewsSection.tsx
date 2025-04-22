@@ -34,14 +34,14 @@ const ReviewSection = () => {
   ];
   return (
     <VStack className="gap-8">
-      <VStack className="gap-4 justify-center items-center px-72">
-        <Heading size="3xl" className="text-center">
+      <VStack className="gap-4 md:px-72 px-4">
+        <Heading size="md" className="text-center md:text-3xl">
           Success stories: Empowering Brands through our Digital Marketing
           Prowess
         </Heading>
-        <Text size="md" className="text-center">
+        <Text size="sm" className="text-center md:text-lg">
           At <span className="text-[#7D26BB] font-semibold">Nextlevity</span>, We Deliver
-          creative campaigns and measurable ROI to clients., we drive
+          creative campaigns and measurable ROI to clients, we drive
           engagement, elevate visibility, and achieve exceptional
           <span className="text-[#7D26BB] font-semibold">
             <a href="#"> Results. </a>
@@ -49,33 +49,31 @@ const ReviewSection = () => {
           Let&apos;s take your business to the next level
         </Text>
       </VStack>
-      <HStack className="grid grid-cols-3 gap-10 px-20 py-10 rounded-lg">
+      <HStack className="grid md:grid-cols-3 md:gap-10 gap-20 md:px-20 px-4 py-10 rounded-lg">
         {stories.map((story, index) => (
           <Link
             key={index}
             href={story.url}
-            className="md:w-80 md:h-auto w-24 transform transition-transform duration-300 hover:scale-105 -my-4"
+            className="md:w-80 md:h-auto transform transition-transform duration-300 hover:scale-105 -my-4"
           >
-            <Card className="w-[360px] bg-[#F2F2F2] justify-between rounded-3xl shadow-hard-5 gap-2">
+            <Card className="md:w-[360px] w-full bg-[#F2F2F2] justify-between rounded-3xl shadow-hard-5 gap-2">
               <HStack className="">
                 <Image
                   src={story.image}
-                  className="object-cover w-full md:h-52 h-24 rounded-3xl "
+                  className="object-cover w-full h-52 rounded-3xl "
                   alt={story.title}
                   width={1900}
                   height={1900}
                 />
               </HStack>
               <HStack className="md:h-48 gap-2 flex-wrap border-0 justify-center items-center drop-shadow-lg">
-                <Heading size="md" className="text-center px-4">
+                <Heading size="sm" className="text-center text-md px-4">
                   {story.title}
                 </Heading>
-                <Text className="text-center">{story.brief}</Text>
+                <Text size="sm" className="text-center md:text-md leading-6">{story.brief}</Text>
               </HStack>
             </Card>
-            <Text className="md:hidden text-center text-xs font-semibold">
-              {story.title}
-            </Text>
+
           </Link>
         ))}
       </HStack>

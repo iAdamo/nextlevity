@@ -33,36 +33,39 @@ const MoreInfo = () => {
   ];
   return (
     <VStack className="gap-10">
-      <VStack className="gap-2 justify-center items-center px-72">
-        <Heading size="3xl" className="text-center">
-          Your Reliable digital Marketing Partner,
+      <VStack className="gap-2 md:px-72 px-4">
+        <Heading
+          size="sm"
+          className="text-center md:font-semibold font-extrablack md:text-4xl"
+        >
+          Your Reliable digital Marketing Partner, Boosting Business Growth
         </Heading>
-        <Heading size="3xl" className="text-center">
-          Boosting Business Growth
-        </Heading>
-        <Text size="md" className="text-center leading-8">
+        <Text size="sm" className="text-center md:text-lg md:leading-8">
           We excel in crafting innovative marketing strategies that drive
           results. Our expert team is dedicated to elevating your brand and
           ensuring your success in the digital world.
         </Text>
       </VStack>
-      <VStack className="md:pl-16 md:py-10 md:flex-row justify-between items-center">
+      <VStack className="md:pl-16 md:py-10 px-4 md:flex-row justify-between items-center">
         <VStack className="md:w-2/3 gap-8">
+          <VStack className="gap-4">
+            <Heading
+              size="sm"
+              className=" md:font-semibold font-extrablack md:text-4xl"
+            >
+              Personalized Digital Marketing Experience
+            </Heading>
+            <Text size="sm" className="md:leading-8 md:text-lg md:pr-64">
+              We develop innovative strategies that not only resonate with your
+              brand identity but also align seamlessly with your business
+              objectives.
+            </Text>
+          </VStack>
           <HStack className="flex-wrap gap-8">
-            <VStack className="gap-4">
-              <Heading size="3xl" className="font-semibold">
-                Personalized Digital Marketing Experience
-              </Heading>
-              <Text size="md" className="leading-8 pr-64">
-                We develop innovative strategies that not only resonate with
-                your brand identity but also align seamlessly with your business
-                objectives.
-              </Text>
-            </VStack>
             {info.map((item, index) => (
               <Card
                 key={index}
-                className="md:w-[23rem] h-28 py-2 rounded-2xl shadow-md gap-2"
+                className="md:w-[23rem] md:h-28 md:py-2 rounded-2xl shadow-md gap-2"
               >
                 <HStack className="gap-2">
                   <Icon
@@ -70,9 +73,13 @@ const MoreInfo = () => {
                     size="lg"
                     className="text-white rounded-full bg-brand-0"
                   />
-                  <Heading size="sm">{item.title}</Heading>
+                  <Heading size="xs" className="md:text-lg">
+                    {item.title}
+                  </Heading>
                 </HStack>
-                <Text className="ml-7">{item.description}</Text>
+                <Text size="sm" className="ml-7 md:text-md">
+                  {item.description}
+                </Text>
               </Card>
             ))}
           </HStack>
@@ -82,7 +89,7 @@ const MoreInfo = () => {
             </LinkText>
           </Link>
         </VStack>
-        <VStack className="hidden w-1/3 md:flex">
+        <VStack className="md:w-1/3">
           <Image
             className="object-cover"
             src={homemage3}

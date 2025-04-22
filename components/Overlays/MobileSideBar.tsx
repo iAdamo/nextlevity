@@ -29,12 +29,12 @@ const MobileSideBar = () => {
   return (
     <>
       <Button
-        className="md:hidden bg-yellow-500 data-[hover=true]:bg-yellow-400 data-[active=true]:bg-yellow-300"
+        className="md:hidden p-0"
         onPress={() => {
           setShowDrawer(true);
         }}
       >
-        <ButtonIcon as={MenuIcon} />
+        <ButtonIcon as={MenuIcon} className="w-10 h-10 text-black" />
       </Button>
       <Drawer
         isOpen={showDrawer}

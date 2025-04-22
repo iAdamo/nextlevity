@@ -4,14 +4,14 @@ import { Button, ButtonText } from "@/components/ui/button";
 import { HStack } from "@/components/ui/hstack";
 import { Text } from "@/components/ui/text";
 import { VStack } from "@/components/ui/vstack";
-import { Link, LinkText } from "@/components/ui/link";
 import { header } from "@/public/assets/homepage";
+import Link from "next/link";
 
 const HomeHeader = () => {
   return (
-    <VStack className="-mt-40 w-full bg-gradient-to-br from-white via-white to-purple-200 relative overflow-hidden">
+    <VStack className="md:-mt-40 -mt-28 w-full bg-gradient-to-br from-white via-white to-purple-200 relative overflow-hidden">
       <Image
-        className="object-cover w-full mt-10"
+        className="object-cover w-full mt-10 md:h-auto h-96"
         src={spirals}
         alt="spirals"
         width={1900}
@@ -19,7 +19,7 @@ const HomeHeader = () => {
       />
 
       <VStack className="absolute inset-0 w-full">
-        <HStack className="top-16 left-[24rem]">
+        <HStack className="md:top-16 top-[8.3rem] md:left-96 left-14">
           <Image
             className="object-cover"
             src={header}
@@ -28,44 +28,50 @@ const HomeHeader = () => {
             height={1150}
           />
         </HStack>
-        <HStack className="absolute top-[50rem] left-[41rem]">
+        <VStack className="absolute w-full h-full md:top-[50rem] top-[23rem] md:left-[41rem] left-36">
           <Image
-            className="chart"
+            className="object-cover md:w-36 md:h-36 w-10 h-10"
             src={chart}
-            alt="Hero Image"
+            alt="chart"
             width={150}
             height={150}
           />
-        </HStack>
+        </VStack>
 
-        <HStack className="w-full md:pl-20 absolute bottom-56 items-center">
-          <VStack className="w-1/2 h-full px-6 py-8 md:p-0 md:py-0 justify-center gap-10">
-            <VStack space="lg" className="">
-              <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
+        <HStack className="w-full md:pl-20 absolute md:bottom-56 items-center">
+          <VStack className="md:w-1/2 h-full px-6 py-28 md:p-0 md:py-0 justify-center md:gap-10 gap-4">
+            <VStack space="sm" className="md:gap-4 gap-2">
+              <Text className="md:text-5xl text-center md:text-start text-xl font-extrabold text-txt-0">
                 Your Vision,
               </Text>
-              <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
-                Our Strategy,
+              <Text className="md:text-5xl text-xl font-extrabold text-txt-0 text-center md:text-start inline md:leading-normal">
+                Our Strategy,{" "}
+                <span className="md:block inline">
+                  Unmatched{" "}
+                  <Link
+                    href="/services"
+                    className="inline md:text-5xl text-xl font-extrabold text-brand-1 hover:underline"
+                  >
+                    Results
+                  </Link>
+                </span>
               </Text>
-              <Link className="inline space-x-2 md:text-5xl text-xl font-extrabold text-txt-0">
-                <Text className="md:text-5xl text-xl font-extrabold text-txt-0">
-                  Unmatched
-                </Text>
-                <LinkText className="text-brand-1 md:text-5xl text-xl font-extrabold">
-                  Results
-                </LinkText>
-              </Link>
             </VStack>
-            <Text className="text-text-primary pr-40 leading-8">
+            <Text
+              size="sm"
+              className="text-center md:text-start md:text-lg text-text-primary md:pr-40 md:leading-8"
+            >
               At Nextlevity, we specialize in turning your vision into reality.
               Our innovative strategies and creative solutions ensure your brand
               stands out in the digital landscape
             </Text>
             <Button
               variant="outline"
-              className="w-40 h-12 mt-8 ml-10 rounded-full border-0 bg-brand-0 data-[hover=true]:bg-brand-1 data-[active=true]:bg-brand-0"
+              className="md:w-40 w-32 md:h-12 h-8 md:mt-8 md:ml-10 mx-auto rounded-full border-0 bg-brand-0 data-[hover=true]:bg-brand-1 data-[active=true]:bg-brand-0"
             >
-              <ButtonText className="text-txt-0">Get in touch</ButtonText>
+              <ButtonText className="text-txt-0 md:text-xl text-sm">
+                Get in touch
+              </ButtonText>
             </Button>
           </VStack>
         </HStack>

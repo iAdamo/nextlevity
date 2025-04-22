@@ -41,9 +41,19 @@ const NavBar = () => {
     <VStack
       className={`items-center justify-center z-10 w-full ${styles.navBarClass}`}
     >
-      <HStack className="py-10 w-full items-center justify-between px-10">
-        <Button onPress={() => router.replace("/")} className="p-0">
-          <Image src={styles.navBarLogo} alt="Logo" width={200} height={176} />
+      <HStack className="md:py-10 py-4 w-full items-center justify-between md:px-10 px-5">
+        <Button
+          variant="link"
+          onPress={() => router.replace("/")}
+          className="p-0"
+        >
+          <Image
+            src={styles.navBarLogo}
+            alt="Logo"
+            width={1200}
+            height={1176}
+            className="md:w-52 w-36"
+          />
         </Button>
 
         {/* Desktop Navigation */}
@@ -63,7 +73,7 @@ const NavBar = () => {
 
         <Link
           href="/contact#form"
-          className={`text-txt-0 font-bold py-2 px-6 text-center rounded-3xl hover:bg-brand-1 active:bg-brand-0 ${styles.buttonClass}`}
+          className={`hidden md:flex text-txt-0 font-bold py-2 px-6 text-center rounded-3xl hover:bg-brand-1 active:bg-brand-0 ${styles.buttonClass}`}
         >
           Get in touch
         </Link>
