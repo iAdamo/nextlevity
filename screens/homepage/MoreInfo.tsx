@@ -47,7 +47,7 @@ const MoreInfo = () => {
         </Text>
       </VStack>
       <VStack className="md:pl-16 md:py-10 px-4 md:flex-row justify-between items-center">
-        <VStack className="md:w-2/3 gap-8">
+        <VStack className="md:w-2/3 gap-8 mb-10 md:mb-0">
           <VStack className="gap-4">
             <Heading
               size="sm"
@@ -65,25 +65,25 @@ const MoreInfo = () => {
             {info.map((item, index) => (
               <Card
                 key={index}
-                className="md:w-[23rem] md:h-28 md:py-2 rounded-2xl shadow-md gap-2"
+                className="md:w-[23rem] w-3/4 md:h-28 md:py-2 rounded-2xl shadow-md gap-2"
               >
                 <HStack className="gap-2">
                   <Icon
                     as={CheckCircleIcon}
-                    size="lg"
+                    size="md"
                     className="text-white rounded-full bg-brand-0"
                   />
                   <Heading size="xs" className="md:text-lg">
                     {item.title}
                   </Heading>
                 </HStack>
-                <Text size="sm" className="ml-7 md:text-md">
+                <Text size="xs" className="ml-7 md:text-md">
                   {item.description}
                 </Text>
               </Card>
             ))}
           </HStack>
-          <Link href="/google.com" className="w-40 ml-10 mt-10">
+          <Link href="/google.com" className="hidden md:flex w-40 ml-10 mt-10">
             <LinkText className="font-bold text-[#7D26BB] data-[hover=true]:text-yellow-400 data-[active=true]:text-yellow-300">
               Learn More...
             </LinkText>

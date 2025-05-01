@@ -7,7 +7,7 @@ import SectionFour from "./SectionFour";
 
 const ServicePage = () => {
   return (
-    <main className="space-y-20">
+    <main className="space-y-10 md:space-y-20">
       <Header />
       <SectionTwo />
       <Consultation />
