@@ -13,6 +13,10 @@ import {
   seye,
 } from "@/public/assets/homepage";
 import { logo } from "@/public/assets/icons";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const TeamSection = () => {
   const teamMembers = [
@@ -55,7 +59,7 @@ const TeamSection = () => {
   return (
     <VStack className="p-2 gap-6 rounded-2xl">
       <VStack className="justify-center items-center gap-4">
-        <Heading className="text-xl md:text-3xl">
+        <Heading className="text-2xl md:text-3xl">
           Meet the team that makes the magic happen
         </Heading>
         <Text size="md" className="hidden md:inline">
@@ -63,7 +67,8 @@ const TeamSection = () => {
           problem solvers.
         </Text>
       </VStack>
-      <HStack className="flex-wrap justify-center gap-6 py-4 mx-20">
+      {/** Desktop */}
+      <HStack className="hidden md:flex flex-wrap justify-center gap-6 py-4 mx-20">
         {teamMembers.map((member, index) => (
           <Card
             key={index}
@@ -89,6 +94,43 @@ const TeamSection = () => {
           </Card>
         ))}
       </HStack>
+      {/** Mobile */}
+      <VStack className="md:hidden w-full">
+        <Swiper
+          className="md:hidden h-full w-[22rem]"
+          spaceBetween={16}
+          slidesPerView={1}
+          autoplay={{ delay: 3000 }}
+          modules={[Autoplay, Pagination]}
+        >
+          {teamMembers.map((member, index) => (
+            <SwiperSlide key={index}>
+              <Card
+                className="p-0 flex-shrink-0 justify-center items-center rounded-3xl"
+                key={index}
+              >
+                <Image
+                  src={member.photo}
+                  alt="Profile Image"
+                  width={1920}
+                  height={1080}
+                  className="object-cover w-56 h-72 rounded-[3rem]"
+                />
+                <VStack className="w-full bottom-20 ">
+                  <VStack className="justify-center items-center mx-4 bg-white rounded-md">
+                    <Heading size="sm" className="">
+                      {member.name}
+                    </Heading>
+                    <Text className="text-sm font-normal text-typography-700">
+                      {member.profession}
+                    </Text>
+                  </VStack>
+                </VStack>
+              </Card>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </VStack>
     </VStack>
   );
 };

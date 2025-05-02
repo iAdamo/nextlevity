@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/checkbox";
 import { CheckIcon } from "@/components/ui/icon";
 import { VStack } from "@/components/ui/vstack";
-import { HStack } from "@/components/ui/hstack";
+// import { HStack } from "@/components/ui/hstack";
 import { Heading } from "@/components/ui/heading";
 import { Text } from "@/components/ui/text";
 import Image from "next/image";
@@ -74,11 +74,11 @@ const ContactForm = () => {
   };
 
   return (
-    <VStack id="form" className="px-20 py-10">
-      <HStack>
-        <VStack className="w-1/2 gap-8">
-          <VStack className="pr-20 pl-10 gap-6">
-            <HStack className="justify-between">
+    <VStack id="form" className="md:px-20 px-8 py-10">
+      <VStack className="md:flex-row gap-20 md:gap-0">
+        <VStack className="md:w-1/2 gap-8">
+          <VStack className="md:pr-20 md:pl-10 gap-6">
+            <VStack className="md:flex-row gap-6 md:justify-between">
               <FormControl isInvalid={!!errors.firstName}>
                 <FormControlLabel>
                   <FormControlLabelText className="font-bold">
@@ -127,7 +127,7 @@ const ContactForm = () => {
                   </FormControlError>
                 )}
               </FormControl>
-            </HStack>
+            </VStack>
             <FormControl isInvalid={!!errors.email}>
               <FormControlLabel>
                 <FormControlLabelText className="font-bold">
@@ -217,7 +217,7 @@ const ContactForm = () => {
               )}
             </FormControl>
           </VStack>
-          <VStack className="ml-10">
+          <VStack className="md:ml-10">
             <FormControl className="">
               <Controller
                 name="services"
@@ -228,7 +228,7 @@ const ContactForm = () => {
                     onChange={(selectedValues) =>
                       field.onChange(selectedValues)
                     }
-                    className="flex flex-row gap-4 flex-wrap"
+                    className="flex md:flex-row gap-4 flex-wrap"
                   >
                     {[
                       "Social Media Marketing",
@@ -253,26 +253,30 @@ const ContactForm = () => {
           </VStack>
           <Button
             onPress={handleSubmit(onSubmit)}
-            className="rounded-2xl ml-32 w-60 h-12 bg-brand-0 hover:bg-brand-1"
+            className="rounded-2xl md:ml-32 mx-auto md:w-60 px-12 md:h-12 h-10 bg-brand-0 hover:bg-brand-1"
           >
             <ButtonText>Send Message</ButtonText>
           </Button>
         </VStack>
-        <VStack className="pl-20 gap-10 w-1/2">
+        <VStack className="md:pl-20 gap-10 md:w-1/2">
           <VStack className="gap-4">
-            <Heading size="2xl">Chat with us</Heading>
-            <Text>Speak to our friendly team via live chat </Text>
-            <Button variant="link" className="justify-start gap-4">
+            <Heading size="xl" className="md:text-3xl">
+              Chat with us
+            </Heading>
+            <Text className="md:text-xl">
+              Speak to our friendly team via live chat{" "}
+            </Text>
+            <Button variant="link" className="underline justify-start gap-4">
               <Image src={message} alt="Message" width={24} height={24} />
-              <ButtonText>Start a live chat</ButtonText>
+              <ButtonText className="underline">Start a live chat</ButtonText>
             </Button>
             <Button variant="link" className="justify-start gap-4">
               <Image src={sentarrow} alt="sentarrow" width={24} height={24} />
-              <ButtonText>Shoot us an email</ButtonText>
+              <ButtonText className="underline">Shoot us an email</ButtonText>
             </Button>
             <Button variant="link" className="justify-start gap-4">
               <Image src={twitter} alt="Socials" width={24} height={24} />
-              <ButtonText>Check out socials</ButtonText>
+              <ButtonText className="underline">Check out socials</ButtonText>
             </Button>
           </VStack>
           <VStack className="gap-4">
@@ -280,11 +284,11 @@ const ContactForm = () => {
             <Text>Call our team from Mon- Fri from 8am to 5pm</Text>
             <Button variant="link" className="justify-start gap-4">
               <Image src={phone} alt="phone" width={24} height={24} />
-              <ButtonText>+234 913 929 0549</ButtonText>
+              <ButtonText className="underline">+234 913 929 0549</ButtonText>
             </Button>
           </VStack>
         </VStack>
-      </HStack>
+      </VStack>
     </VStack>
   );
 };

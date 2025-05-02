@@ -1,6 +1,5 @@
 import { Text } from "@/components/ui/text";
 import { VStack } from "@/components/ui/vstack";
-import { HStack } from "@/components/ui/hstack";
 import Image from "next/image";
 import { value0, value1, value2, value3 } from "@/public/assets/abouts";
 
@@ -36,7 +35,7 @@ const CoreValues = () => {
     },
   ];
   return (
-    <VStack className="m-20 gap-16">
+    <VStack className="md:m-20 md:px-0 px-4 md:gap-16">
       <VStack className="items-start justify-start">
         <Text className="py-2 px-4 rounded-3xl border border-brand-1 block">
           Our Values
@@ -45,15 +44,15 @@ const CoreValues = () => {
       </VStack>
       <VStack className="gap-8">
         {values.map((value, index) => (
-          <HStack className="justify-between mt-2 gap-8" key={index}>
-            <VStack className="w-[65%] p-4 gap-2 border-t-2">
+          <VStack className="md:flex-row justify-between mt-2 gap-8" key={index}>
+            <VStack className="md:w-[65%] p-4 gap-2 border-t-2">
               <Text size="sm">{value.title}</Text>
               <Text size="2xl" className="font-semibold">
                 {value.value}
               </Text>
               <Text>{value.description}</Text>
             </VStack>
-            <VStack className="h-auto w-[35%] rounded-2xl">
+            <VStack className="hidden md:flex h-auto w-[35%] rounded-2xl">
               <Image
                 className="object-cover h-52 w-full rounded-2xl"
                 src={value.image}
@@ -62,7 +61,7 @@ const CoreValues = () => {
                 height={400}
               />
             </VStack>
-          </HStack>
+          </VStack>
         ))}
       </VStack>
     </VStack>

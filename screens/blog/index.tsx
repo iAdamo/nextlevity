@@ -9,7 +9,7 @@ import AllArticles from "./AllArticles";
 
 const BlogPage = () => {
   return (
-    <article className="space-y-32">
+    <article className="space-y-12 md:space-y-32">
       <BlogHeader />
       <PopularArticles />
       <RecentArticles />

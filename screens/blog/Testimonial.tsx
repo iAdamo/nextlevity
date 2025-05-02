@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Testimonial = () => {
   return (
-    <VStack className="px-20 gap-10">
+    <VStack className="md:px-20 px-4 gap-10">
       <HStack className="justify-between">
         <Heading size="2xl">Testimonial</Heading>
         <Link
@@ -17,8 +17,8 @@ const Testimonial = () => {
           View all
         </Link>
       </HStack>
-      <HStack className="shadow-lg">
-        <VStack className="w-[45%]">
+      <VStack className="md:flex-row shadow-lg">
+        <VStack className="md:w-[45%]">
           <Image
             className="object-cover w-full h-full"
             src="/assets/blog/blog7.jpeg"
@@ -27,22 +27,31 @@ const Testimonial = () => {
             height={3000}
           />
         </VStack>
-        <VStack className="w-[55%] p-8  justify-between items-start">
-          <Heading className="py-1 px-4 bg-white text-brand-1 border border-brand-1 text-center font-normal rounded-full">
+        <VStack className="md:w-[55%] p-8 gap-2 md:gap-0 justify-between items-start">
+          <Heading
+            size="sm"
+            className="py-1 px-4 bg-white text-brand-1 md:text-xl text-center font-normal rounded-full"
+          >
             Featured
           </Heading>
-          <Heading size="3xl">How Chill Republic doubled their Revenue </Heading>
-          <Text>
+          <Heading size="lg" className="md:text-4xl">
+            How Chill Republic doubled their Revenue
+          </Heading>
+          <Text size="sm" className="md:text-xl">
             NextLevity helped Chill Republic double their revenue by
             implementing targeted digital marketing strategies, enhancing
             their...
           </Text>
           <VStack>
-            <Text className="font-semibold">Tiffany wells</Text>
-            <Text className="font-semibold">Editor, NextLevity</Text>
+            <Text size="sm" className="md:text-xl font-semibold text-black">
+              Tiffany wells
+            </Text>
+            <Text size="sm" className="md:text-xl font-semibold text-black">
+              Editor, NextLevity
+            </Text>
           </VStack>
         </VStack>
-      </HStack>
+      </VStack>
     </VStack>
   );
 };

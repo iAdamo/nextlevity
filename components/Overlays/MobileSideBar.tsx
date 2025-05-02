@@ -9,10 +9,7 @@ import {
 } from "@/components/ui/drawer";
 import { Text } from "@/components/ui/text";
 import { VStack } from "@/components/ui/vstack";
-import {
-
-  MenuIcon,
-} from "@/components/ui/icon";
+import { MenuIcon } from "@/components/ui/icon";
 import { Link, LinkText } from "@/components/ui/link";
 
 const MobileSideBar = () => {
@@ -52,27 +49,27 @@ const MobileSideBar = () => {
             </Text>
             <VStack className="mt-4 gap-4">
               <Link href="/">
-                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+                <LinkText className="no-underline text-txt-0 font-extrabold data-[hover=true]:text-yellow-500">
                   Home
                 </LinkText>
               </Link>
               <Link href="/services">
-                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+                <LinkText className="no-underline text-txt-0 font-extrabold data-[hover=true]:text-yellow-500">
                   Services
                 </LinkText>
               </Link>
               <Link href="/about">
-                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+                <LinkText className="no-underline text-txt-0 font-extrabold data-[hover=true]:text-yellow-500">
                   About
                 </LinkText>
               </Link>
               <Link href="/blog">
-                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+                <LinkText className="no-underline text-txt-0 font-extrabold data-[hover=true]:text-yellow-500">
                   Blog
                 </LinkText>
               </Link>
               <Link href="/contact">
-                <LinkText className="no-underline text-purple-500 font-extrabold data-[hover=true]:text-yellow-500">
+                <LinkText className="no-underline text-txt-0 font-extrabold data-[hover=true]:text-yellow-500">
                   Contact
                 </LinkText>
               </Link>
