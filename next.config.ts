@@ -1,10 +1,9 @@
+import type { NextConfig } from "next";
+
 import { withGluestackUI } from "@gluestack/ui-next-adapter";
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const nextConfig: NextConfig = {
   transpilePackages: ["nativewind", "react-native-css-interop"],
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 
 export default withGluestackUI(nextConfig);

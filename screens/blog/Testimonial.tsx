@@ -9,10 +9,12 @@ const Testimonial = () => {
   return (
     <VStack className="md:px-20 px-4 gap-10">
       <HStack className="justify-between">
-        <Heading size="2xl">Testimonial</Heading>
+        <Heading size="lg" className="md:text-3xl">
+          Testimonial
+        </Heading>
         <Link
           href="#"
-          className="py-2 px-4 hover:bg-brand-0 border border-brand-1 font-bold text-brand-1 rounded-full w-32 text-center"
+          className="md:py-2 py-1 md:px-4 px-2 hover:bg-brand-0 border border-brand-1 font-bold text-brand-1 md:rounded-full rounded-lg w-32 text-center md:text-lg text-sm"
         >
           View all
         </Link>

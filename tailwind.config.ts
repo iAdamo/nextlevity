@@ -1,5 +1,8 @@
 import gluestackPlugin from '@gluestack-ui/nativewind-utils/tailwind-plugin';
 
+//@ts-expect-error : nativewind/preset is not a module
+import * as nativewind from "nativewind/preset";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
@@ -8,7 +11,7 @@ module.exports = {
     "components/**/*.{tsx,jsx,ts,js}",
     "./screens/**/*.{js,jsx,ts,tsx}",
   ],
-  presets: [require("nativewind/preset")],
+  presets: [nativewind],
   important: "html",
 
   theme: {

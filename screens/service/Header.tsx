@@ -91,7 +91,7 @@ const Header = () => {
           height={3000}
         />
         <VStack className="absolute inset-0 bg-[#FFFFFF80] w-full justify-center items-center">
-          <VStack className="md:gap-28 mt-8 md:mt-auto md:px-36 px-4 justify-center items-center">
+          <VStack className="md:gap-28 mt-8 md:mt-0 md:px-36 px-4 justify-center items-center">
             <VStack className="gap-4 justify-center items-center">
               <Heading size="md" className="text-4xl">
                 Our Services

@@ -1,6 +1,6 @@
 "use client";
 
-import { SafeAreaView } from "@/components/ui/safe-area-view";
+// import { SafeAreaView } from "@/components/ui/safe-area-view";
 import HomeHeader from "@/screens/homepage/HomeHeader";
 import Categories from "@/screens/homepage/Categories";
 import ReviewsSection from "@/screens/homepage/ReviewsSection";
@@ -11,7 +11,7 @@ import MarketingSolution from "./MaketingSolution";
 
 const HomePage = () => {
   return (
-    <SafeAreaView className="gap-10 md:gap-20">
+    <main className="space-y-10 md:space-y-20">
       <HomeHeader />
       <MoreInfo />
       <MarketingSolution />
@@ -19,8 +19,8 @@ const HomePage = () => {
       <ReviewsSection />
       <ReviewsSection2 />
       <FaqSection />
-    </SafeAreaView>
-  );
+    </main>
+  )
 };
 
 export default HomePage;

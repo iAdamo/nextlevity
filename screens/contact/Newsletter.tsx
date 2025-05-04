@@ -28,12 +28,12 @@ const Newsletter = () => {
             designed to elevate your brand.
           </Text>
         </VStack>
-        <VStack className="md:w-1/4 justify-center items-center ">
+        <VStack className="md:w-1/3 justify-center items-center ">
           <FormControl className="w-full">
-            <Input className="bg-[#FFFEFE] w-full md:h-14 h-12 rounded-lg border-none px-2 data-[focus=true]:bg-transparent">
+            <Input className="bg-[#FFFEFE]  md:h-14 h-12 rounded-lg border-none px-2 data-[focus=true]:bg-transparent">
               <InputField
                 placeholder="Enter your email address"
-                className="placeholder:text-sm w-full font-normal placeholder:text-typography-400"
+                className="placeholder:text-sm md:placeholder:text-lg w-full font-normal placeholder:text-typography-400"
                 value={values}
                 onChangeText={(text) => setValues(text)}
               />

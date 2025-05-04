@@ -107,7 +107,7 @@ const AllArticles = () => {
       <VStack className="gap-20">
         <HStack className="justify-between items-center">
           <VStack className="gap-4">
-            <Heading size="lg" className="md:text-xl">
+            <Heading size="lg" className="md:text-3xl">
               All Articles
             </Heading>
             {pathname === "/blog" && (

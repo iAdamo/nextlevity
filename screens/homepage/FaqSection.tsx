@@ -13,7 +13,7 @@ import {
   AccordionContentText,
 } from "@/components/ui/accordion";
 import { Divider } from "@/components/ui/divider";
-import { MinusIcon, PlusIcon } from "lucide-react-native";
+import { AddIcon, RemoveIcon } from "@/components/ui/icon";
 
 const FaqSection = () => {
   const faqsData = [
@@ -88,17 +88,17 @@ const FaqSection = () => {
             <AccordionItem value={String(index)} className="md:mb-4">
               <AccordionHeader>
                 <AccordionTrigger className="gap-4">
-                  {({ isExpanded }) => {
+                  {({ isExpanded }: { isExpanded: boolean }) => {
                     return (
                       <>
                         {isExpanded ? (
                           <AccordionIcon
-                            as={MinusIcon}
+                            as={RemoveIcon}
                             className="text-brand-0 font-bold"
                           />
                         ) : (
                           <AccordionIcon
-                            as={PlusIcon}
+                            as={AddIcon}
                             className="text-brand-0 font-bold"
                           />
                         )}
